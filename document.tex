@@ -1,0 +1,45 @@
+% kompiliert mit XeLaTeX
+\documentclass[
+12pt, % font size
+parskip=half, % space between paragraphs instead of indentation
+digital, % digital or print
+oneside, % oneside / twoside
+%	openright, % openright for title page and subsequent chapters on right pages in twosided layout
+]{bsc}
+
+\usepackage {xltxtra}
+\usepackage{microtype}
+% Package für Bilder
+\usepackage{graphicx}
+
+\title{Understanding}
+\author{Max SImon}
+\date{August 21, 2017}
+
+% Mathe
+\usepackage{amsmath, amssymb, booktabs, hyperref, subcaption, siunitx}
+
+\bibliography{../Paper}
+
+% Code
+\usepackage{listings}
+
+\newcommand{\diff}{\text{d}}
+\newcommand{\pip}{PI(4,5)P$_2$}
+\newcommand{\acid}[2]{#1$^{#2}$}
+
+%\newcommand{\fourier}[1]{\mathcal{F}\left( #1 \right)}
+%\newcommand{\revfourier}[1]{\mathcal{F}^{-1}\left( #1 \right)}
+
+
+\captionsetup[subfigure]{labelformat=simple, labelsep=colon}
+\renewcommand{\thesubfigure}{Figure~\thefigure \alph{subfigure}}
+
+\includeonly{introduction/fak}
+
+\begin{document}
+	
+\chapter{Introduction}
+\include{introduction/fak}
+
+\end{document}
