@@ -27,6 +27,7 @@ oneside, % oneside / twoside
 \newcommand{\diff}{\text{d}}
 \newcommand{\pip}{PI(4,5)P$_2$}
 \newcommand{\acid}[2]{#1$^{#2}$}
+\newcommand{\gromacs}{GROMACS}
 
 %\newcommand{\fourier}[1]{\mathcal{F}\left( #1 \right)}
 %\newcommand{\revfourier}[1]{\mathcal{F}^{-1}\left( #1 \right)}
@@ -35,11 +36,12 @@ oneside, % oneside / twoside
 \captionsetup[subfigure]{labelformat=simple, labelsep=colon}
 \renewcommand{\thesubfigure}{Figure~\thefigure \alph{subfigure}}
 
-\includeonly{introduction/fak}
+\includeonly{introduction/fak, introduction/md}
 
 \begin{document}
 	
 \chapter{Introduction}
 \include{introduction/fak}
+\include{introduction/md}
 
 \end{document}
