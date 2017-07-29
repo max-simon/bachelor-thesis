@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  26 JUL 2017 20:35
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  29 JUL 2017 02:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1858,15 +1858,25 @@ Package microtype Info: Character `‐' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-LaTeX Warning: Reference `TOBEADDED' on page 2 undefined on input line 4.
+LaTeX Warning: Reference `TOBEADDED' on page 2 undefined on input line 5.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--43
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--43
+Underfull \hbox (badness 10000) in paragraph at lines 3--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--15
 
  []
 
@@ -1875,7 +1885,7 @@ Package microtype Info: Character `‐' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [2
 
-]
+]) [3]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 35.
 See the caption package documentation for explanation.
@@ -1895,12 +1905,12 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 37192 strings out of 493591
- 693462 string characters out of 6143546
- 1015457 words of memory out of 5000000
- 40194 multiletter control sequences out of 15000+600000
+ 37204 strings out of 493591
+ 694455 string characters out of 6143546
+ 1028171 words of memory out of 5000000
+ 40206 multiletter control sequences out of 15000+600000
  8925 words of font info for 68 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
  65i,11n,107p,10371b,3632s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (2 pages).
+Output written on document.pdf (3 pages).
