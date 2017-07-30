@@ -1,6 +1,9 @@
 \section{Molecular Dynamics simulations}
-Molecular dynamics (MD) simulations are an important tool to study biological systems on a microscopic scale. In the framework of MD simplifications are made, which enables simulations of several nanometres length scales for microseconds. Therefore MD is suitable for membranes, proteins and other biomolecules.\\
-Because in this thesis \gromacs\,(Groningen Machine for Chemical Simulations) \autocites{gromacs1, gromacsManual} was used as MD engine, the following part refers to \gromacs\,conventions and features.
+It is often difficult to get a precise insight into dynamics of a biological system on a molecular scale. Reasons are, that the measurable time- and length scales are usually larger than those of the system. Therefore most effects can only be measured indirectly. Another problem are disturbing factors, which can be hard to control.\\
+These problems do not exist in computer simulations, in which the positions of all particles of the system are known at a much smaller timescale than the dynamics in the system.\\
+An important tool is Molecular dynamics simulation (MD). MD can provide atomistic details, but e.g. with coarse grained models (see \autoref{subsub:coarsegraining}) a length scale of several nanometres is still accessible for microseconds. Therefore MD is suitable for membranes, proteins and other biomolecules.\\
+In this thesis MD was used to investigate interactions of FAK with other FAK and the membrane. Therefore the main concepts of MD and characteristics of the used models are outlined below. However within the scope of this thesis it can just be a small survey.\\
+Because \gromacs\,(Groningen Machine for Chemical Simulations) \autocites{gromacs1, gromacsManual} was used as MD engine in this thesis, the following explanations refer to \gromacs\,conventions and features.
 \subsection{The physics behind MD}
 In MD the system is simulated on an atomistic scale but with classical mechanics only. In order to do so atoms are only treated as spheres without distinction into electrons and nuclei. Quantum mechanical (QM) effects, such as excitation or electron transfer processes, are therefore not accessible and neglected in MD. However the atoms are parametrized by effective parameters, which can be motivated from QM \autocite[p. 127f]{greenBook}.\\
 \\
@@ -77,6 +80,7 @@ All simulations for optimizing have been done with a time step of 2$\si{\femto\s
 \\
 There are several models for water, which can be used with all-atom force fields. They differ mainly in intermolecular interactions of water atoms. For simulations in this thesis the TIPS3P water model was used. It is a modification of the TIP3P water model \autocite{tip3p} used in parametrisation of C36, which allows also Lennard-Jones-interactions on the hydrogens and not only on the oxygen \autocite{charmm36_protein}. % TODO: better citing?
 \subsubsection{Coarse graining and the Martini 2.2 force field}
+\label{subsub:coarsegraining}
 The Martini 2.2 \autocites{martini22_lipids}{martini22} force field was introduced in 2013 and is one of the most famous coarse graining force fields. It maps usually four heavy atoms onto a single bead (ring-like structures need a higher resolution), which implicates of course a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
 \\
 The parametrisation in Martini is mainly based on fitting partitioning free energies of small molecules, such as amino acid side chain analogues, between a range of polar and non-polar solvents to results from all-atom simulations and experimental. For lipids also thermodynamic properties, such as area per lipid, have been considered. The parameters for membrane-protein interactions were optimized by fitting binding energies of small peptides and a membrane to experimental data and results from all-atom simulations data. In the simulations for optimization a time step of 20$\si{\femto\second}$ up to 30$\si{\femto\second}$ was used \autocites{martini22}{martini22_lipids}.\\
@@ -100,7 +104,23 @@ To use PBC the shape of the simulation box has to have a space filling geometry 
 A particle interacts only with the nearest image of another particle, which means that particles near boundaries can interact with periodic images of other particles instead of the real particle. Nevertheless molecules can have long range interaction with their own periodic images, which leads to artefacts and has to be considered when choosing the systems size.\\
 It is generally thought, that PBC only have small or no effects on equilibrium properties or structures of fluids, but known problems are the absence of long wavelength fluctuations (e.g. in phase transitions) or the violation of angular momentum conversation \autocite[p. 141f]{greenBook}.
 \subsubsection{Thermostats}
-Integration schemes in MD are designed to conserve the energy of a system. This refers to a microcanonical ensemble, in which the number of particles $N$, the volume $V$ and the energy $E$ is constant (NVE). However in real biological systems not the energy but rather temperature is kept constant, which is the canonical ensemble (NVT). This can be achieved by thermostats. For the thermostats used in this thesis some characteristics are outlined below.
+Integration schemes in MD are designed to conserve the energy of a system. This refers to a microcanonical ensemble, in which the number of particles $N$, the volume $V$ and the energy $E$ is constant (NVE). However in real biological systems not the energy but rather temperature is kept constant, which is the canonical ensemble (NVT). This can be achieved by thermostats.\\
+In this thesis the Berendsen thermostat, the Parinello-Bussi and the Nosè-Hoover thermostat were used.\\
+\paragraph{Berendsen and Parinello-Bussi}
+The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. Weak coupling means, that the energy difference is not conducted in one rescaling, but over a given time scale $\tau_T$, which allows a specification of the coupling strength. As the rescaling of velocities transfer kinetic energy from internal degrees of freedom, such as vibrations, to translational and rotational kinetic energy of the center of mass of the system \autocite[p. 738]{velRescaleSucks}, this thermostat is not suitable for production runs. However deviations from $T_0$ decay exponential making this thermostat usefull for equilibration runs or non equilibrium MD simulations \autocite[p. 3689]{berendsen}.\\
+The Parrinello-Bussi  thermostat \autocite{parinelloBussi} extends the Berendsen thermostat by a stochastic term, which leads to a more accurate sampling of phase space. The advantages of the Berendsen thermostat are still in place \autocite[p. 31]{gromacsManual}.
+\paragraph{Nosé-Hoover thermostat}
+The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath, which effectively modifies the equations of motion.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% TODO %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+ For the thermostats used in this thesis some characteristics are outlined below.
 \paragraph{Berendsen thermostat}
 The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. The temperature $T$, to which the system is set to, is given by
 \begin{equation}

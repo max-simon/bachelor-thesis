@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  30 JUL 2017 00:06
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  31 JUL 2017 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1435,7 +1435,8 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [digital].
 
-(./document.aux (./introduction/fak.aux) (./introduction/md.aux))
+(./document.aux (./introduction/fak.aux) (./introduction/previous.aux)
+(./introduction/md.aux) (./introduction/fec.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -1860,142 +1861,210 @@ Package microtype Info: Character `‐' is missing
 
 LaTeX Warning: Reference `TOBEADDED' on page 2 undefined on input line 6.
 
+
+Overfull \hbox (2.02702pt too wide) in paragraph at lines 12--15
+\EU1/Palatino(0)/m/n/12 the basic patch in the F2 subdomain results in long ran
+ged configurational changes,
+ []
+
 Package microtype Info: Character `‐' is missing
 (microtype)             in font `\EU1/Palatino(0)/m/it/12'.
 (microtype)             Ignoring protrusion settings for this character.
 [2
 
 ]) [3]
+\openout2 = `introduction/previous.aux'.
+
+ (./introduction/previous.tex) [4
+
+
+]
 \openout2 = `introduction/md.aux'.
 
  (./introduction/md.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
-
+Overfull \hbox (52.69522pt too wide) in paragraph at lines 2--7
+\EU1/Palatino(0)/m/n/12 used as MD engine in this thesis, the following explana
+tions refer to GROMACSconventions
  []
 
 
-Overfull \hbox (8.292pt too wide) in paragraph at lines 16--20
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+[5
+
+
+]
+Overfull \hbox (8.292pt too wide) in paragraph at lines 19--23
 \EU1/Palatino(0)/m/n/12 They can be integrated numerically with e.g. Leapfrog- 
 or Verlet integration scheme.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--20
-
- []
-
-[4
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 44--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--61
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--72
+Underfull \hbox (badness 10000) in paragraph at lines 52--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--64
 
  []
 
 [7]
-Overfull \hbox (5.23286pt too wide) in paragraph at lines 73--79
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+
+ []
+
+
+Overfull \hbox (5.23286pt too wide) in paragraph at lines 76--82
 \EU1/Palatino(0)/m/n/12 CHARMM (\EU1/Palatino(0)/m/it/12 Chemistry at HARvard M
 acromolecular Mechanics\EU1/Palatino(0)/m/n/12 ) is a MD engine, which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 84--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--92
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--88
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 
  []
 
-[9] [10]
-Overfull \hbox (11.90735pt too wide) in paragraph at lines 113--114
+[11] [12]
+Overfull \hbox (11.2511pt too wide) in paragraph at lines 125--126
 [] []\EU1/Optima(0)/bx/n/12 Parinello-Bussi thermostat[][] \EU1/Palatino(0)/m/n
-/12 The Parrinello-Bussi thermostat [[][]10[][]] extends the Berend-
+/12 The Parrinello-Bussi thermostat [[][]11[][]] extends the Berend-
  []
 
 
-Overfull \hbox (5.46413pt too wide) in paragraph at lines 115--116
+Overfull \hbox (5.46413pt too wide) in paragraph at lines 127--128
 [] []\EU1/Optima(0)/bx/n/12 Nosé-Hoover thermostat[][] \EU1/Palatino(0)/m/n/12 
-The Nosé-Hoover thermostat [[][]25[][], [][]15[][]] extends the Hamil-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
-
+The Nosé-Hoover thermostat [[][]29[][], [][]18[][]] extends the Hamil-
  []
 
 
-Overfull \hbox (4.75342pt too wide) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
+
+ []
+
+[13]
+Overfull \hbox (4.75342pt too wide) in paragraph at lines 141--142
 [] []\EU1/Optima(0)/bx/n/12 Berendsen barostat[][] \EU1/Palatino(0)/m/n/12 Anal
 ogously to the Berendsen thermostat the Berendsen baro-
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 139--45
+Underfull \hbox (badness 10000) in paragraph at lines 151--46
 
  []
 
-[12] [13]
+[14]
+\openout2 = `introduction/fec.aux'.
+
+ (./introduction/fec.tex
+Package microtype Info: Character `\textservicemark ' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‐' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textservicemark ' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‐' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
+
+ []
+
+[15
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+
+ []
+
+[17])
+Underfull \hbox (badness 10000) in paragraph at lines 77--47
+
+ []
+
+[18]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 36.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
-(./document.aux (./introduction/fak.aux) (./introduction/md.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+(./document.aux (./introduction/fak.aux) (./introduction/previous.aux)
+(./introduction/md.aux) (./introduction/fec.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 48.
 
 
 LaTeX Warning: There were undefined references.
@@ -2003,15 +2072,15 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 37281 strings out of 493591
- 697048 string characters out of 6143546
- 1047647 words of memory out of 5000000
- 40270 multiletter control sequences out of 15000+600000
- 9602 words of font info for 75 fonts, out of 8000000 for 9000
+ 37318 strings out of 493591
+ 697958 string characters out of 6143546
+ 1054993 words of memory out of 5000000
+ 40291 multiletter control sequences out of 15000+600000
+ 9618 words of font info for 77 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
- 65i,12n,107p,10371b,3670s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,12n,107p,10371b,3668s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (13 pages).
+Output written on document.pdf (18 pages).

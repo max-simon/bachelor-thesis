@@ -36,12 +36,13 @@ oneside, % oneside / twoside
 \captionsetup[subfigure]{labelformat=simple, labelsep=colon}
 \renewcommand{\thesubfigure}{Figure~\thefigure \alph{subfigure}}
 
-\includeonly{introduction/fak, introduction/md}
+\includeonly{introduction/fak, introduction/md, introduction/fec, introduction/previous}
 
 \begin{document}
 	
 \chapter{Introduction}
 \include{introduction/fak}
+\include{introduction/previous}
 \include{introduction/md}
-
+\include{introduction/fec}
 \end{document}

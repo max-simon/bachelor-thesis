@@ -1,0 +1,78 @@
+\section{Free energy}
+To understand state transitions in a physical system the free energy is very handy quantity. It is directly linked to the probability distribution for different states and other quantities can be derived easily.\\
+Below the basic concept of free energy is outlined as well as a practical method to retrieve free energy landscapes from MD simulation, which was used in this thesis.
+\subsection{Partition functions and free energies}
+The behaviour of a system depends on the interaction with the outside of the system. These interactions are classified in ensembles. The most important are the microcanonical ensemble ($N, V$ and $E$ constant), canonical ensemble ($N, V$ and $T$ constant) and the isothermal-isobaric ensemble ($N, p$ and $T$ constant).\\
+\\
+In the microcanonical ensemble the probability, that a system enters a microstate with energy $E' = E(\mathbf{q}, \mathbf{p})$ ($\mathbf{q}, \mathbf{p}$ are the positions and momenta of the particles respectively), is equal for all $E' < \left|E + \diff E\right|$ and $0$ else. Therefore the partition function $\Omega$ is given as
+\begin{equation}
+\Omega(N, V, E) = C_0 \int \delta\left(\mathcal{H}(\mathbf{q}, \mathbf{p}) - E\right) \diff \mathbf{q} \diff \mathbf{p}
+\end{equation}
+where $\mathcal{H}(\mathbf{q}, \mathbf{p}) = U(\mathbf{q}) + K(\mathbf{p})$ is the Hamiltonian and $C_0$ a proportional constant, in which the smallest phase space volume and the indistinguishability of particles have to be taken into account \autocite[16]{freeEnergyBook}.% For a set of $N$ identical particles this would be $\frac{1}{h^{3N} N!}$ with $h$ the Planck constant.\\
+\\
+\\
+In the canonical ensemble however the temperature $T$ is kept constant instead of the energy. Therefore the partition function has to include all possible energies weighted with their probability given by the Boltzmann factor. Below $\frac{1}{k_B T}$ is shortened with $\beta$.
+\begin{align}
+Q(N, V, T) &= \int \exp\left(-\beta E\right) \Omega(N, V, E) \diff E\\
+&= C_0 \int \exp\left(-{\beta\mathcal{H}(\mathbf{q}, \mathbf{p})}\right) \diff \mathbf{q} \diff \mathbf{p}
+\end{align}
+The configurational integral is defined as 
+\begin{equation}
+Z(N, V, T) = \int \exp\left(-{\beta U}(\mathbf{q})\right) \diff \mathbf{q}
+\end{equation}
+It is important to see, that $\mathcal{H}$ only depends on the quadrature of $\mathbf{p}$, so the integral over the momenta can always be solved analytical by turning it into a Gauss integral. This implies, that for two related systems, in which the particle masses are the same, the integral over $\mathbf{p}$ does not change and therefore
+\begin{equation}
+\frac{Q_2}{Q_1} = \frac{Z_2}{Z_1}
+\end{equation}
+holds \autocite[17]{freeEnergyBook}.\\
+\\
+The partition function of the isothermal-isobaric ensemble, in which the pressure is kept constant instead of the volume, can be set up by expanding the Hamiltonian by the work the system is doing on expansion/contraction.
+\begin{align}
+\mathcal{H}' &= \mathcal{H} + pV\\
+\Xi(N, p, T) &= C_1 \int \exp\left(-\beta p V\right) Q(N, V, T) dV
+\end{align}
+where $C_1$ is a volume scale. For a further discussion of $C_1$ please \autocite[see][]{isothermalIsobaric}.\\
+\\
+The Helmholtz free energy $A$ refers to a canonical ensemble, which means that it is minimal in equilibrium under constant temperature and volume. The Gibbs free energy $G$ refers to an isothermal-isobaric ensemble \autocite[19]{freeEnergyBook}.
+\begin{align}
+A &= - \beta \ln\left(Q\right)\\
+G &= - \beta \ln\left(\Xi\right)
+\end{align}
+Usually the exact value of the free energy is unknown, but the main interest lies in free energy differences between two states of a system. For the Helmholtz free energy $A$ this difference is given as
+\begin{equation}
+\Delta A = A_2 - A_1 = - \beta \ln\left(Q_2\right) + \beta \ln\left(Q_1\right) = -\beta \ln\left(\frac{Q2}{Q1}\right) = -\beta \ln \left(\frac{Z_2}{Z_1}\right)
+\end{equation}
+\subsubsection{Free energy in MD and Umbrella Sampling}
+The free energy of a system as a function of a set of parameters $\vec{\xi}$ is given as
+\begin{equation}
+\label{eq:free_energy_from_rho}
+A(\vec{\xi}) = - \beta \ln\left(\rho(\vec{\xi})\right)
+\end{equation}
+$\rho(\vec{\xi})$ can be easily measured during a MD simulation by counting the number of states, in which $\vec{\xi}(\mathbf{q}) = \vec{\xi}$. Therefore it is also referred as histogram. $\vec{\xi}$ are often called reaction coordinates and could be e.g. the distance between two molecules.
+In reality however $A(\vec{\xi})$ can have big barriers and because the potential energy $U$ is sharply distributed around its mean in $NVT$ simulations, $\vec{\xi}$ can only hardly be sampled during a finite simulation.\\
+\\
+One possibility to overcome the sampling problem is umbrella sampling \autocite{originalUmbrellaSampling}. In this approach the path $\xi$ (for simplicity one dimensional) is split up into distinct windows $[\xi_0, \xi_n]$. To each window $i$ a biasing potential $\hat{U}_i(\xi)$ can be applied to ensure a good sampling of $\xi$ around $\xi_i$. This changes the potential energy to
+\begin{equation}
+U_{B, i}(\mathbf{q}) = U(\mathbf{q}) + \hat{U}_i(\xi(\mathbf{q})))
+\end{equation}
+After a simulation with the biased potential $U_{B, i}$ the unbiased probability distribution $\rho_i(\xi)$ has to be reconstructed from the observed biased one $\rho_{B, i}(\xi)$.\\
+In the following explanation the window index $i$ is dropped and the unbiased system and the biased system are referred as 1 and 2 respectively.\\
+The probability density of finding the biased system in a configuration, in which its potential energy differs from the potential energy of the unbiased system (that is in the same configuration), by $\Delta U = U_2(\mathbf{q}) - U_1(\mathbf{q})$ shall be considered. This implies $U_2(\mathbf{q}) = U_1(\mathbf{q}) + \Delta U$, which is done by an Delta function.
+\begin{align}
+\rho_2(\Delta U) = \frac{\int \exp\left(-\beta U_2(\mathbf{q})\right) \delta\left(U_2(\mathbf{q}) - U_1(\mathbf{q}) - \Delta U\right) \diff \mathbf{q}}{Z_2}
+\end{align}
+By substituting $U_2(\mathbf{q})$ the factor $\exp\left(-\beta\Delta U\right)$ can be moved out of the integral. After a multiplication of $\frac{Z_1}{Z_1}$, $\rho_1(\Delta U)$ can be identified. $\rho_1(\Delta U)$ has the same meaning as $\rho_2(\Delta U)$, but refers to the unbiased system. This is the corrected probability density \autocite[p. 179ff]{UnderstandingMD}.
+\begin{align}
+\label{eq:rel_rho2_rho1}
+\rho_2(\Delta U) = \frac{Z_1}{Z_2} \exp\left(-\beta\Delta U\right) \rho_1
+\end{align}
+Because $\Delta A = -\beta \ln\left(\frac{Z_2}{Z_1}\right)$, \autoref{eq:rel_rho2_rho1} can be transformed into
+\begin{equation}
+\rho_1(\Delta U) = \exp\left(-\beta\left(\Delta A - \Delta U\right)\right)\rho_2(\Delta U)
+\end{equation}
+Therefore the measured biased histograms $\tilde{\rho}_{B, i}(\xi)$ can be turned into unbiased histograms $\tilde{\rho}_{i}(\xi)$ via
+\begin{equation}
+\label{eq:reconstruction_from_biased}
+\tilde{\rho}_{i}(\xi) = \exp\left(-\beta\left(\Delta A_i - \hat{U}_i(\xi)\right)\right)\tilde{\rho}_{B, i}(\xi)
+\end{equation}
+Of course $\Delta A_i$ is not known, but assuming that $\rho(\xi)$ is a continuous function, the results from the single windows can be combined and afterwards normalized. With this method however one can only have two histograms in the overlapping region. Another problem is, that the sampling in the tails is usually poor and statistical errors, which propagate through all overlapping regions, can become very large \autocite[236ff]{freeEnergyBook}. Therefore umbrella sampling is usually combined with the Weighted histogram analysis method (WHAM) \autocites{originalWHAM, extensionWHAM}. This algorithm is able to combine several histograms in one overlapping region and it is designed to keep the statistical errors small. The main idea is to combine probability densities linearly with an additional weighting factor $\omega_i(\xi)$ to the total probability density $\tilde{\rho}$. The weighting factors $\omega_i$ are chosen iteratively in a way, that the overall statistical error is minimized.\\ 
