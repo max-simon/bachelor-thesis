@@ -1045,6 +1045,56 @@
     \field{year}{2014}
   \endentry
 
+  \entry{pap002Exp}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJE}{%
+         family={Hall},
+         family_i={H\bibinitperiod},
+         given={Jessica\bibnamedelima E},
+         given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SMD}{%
+         family={Schaller},
+         family_i={S\bibinitperiod},
+         given={Michael\bibnamedelima D},
+         given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=JC}{%
+         family={Johnson},
+         family_i={J\bibinitperiod},
+         given={Colin},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Kinases ; Phosphorylation ; Extracellular matrix ; Binding sites ;
+  Cell adhesion & migration}
+    \strng{namehash}{HJESMD1}
+    \strng{fullhash}{HJESMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{issn}{1932-6203 and 1932-6203}
+    \field{number}{2}
+    \field{pages}{e0172136}
+    \field{title}{Phospholipid binding to the FAK catalytic domain impacts
+  function}
+    \field{volume}{12}
+    \list{location}{1}{%
+      {San Francisco}%
+    }
+    \field{journaltitle}{PLOS ONE}
+    \field{year}{2017}
+  \endentry
+
   \entry{isothermalIsobaric}{article}{}
     \name{author}{2}{}{%
       {{hash=HKK}{%
@@ -1728,6 +1778,61 @@
     \field{year}{2007}
   \endentry
 
+  \entry{pip2_minus5}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MS}{%
+         family={McLaughlin},
+         family_i={M\bibinitperiod},
+         given={Stuart},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Jiyao},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gambhir},
+         family_i={G\bibinitperiod},
+         given={Alok},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Murray},
+         family_i={M\bibinitperiod},
+         given={Diana},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \keyw{phosphoinositides ; phosphatidylinositol 4,5-bisphosphate ; signal
+  transduction ; second messengers}
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSWJGAMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{issn}{1056-8700 and 1545-4266}
+    \field{number}{1}
+    \field{pages}{151\bibrangedash 175}
+    \field{title}{PIP2 AND PROTEINS: Interactions, Organization, and
+  Information Flow}
+    \field{volume}{31}
+    \list{location}{1}{%
+      {4139 El Camino Way, P.O. Box 10139}%
+    }
+    \field{journaltitle}{Annual Review of Biophysics and Biomolecular
+  Structure}
+    \field{year}{2002}
+  \endentry
+
   \entry{greenBook}{book}{}
     \name{editor}{2}{}{%
       {{hash=ML}{%
@@ -1890,70 +1995,59 @@
     \field{year}{1977}
   \endentry
 
-  \entry{transAuto}{article}{}
-    \name{author}{6}{}{%
-      {{hash=TM}{%
-         family={Toutant},
+  \entry{backwardpy}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WTA}{%
+         family={Wassenaar},
+         family_i={W\bibinitperiod},
+         given={Tsjerk\bibnamedelima A},
+         given_i={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Pluhackova},
+         family_i={P\bibinitperiod},
+         given={Kristyna},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=BRA}{%
+         family={B{\"o}ckmann},
+         family_i={B\bibinitperiod},
+         given={Rainer\bibnamedelima A},
+         given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TDP}{%
+         family={Tieleman},
          family_i={T\bibinitperiod},
-         given={Madeleine},
-         given_i={M\bibinitperiod},
-      }}%
-      {{hash=CA}{%
-         family={Costa},
-         family_i={C\bibinitperiod},
-         given={Alicia},
-         given_i={A\bibinitperiod},
-      }}%
-      {{hash=SJM}{%
-         family={Studler},
-         family_i={S\bibinitperiod},
-         given={Jeanne-Marie},
-         given_i={J\bibinitperiod-M\bibinitperiod},
-      }}%
-      {{hash=KG}{%
-         family={Kadar{\'e}},
-         family_i={K\bibinitperiod},
-         given={Gress},
-         given_i={G\bibinitperiod},
-      }}%
-      {{hash=CM}{%
-         family={Carnaud},
-         family_i={C\bibinitperiod},
-         given={Mich{\`e}le},
-         given_i={M\bibinitperiod},
-      }}%
-      {{hash=GJA}{%
-         family={Girault},
-         family_i={G\bibinitperiod},
-         given={Jean-Antoine},
-         given_i={J\bibinitperiod-A\bibinitperiod},
+         given={D\bibnamedelima Peter},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
     \list{language}{1}{%
       {English}%
     }
-    \list{publisher}{1}{%
-      {American Society for Microbiology}%
-    }
-    \keyw{Peptides - genetics ; Protein-Tyrosine Kinases - metabolism ;
-  Isoenzymes - metabolism ; Coumarins - metabolism ; Peptides - metabolism}
-    \strng{namehash}{TM+1}
-    \strng{fullhash}{TMCASJMKGCMGJA1}
+    \strng{namehash}{WTA+1}
+    \strng{fullhash}{WTAPKBRAMSJTDP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{issn}{0270-7306 and 1098-5549}
-    \field{number}{22}
-    \field{pages}{7731\bibrangedash 7743}
-    \field{title}{Alternative Splicing Controls the Mechanisms of FAK
-  Autophosphorylation}
-    \field{volume}{22}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{issn}{1549-9626}
+    \field{number}{2}
+    \field{pages}{676}
+    \field{title}{Going Backward: A Flexible Geometric Approach to Reverse
+  Transformation from Coarse Grained to Atomistic Models}
+    \field{volume}{10}
     \list{location}{1}{%
       {United States}%
     }
-    \field{journaltitle}{Molecular and Cellular Biology}
-    \field{year}{2002}
+    \field{journaltitle}{Journal of chemical theory and computation}
+    \field{year}{2014}
   \endentry
 
   \entry{polarizableMartini}{article}{}
@@ -2076,6 +2170,68 @@
   ATP}
     \list{location}{1}{%
       {United States}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{pap004}{book}{}
+    \name{author}{6}{}{%
+      {{hash=ZJ}{%
+         family={Zhou},
+         family_i={Z\bibinitperiod},
+         given={Jing},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=ASC}{%
+         family={Aponte-Santamar{\'\i}a},
+         family_i={A\bibinitperiod-S\bibinitperiod},
+         given={Camilo},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sturm},
+         family_i={S\bibinitperiod},
+         given={Sebastian},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=BJT}{%
+         family={Bullerjahn},
+         family_i={B\bibinitperiod},
+         given={Jakob\bibnamedelima T{\'o}mas},
+         given_i={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bronowska},
+         family_i={B\bibinitperiod},
+         given={Agnieszka},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gr{\"a}ter},
+         family_i={G\bibinitperiod},
+         given={Frauke},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Experiments ; Kinases ; Funding ; Phosphorylation ; Parameter
+  estimation}
+    \strng{namehash}{ZJ+1}
+    \strng{fullhash}{ZJASCSSBJTBAGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{issn}{1553-7358}
+    \field{subtitle}{e1004593}
+    \field{title}{Mechanism of Focal Adhesion Kinase Mechanosensing}
+    \list{location}{1}{%
+      {San Francisco}%
     }
     \field{year}{2015}
   \endentry

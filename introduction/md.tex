@@ -3,7 +3,7 @@ It is often difficult to get a precise insight into dynamics of a biological sys
 These problems do not exist in computer simulations, in which the positions of all particles of the system are known at a much smaller timescale than the dynamics in the system.\\
 An important tool is Molecular dynamics simulation (MD). MD can provide atomistic details, but e.g. with coarse grained models (see \autoref{subsub:coarsegraining}) a length scale of several nanometres is still accessible for microseconds. Therefore MD is suitable for membranes, proteins and other biomolecules.\\
 In this thesis MD was used to investigate interactions of FAK with other FAK and the membrane. Therefore the main concepts of MD and characteristics of the used models are outlined below. However within the scope of this thesis it can just be a small survey.\\
-Because \gromacs\,(Groningen Machine for Chemical Simulations) \autocites{gromacs1, gromacsManual} was used as MD engine in this thesis, the following explanations refer to \gromacs\,conventions and features.
+Because \gromacs{} (Groningen Machine for Chemical Simulations) \autocites{gromacs1, gromacsManual} was used as MD engine in this thesis, the following explanations refer to \gromacs{} conventions and features.
 \subsection{The physics behind MD}
 In MD the system is simulated on an atomistic scale but with classical mechanics only. In order to do so atoms are only treated as spheres without distinction into electrons and nuclei. Quantum mechanical (QM) effects, such as excitation or electron transfer processes, are therefore not accessible and neglected in MD. However the atoms are parametrized by effective parameters, which can be motivated from QM \autocite[p. 127f]{greenBook}.\\
 \\
@@ -64,7 +64,7 @@ The electrostatic potential is proportional to $1/r$, that is why the use of a c
 \subsubsection{External forces}
 In addition to bonded and non-bonded interactions external or artificial forces can be applied, such as pulling forces, restrains and constrains.\\
 \\
-With \gromacs\,it is possible to perform pulling forces onto groups of atoms in the system. In this thesis pulling was used to bias distances between groups. For this \gromacs\,provides an option to apply an umbrella potential to two groups which yields in a force, which is proportional to the deviation of the distance between the groups from a reference distance. The force can be applied on one or two spatial dimensions only or along a predefined vector and the reference distance can change during in time  \autocite[p. 154-159]{gromacsManual}.\\
+With \gromacs{} it is possible to perform pulling forces onto groups of atoms in the system. In this thesis pulling was used to bias distances between groups. For this \gromacs{} provides an option to apply an umbrella potential to two groups which yields in a force, which is proportional to the deviation of the distance between the groups from a reference distance. The force can be applied on one or two spatial dimensions only or along a predefined vector and the reference distance can change during in time  \autocite[p. 154-159]{gromacsManual}.\\
 Restrains are artificial potentials applied to positions, distances, angles, dihedral angles or orientations of particle groups to conserve labile configurations or to take additional information from experimental data into account \autocite[p. 84f]{gromacsManual}.\\
 Constrains are set to keep properties, such as bond lengths constant. In order to do so, they get reset to the desired value after each time step \autocite[p. 44f]{gromacsManual}. % Lincs, shake?
 \subsection{Forcefields}
@@ -104,59 +104,62 @@ To use PBC the shape of the simulation box has to have a space filling geometry 
 A particle interacts only with the nearest image of another particle, which means that particles near boundaries can interact with periodic images of other particles instead of the real particle. Nevertheless molecules can have long range interaction with their own periodic images, which leads to artefacts and has to be considered when choosing the systems size.\\
 It is generally thought, that PBC only have small or no effects on equilibrium properties or structures of fluids, but known problems are the absence of long wavelength fluctuations (e.g. in phase transitions) or the violation of angular momentum conversation \autocite[p. 141f]{greenBook}.
 \subsubsection{Thermostats}
-Integration schemes in MD are designed to conserve the energy of a system. This refers to a microcanonical ensemble, in which the number of particles $N$, the volume $V$ and the energy $E$ is constant (NVE). However in real biological systems not the energy but rather temperature is kept constant, which is the canonical ensemble (NVT). This can be achieved by thermostats.\\
-In this thesis the Berendsen thermostat, the Parinello-Bussi and the Nosè-Hoover thermostat were used.\\
+Integration schemes in MD are designed to conserve the energy of a system. However in real biological systems not the energy but rather temperature is kept constant. This can be achieved with thermostats.
 \paragraph{Berendsen and Parinello-Bussi}
 The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. Weak coupling means, that the energy difference is not conducted in one rescaling, but over a given time scale $\tau_T$, which allows a specification of the coupling strength. As the rescaling of velocities transfer kinetic energy from internal degrees of freedom, such as vibrations, to translational and rotational kinetic energy of the center of mass of the system \autocite[p. 738]{velRescaleSucks}, this thermostat is not suitable for production runs. However deviations from $T_0$ decay exponential making this thermostat usefull for equilibration runs or non equilibrium MD simulations \autocite[p. 3689]{berendsen}.\\
 The Parrinello-Bussi  thermostat \autocite{parinelloBussi} extends the Berendsen thermostat by a stochastic term, which leads to a more accurate sampling of phase space. The advantages of the Berendsen thermostat are still in place \autocite[p. 31]{gromacsManual}.
 \paragraph{Nosé-Hoover thermostat}
-The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath, which effectively modifies the equations of motion.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% TODO %%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
- For the thermostats used in this thesis some characteristics are outlined below.
-\paragraph{Berendsen thermostat}
-The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. The temperature $T$, to which the system is set to, is given by
-\begin{equation}
-\label{eq:berendsen_time_evolving}
-\frac{\diff T}{\diff t} = \frac{T_0 - T}{\tau_T}
-\end{equation}
-Therefore an exponential relaxation can be observed. Weak coupling means, that the energy difference is not conducted in one rescaling, but over a given time scale $\tau_T$, which allows a specification of the coupling strength.\\
-It has been shown, that rescaling of velocities transfer kinetic energy from internal degrees of freedom, such as vibrations, to translational and rotational kinetic energy of the center of mass of the system \autocite[p. 738]{velRescaleSucks}, which results in a wrong sampling of phase space. Therefore this thermostat is not suitable for production runs. Due to the exponential decay it adjusts quit fast, is stable against large deviations from the desired temperature and prevents oscillations. For these reasons it is often used in equilibration runs or non-equilibrium MD simulations \autocite[p. 3689]{berendsen}.
-\paragraph{Parinello-Bussi thermostat}
-The Parrinello-Bussi  thermostat \autocite{parinelloBussi} extends the Berendsen thermostat by a stochastic term, which leads to a more accurate sampling of phase space. The advantages of the Berendsen thermostat are still in place \autocite[p. 31]{gromacsManual}.
-\paragraph{Nosé-Hoover thermostat}
-The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath. The equations of motion are modified to
-\begin{equation}
-\frac{\diff^2 \vec{r}_i}{\diff t^2} = \frac{\vec{F}_i}{m_i} - \frac{p_\xi}{Q(T_0, \tau_T)}\frac{\diff \vec{r}_i}{\diff t}
-\end{equation}
-Here $\xi$ represents the friction parameter with momentum $p_\xi$ and a mass parameter $Q(T_0, \tau_T)$, which defines the coupling strength. $Q$ depends on the target temperature $T_0$ and a coupling time scale $\tau_T$. The evolution of $\xi$ is defined as
-\begin{equation}
-\frac{\diff p_\xi}{\diff t} = T - T_0
-\end{equation}
-This leads to oscillations between the system and the heat bath with the period $\tau_T$. The relaxation is about five times slower as by an exponential relaxation (see Berendsen or Parrinello–Bussi thermostats) with the same $\tau_T$ \autocite[p. 32f]{gromacsManual}.\\
+The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath, which is represented as a first order derivation in the equations of motion. The friction parameter varies in time and depends on the derivation of the temperature in the system from the given target temperature. For larger deviations Nosè-Hoover thermostat are unstable and lead to large temperature deviations. However the sampling of the phase space of the system is better than in Berendsen thermostats and for that reason Nosè-Hoover can be used for production runs of equilibrated systems \autocite[p. 32f]{gromacsManual}.\\
 \\
 Often groups are coupled to independent thermostats. This is helpful, because the heat exchange between f.e. proteins and solvents is often not correct. Therefore proteins would cool down and the solvent would heat up \autocite[p. 34]{gromacsManual}.
 \subsubsection{Barostats}
-In biological systems often not the volume but the pressure is constant. This refers to the isobaric isothermal ensemble (NpT). Below the characteristics of the barostats used in this thesis are outlined.
+In biological systems often not the volume but the pressure is constant, which can be achieved in MD with different barostats.
 \paragraph{Berendsen barostat}
-Analogously to the Berendsen thermostat the Berendsen barostat \autocite{berendsen} couples the systems pressure $P$ weakly to an external pressure $P_0$ by rescaling the positions of the particles.\\
-\begin{equation}
-\label{eq:berendsen_pressure_time_evolving}
-\frac{\diff P}{\diff t} = \frac{P_0 - T}{\tau_P}
-\end{equation}
-$\tau_P$ is the time scale of coupling. Similar to the Berendsen thermostat this barostat does not sample the NpT ensemble and should therefore only be used in equilibration runs and non-equilibrium MD simulations \autocite[p. 36]{gromacsManual}.
+Analogously to the Berendsen thermostat the Berendsen barostat \autocite{berendsen} couples the systems pressure weakly to an external pressure $P_0$ by rescaling the positions of the particles. Similar to the Berendsen thermostat this barostat does not sample the whole phase space and should therefore only be used in equilibration runs and non-equilibrium MD simulations \autocite[p. 36]{gromacsManual}.
 \paragraph{Parinello-Rahman barostat}
-In the Parinello-Rahman barostat \autocites{parinelloBarostat}{parinelloBarostat2} the equations of motion of the particles change to
-\begin{equation}
-\frac{\diff^2 \vec{r}_i}{\diff t^2} = \frac{\vec{F}_i}{m_i} - \underline{M} \frac{\diff \vec{r}_i}{\diff t}
-\end{equation}
-where $\underline{M}$ is a matrix is given by a differential equation depending on the current pressure, the target pressure, the volume and a time scale. The Parinello-Rahman barostat samples the full phase space and can be therefore used in production runs. Large deviations from the desired pressure however lead to oscillations in the box, therefore it should not be used for equilibration runs \autocite[p. 36]{gromacsManual}.\\
+In the Parinello-Rahman barostat \autocites{parinelloBarostat}{parinelloBarostat2} the position vectors of the particles are transformed by a matrix $\underline{M}$. $\underline{M}$ depends on the current pressure, the target pressure and the volume. The Parinello-Rahman barostat samples the full phase space and can be therefore used in production runs. Large deviations from the desired pressure however lead to oscillations in the box, therefore it should not be used for equilibration runs \autocite[p. 36]{gromacsManual}.\\
 \\
-\gromacs\,provides the possibility to couple the z-direction independently from the x- and y-direction, which is called semiisotropic pressure coupling. This feature is useful for membrane and pulling simulations, because the dynamics differ a lot between these axes.
+\gromacs{} provides the possibility to couple the z-direction independently from the x- and y-direction, which is called semiisotropic pressure coupling. This feature is useful for membrane and pulling simulations, because the dynamics differ a lot between these axes.
+
+
+
+%For the thermostats used in this thesis some characteristics are outlined below.
+%\paragraph{Berendsen thermostat}
+%The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. The temperature $T$, to which the system is set to, is given by
+%\begin{equation}
+%\label{eq:berendsen_time_evolving}
+%\frac{\diff T}{\diff t} = \frac{T_0 - T}{\tau_T}
+%\end{equation}
+%Therefore an exponential relaxation can be observed. Weak coupling means, that the energy difference is not conducted in one rescaling, but over a given time scale $\tau_T$, which allows a specification of the coupling strength.\\
+%It has been shown, that rescaling of velocities transfer kinetic energy from internal degrees of freedom, such as vibrations, to translational and rotational kinetic energy of the center of mass of the system \autocite[p. 738]{velRescaleSucks}, which results in a wrong sampling of phase space. Therefore this thermostat is not suitable for production runs. Due to the exponential decay it adjusts quit fast, is stable against large deviations from the desired temperature and prevents oscillations. For these reasons it is often used in equilibration runs or non-equilibrium MD simulations \autocite[p. 3689]{berendsen}.
+%\paragraph{Parinello-Bussi thermostat}
+%The Parrinello-Bussi  thermostat \autocite{parinelloBussi} extends the Berendsen thermostat by a stochastic term, which leads to a more accurate sampling of phase space. The advantages of the Berendsen thermostat are still in place \autocite[p. 31]{gromacsManual}.
+%\paragraph{Nosé-Hoover thermostat}
+%The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath. The equations of motion are modified to
+%\begin{equation}
+%\frac{\diff^2 \vec{r}_i}{\diff t^2} = \frac{\vec{F}_i}{m_i} - \frac{p_\xi}{Q(T_0, \tau_T)}\frac{\diff \vec{r}_i}{\diff t}
+%\end{equation}
+%Here $\xi$ represents the friction parameter with momentum $p_\xi$ and a mass parameter $Q(T_0, \tau_T)$, which defines the coupling strength. $Q$ depends on the target temperature $T_0$ and a coupling time scale $\tau_T$. The evolution of $\xi$ is defined as
+%\begin{equation}
+%\frac{\diff p_\xi}{\diff t} = T - T_0
+%\end{equation}
+%This leads to oscillations between the system and the heat bath with the period $\tau_T$. The relaxation is about five times slower as by an exponential relaxation (see Berendsen or Parrinello–Bussi thermostats) with the same $\tau_T$ \autocite[p. 32f]{gromacsManual}.\\
+%\\
+%Often groups are coupled to independent thermostats. This is helpful, because the heat exchange between f.e. proteins and solvents is often not correct. Therefore proteins would cool down and the solvent would heat up \autocite[p. 34]{gromacsManual}.
+%\subsubsection{Barostats}
+%In biological systems often not the volume but the pressure is constant. This refers to the isobaric isothermal ensemble (NpT). Below the characteristics of the barostats used in this thesis are outlined.
+%\paragraph{Berendsen barostat}
+%Analogously to the Berendsen thermostat the Berendsen barostat \autocite{berendsen} couples the systems pressure $P$ weakly to an external pressure $P_0$ by rescaling the positions of the particles.\\
+%\begin{equation}
+%\label{eq:berendsen_pressure_time_evolving}
+%\frac{\diff P}{\diff t} = \frac{P_0 - T}{\tau_P}
+%\end{equation}
+%$\tau_P$ is the time scale of coupling. Similar to the Berendsen thermostat this barostat does not sample the NpT ensemble and should therefore only be used in equilibration runs and non-equilibrium MD simulations \autocite[p. 36]{gromacsManual}.
+%\paragraph{Parinello-Rahman barostat}
+%In the Parinello-Rahman barostat \autocites{parinelloBarostat}{parinelloBarostat2} the equations of motion of the particles change to
+%\begin{equation}
+%\frac{\diff^2 \vec{r}_i}{\diff t^2} = \frac{\vec{F}_i}{m_i} - \underline{M} \frac{\diff \vec{r}_i}{\diff t}
+%\end{equation}
+%where $\underline{M}$ is a matrix is given by a differential equation depending on the current pressure, the target pressure, the volume and a time scale. The Parinello-Rahman barostat samples the full phase space and can be therefore used in production runs. Large deviations from the desired pressure however lead to oscillations in the box, therefore it should not be used for equilibration runs \autocite[p. 36]{gromacsManual}.\\
+%\\
+%\gromacs{} provides the possibility to couple the z-direction independently from the x- and y-direction, which is called semiisotropic pressure coupling. This feature is useful for membrane and pulling simulations, because the dynamics differ a lot between these axes.
