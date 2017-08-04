@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  3 AUG 2017 00:57
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  4 AUG 2017 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1888,7 +1888,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 9.
 
 
-LaTeX Warning: Citation 'CITATION34' on page 2 undefined on input line 13.
+LaTeX Warning: Citation 'CITATION34' on page 2 undefined on input line 12.
 
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\EU1/Palatino(0)/bx/n/12'.
@@ -1896,44 +1896,70 @@ Package microtype Info: Character `\textservicemark ' is missing
 Package microtype Info: Character `‐' is missing
 (microtype)             in font `\EU1/Palatino(0)/bx/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‐' is missing
+(microtype)             in font `\EU1/Palatino(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--20
+Underfull \hbox (badness 10000) in paragraph at lines 10--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--20
+Underfull \hbox (badness 10000) in paragraph at lines 10--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--20
+Underfull \hbox (badness 10000) in paragraph at lines 10--21
 
  []
 
 
-Overfull \hbox (2.77791pt too wide) in paragraph at lines 10--20
+Underfull \hbox (badness 10000) in paragraph at lines 10--21
+
+ []
+
+
+Overfull \hbox (2.77791pt too wide) in paragraph at lines 10--21
 \EU1/Palatino(0)/m/n/12 puter simulations [[][]12[][]] and have been confirmed 
 recently in experiments [[][]16[][]]. Their
  []
 
-Package microtype Info: Character `‐' is missing
-(microtype)             in font `\EU1/Palatino(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
 [2
 
-] [3])
-Underfull \hbox (badness 10000) in paragraph at lines 21--45
+] [3]
+
+! Class scrreprt Error: undefined old font command `\it'.
+
+See the scrreprt class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ... it induces clustering of several FAK {\it
+                                                   in vitro} on membranes \a...
+
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. New KOMA-Script
+classes have defined the old font commands like `\it' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warn abouts soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\it', e.g., by `\normalfont \itshape `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\it' yourself,
+you should replace it, e.g., by `\normalfont \itshape '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 22--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--45
+Underfull \hbox (badness 10000) in paragraph at lines 22--45
 
  []
 
