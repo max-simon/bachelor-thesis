@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  1 AUG 2017 12:44
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.17)  3 AUG 2017 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,7 +1436,7 @@ LaTeX Warning: Unused global option(s):
     [digital].
 
 (./document.aux (./introduction/fak.aux) (./introduction/md.aux)
-(./introduction/fec.aux) (./introduction/methods.aux))
+(./introduction/fec.aux) (./introduction/methods.aux) (./results/umbrella.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1459,7 +1459,6 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 42.
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -1889,7 +1888,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 9.
 
 
-LaTeX Warning: Citation 'CITATION34' on page 2 undefined on input line 12.
+LaTeX Warning: Citation 'CITATION34' on page 2 undefined on input line 13.
 
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\EU1/Palatino(0)/bx/n/12'.
@@ -1898,27 +1897,27 @@ Package microtype Info: Character `‐' is missing
 (microtype)             in font `\EU1/Palatino(0)/bx/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--19
+Underfull \hbox (badness 10000) in paragraph at lines 10--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--19
+Underfull \hbox (badness 10000) in paragraph at lines 10--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--19
+Underfull \hbox (badness 10000) in paragraph at lines 10--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--19
+Underfull \hbox (badness 10000) in paragraph at lines 10--20
 
  []
 
 
-Overfull \hbox (2.77791pt too wide) in paragraph at lines 10--19
+Overfull \hbox (2.77791pt too wide) in paragraph at lines 10--20
 \EU1/Palatino(0)/m/n/12 puter simulations [[][]12[][]] and have been confirmed 
 recently in experiments [[][]16[][]]. Their
  []
@@ -1929,12 +1928,12 @@ Package microtype Info: Character `‐' is missing
 [2
 
 ] [3])
-Underfull \hbox (badness 10000) in paragraph at lines 20--45
+Underfull \hbox (badness 10000) in paragraph at lines 21--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--45
+Underfull \hbox (badness 10000) in paragraph at lines 21--45
 
  []
 
@@ -2114,17 +2113,76 @@ chapter 2.
 
 
 ]
+\openout2 = `introduction/methods.aux'.
+
+ (./introduction/methods.tex
+
+LaTeX Warning: Citation 'SARA' on page 19 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'SARA' on page 19 undefined on input line 4.
+
+Package microtype Info: Character `\textservicemark ' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‐' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textservicemark ' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‐' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textservicemark ' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‐' is missing
+(microtype)             in font `\EU1/Palatino(0)/bx/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 5.
+
+
+LaTeX Warning: Citation 'gromacsWHAMpaper' on page 19 undefined on input line 9
+.
+
+[19
+
+]) [20]
+chapter 3.
+[21
+
+
+]
+\openout2 = `results/umbrella.aux'.
+
+ (./results/umbrella.tex
+
+LaTeX Warning: Reference `bild' on page 22 undefined on input line 1.
+
+) [22
+
+]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 37.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 (./document.aux (./introduction/fak.aux) (./introduction/md.aux)
-(./introduction/fec.aux) (./introduction/methods.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 50.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 50.
-
+(./introduction/fec.aux) (./introduction/methods.aux) (./results/umbrella.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
 
 LaTeX Warning: There were undefined references.
 
@@ -2136,15 +2194,15 @@ Package biblatex Warning: Please (re)run BibTeX on the file(s):
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 37373 strings out of 493591
- 699259 string characters out of 6143546
- 1061107 words of memory out of 5000000
- 40339 multiletter control sequences out of 15000+600000
- 12289 words of font info for 97 fonts, out of 8000000 for 9000
+ 37405 strings out of 493591
+ 700032 string characters out of 6143546
+ 1063959 words of memory out of 5000000
+ 40357 multiletter control sequences out of 15000+600000
+ 12321 words of font info for 101 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
- 65i,12n,107p,10371b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,107p,10371b,4063s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (18 pages).
+Output written on document.pdf (22 pages).

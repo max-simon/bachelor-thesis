@@ -6,6 +6,7 @@ A level-1 auxiliary file: introduction/fak.aux
 A level-1 auxiliary file: introduction/md.aux
 A level-1 auxiliary file: introduction/fec.aux
 A level-1 auxiliary file: introduction/methods.aux
+A level-1 auxiliary file: results/umbrella.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -20,17 +21,18 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10699 items from 5000.
+Reallocated field_info (elt_size=4) to 10838 items from 5000.
 Database file #1: document-blx.bib
 Database file #2: ../Paper.bib
 Warning--I didn't find a database entry for "CITATION34"
 Warning--I didn't find a database entry for "SARA"
+Warning--I didn't find a database entry for "gromacsWHAMpaper"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 39 entries,
             6256 wiz_defined-function locations,
-            1511 strings with 22583 characters,
+            1514 strings with 22635 characters,
 and the built_in function-call counts, 383239 in all, are:
 = -- 31395
 > -- 5559
@@ -69,4 +71,4 @@ warning$ -- 0
 while$ -- 4826
 width$ -- 0
 write$ -- 2124
-(There were 2 warnings)
+(There were 3 warnings)
