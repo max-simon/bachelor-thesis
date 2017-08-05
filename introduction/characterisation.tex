@@ -1,0 +1,15 @@
+\section{Characterisation of multiple protein interactions}
+For the later analysis, protein-protein interactions are classified using the following terms.
+\paragraph{Interaction} Proteins or parts of proteins interact, if their minimal distance is smaller than a cut-off distance.
+\paragraph{Neighbour} Protein A is a neighbour of Protein B, if they are interacting. One protein can have several neighbours. For a more detailed characterisation the following types are defined (see also \autoref{tobeadded}):
+\begin{enumerate}[label={type \theenumi:}, leftmargin=*]
+	\item only the FERM domain interacts with only the FERM domain of the other protein
+	\item only the kinase interacts with only the kinase of the other protein
+	\item only the FERM domain interacts with only the kinase of the other protein
+	\item the FERM domain is interacting with both, the FERM and kinase of the other protein
+	\item the kinase is interacting with both, the FERM and kinase of the other protein
+	\item the FERM domain is interacting with the FERM domain of the other protein and the kinase is interacting with the kinase of the other protein
+	\item the FERM domain is interacting with the kinase of the other protein and the kinase is interacting with the FERM domain of the other protein
+\end{enumerate}
+\paragraph{Cluster} Protein A belongs to a cluster, if it has at least one neighbour inside the cluster. Two neighbouring proteins form a cluster of size 2. One protein can only belong to one cluster.
+\paragraph{Dimer} A dimer is a set of two neighbouring proteins, which do not interact with a third protein.

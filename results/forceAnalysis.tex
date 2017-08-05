@@ -1,0 +1,20 @@
+\section{Disturbance by applied force}
+Each of the 25 proteins was stabilized with an external force acting on the FERM domain. These forces have of course impacts on the system, which shall be analysed below.\\%TODO: "shall" the right word here?
+\\
+First the COM distance of F1 and F2, namely $d_F$, is considered. In \autoref{tobeadded} a hexbinning plot of $d_F$ against the force can be found. The plot shows, that some combinations (below the orange line) are never visited. For a given force, $d_F$ seems to have a lower boundary. This boundary is defined by $d_{F, \text{min}} = z_0 - \Delta z$, where $z_0$ is the reference distance of the force and $\Delta z$ the elongation (proportional to the force), and is reached, if the vector between F1 and F2, $\vec{d}_F$, is parallel to the z-axis.\\
+The plot indicates, that $d_F$ and the force are hardly correlated. This was tested with a linear regression. To not bias the regression by $d_{F, \text{min}}$ only points with a force lower than $0\,\forceunit$ were taken into account. With a p-Value of $23\%$ for the H0 hypothesis slope $m = 0$, the distance $d_F$ and the applied force can be seen as uncorrelated.\\
+\\
+The applied force is directly linked to the angle between the distance vector of F1 and F2 and the z-axis, namely $\beta$. The approach is meant to prevent falling down of the proteins, but does it changes the distribution of $\beta$ significantly?\\
+For this purpose the distribution of $\beta$ for the generating simulations (see \autoref{setup:fakclust}) with external forces are compared to those without the stabilizing force. The results can be found in \autoref{Tobeadded}.\\
+The location of the mean is determined by the choice of $z_0$. However the variance of the distributions are similar. This indicates, that although the mean of $\beta$ is restricted, the fluctuations around this mean are not restricted crucially by the applied force.
+% TODO: is this really true?
+\\
+Since protein dimers are investigated in the following sections, also the distribution of the forces for the different dimer types should be considered. In \autoref{tobeadded} the forces, which occurred on the different dimers, are presented as boxplots. % number of datapoints in description?
+The forces acting on a type 1 protein pairs (FERM-FERM) as well as these acting on a type 3 protein pairs (FERM-kinase) are symmetrically distributed around the overall mean. In contrast the forces acting on e.g. type 9 protein pairs are systematically lower than those acting on other types, which has to be taken into account when analysing those dimers.\\
+One important reason for this can be the sampling. While there are 1 162 144 datapoints for type 1 pairs coming from several different proteins, only 464 datapoints exist for type 9 pairs, mainly observed in one pair only.\\
+\\
+At last the influence of the force on conformational changes inside FAK is considered. For this purpose the distances between residue pairs were tested upon a correlation with the applied force. In figure \autoref{tobeadded} the calculated Pearson correlation coefficients for significant correlations are shown for residue pairs of different domains. There are 583 residue pairs with a correlation coefficient $|r| > 0.3$ in total (0 for $|r| > 0.5$), 135 of them are contributing to the interface of the FERM domain and the kinase. However all major spots consist of both, positive and negative correlated distances. Therefore the overall structure should not depend too much on the applied force.\\
+For the correlation calculation 10 different proteins were chosen, each for $1\,\si{\micro\second}$.
+\\
+The applied forces seems to have only slight impacts on the system. The protein structure is well conserved and for most protein pair types no significant dependency was observed. However the missing of poses in the simulations due to the restriction of the angle $\beta$ can not be excluded entirely.
+%% Discussion: further studies on impact to membrane, absolute z-axis

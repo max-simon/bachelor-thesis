@@ -11,6 +11,7 @@ oneside, % oneside / twoside
 \usepackage{microtype}
 % Package für Bilder
 \usepackage{graphicx}
+\usepackage{enumitem}
 
 \title{Understanding}
 \author{Max SImon}
@@ -29,6 +30,8 @@ oneside, % oneside / twoside
 \newcommand{\acid}[2]{#1$^{#2}$}
 \newcommand{\gromacs}{GROMACS}
 \newcommand{\pope}{POPE}
+\newcommand{\popc}{POPC}
+\newcommand{\forceunit}{\si{\kilo\joule/\mole/\nano\metre}}
 
 %\newcommand{\fourier}[1]{\mathcal{F}\left( #1 \right)}
 %\newcommand{\revfourier}[1]{\mathcal{F}^{-1}\left( #1 \right)}
@@ -37,16 +40,20 @@ oneside, % oneside / twoside
 \captionsetup[subfigure]{labelformat=simple, labelsep=colon}
 \renewcommand{\thesubfigure}{Figure~\thefigure \alph{subfigure}}
 
-%\includeonly{introduction/fak, introduction/md, introduction/fec}
+\includeonly{introduction/characterisation}
 
 \begin{document}
 	
 \chapter{Introduction}
 \include{introduction/fak}
+\include{introduction/previouswork}
+\chapter{Methods}
 \include{introduction/md}
 \include{introduction/fec}
-\chapter{Methods}
-\include{introduction/methods}
+\include{introduction/characterisation}
+\chapter{Setup}
+\include{introduction/setup}
 \chapter{Results}
 \include{results/umbrella}
+\include{results/forceAnalysis}
 \end{document}

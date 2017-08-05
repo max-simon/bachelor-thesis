@@ -1,0 +1,198 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{structFAK}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LD}{%
+         family={Lietha},
+         family_i={L\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={Cai},
+         family_i={C\bibinitperiod},
+         given={Xinming},
+         given_i={X\bibinitperiod},
+      }}%
+      {{hash=CDF}{%
+         family={Ceccarelli},
+         family_i={C\bibinitperiod},
+         given={Derek\bibnamedelima F.J},
+         given_i={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         family_i={L\bibinitperiod},
+         given={Yiqun},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=SMD}{%
+         family={Schaller},
+         family_i={S\bibinitperiod},
+         given={Michael\bibnamedelima D},
+         given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=EMJ}{%
+         family={Eck},
+         family_i={E\bibinitperiod},
+         given={Michael\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Inc}%
+    }
+    \keyw{PROTEINS ; CELLBIO ; Focal Adhesion Protein-Tyrosine Kinases -
+  metabolism ; Enzyme Inhibitors - chemistry ; Focal Adhesion Protein-Tyrosine
+  Kinases - chemistry}
+    \strng{namehash}{LD+1}
+    \strng{fullhash}{LDCXCDFLYSMDEMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{issn}{0092-8674 and 1097-4172}
+    \field{number}{6}
+    \field{pages}{1177\bibrangedash 1187}
+    \field{title}{Structural Basis for the Autoinhibition of Focal Adhesion
+  Kinase}
+    \field{volume}{129}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{Cell}
+    \field{year}{2007}
+  \endentry
+
+  \entry{backwardpy}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WTA}{%
+         family={Wassenaar},
+         family_i={W\bibinitperiod},
+         given={Tsjerk\bibnamedelima A},
+         given_i={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Pluhackova},
+         family_i={P\bibinitperiod},
+         given={Kristyna},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=BRA}{%
+         family={B{\"o}ckmann},
+         family_i={B\bibinitperiod},
+         given={Rainer\bibnamedelima A},
+         given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TDP}{%
+         family={Tieleman},
+         family_i={T\bibinitperiod},
+         given={D\bibnamedelima Peter},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{WTA+1}
+    \strng{fullhash}{WTAPKBRAMSJTDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{issn}{1549-9626}
+    \field{number}{2}
+    \field{pages}{676}
+    \field{title}{Going Backward: A Flexible Geometric Approach to Reverse
+  Transformation from Coarse Grained to Atomistic Models}
+    \field{volume}{10}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{Journal of chemical theory and computation}
+    \field{year}{2014}
+  \endentry
+
+  \entry{pap003}{book}{}
+    \name{author}{5}{}{%
+      {{hash=ZJ}{%
+         family={Zhou},
+         family_i={Z\bibinitperiod},
+         given={Jing},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bronowska},
+         family_i={B\bibinitperiod},
+         given={Agnieszka},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=LCJ}{%
+         family={Le\bibnamedelima Coq},
+         family_i={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Johanne},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lietha},
+         family_i={L\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gr{\"a}ter},
+         family_i={G\bibinitperiod},
+         given={Frauke},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \keyw{Adenosine Triphosphate - pharmacology ; Focal Adhesion
+  Protein-Tyrosine Kinases - metabolism ; Focal Adhesion Protein-Tyrosine
+  Kinases - chemistry ; Inositol Phosphates - pharmacology ; Allosteric
+  Regulation - drug effects}
+    \strng{namehash}{ZJ+1}
+    \strng{fullhash}{ZJBALCJLDGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{issn}{0006-3495 and 1542-0086}
+    \field{pages}{698\bibrangedash 705}
+    \field{title}{Allosteric Regulation of Focal Adhesion Kinase by PIP2 and
+  ATP}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{year}{2015}
+  \endentry
+\endsortlist
+\endinput
