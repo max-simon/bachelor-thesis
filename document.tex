@@ -40,20 +40,31 @@ oneside, % oneside / twoside
 \captionsetup[subfigure]{labelformat=simple, labelsep=colon}
 \renewcommand{\thesubfigure}{Figure~\thefigure \alph{subfigure}}
 
-\includeonly{introduction/characterisation}
+\includeonly{results/freeFAK}
 
 \begin{document}
 	
 \chapter{Introduction}
 \include{introduction/fak}
-\include{introduction/previouswork}
+\chapter{Motivation}
+\input{introduction/motivation}
 \chapter{Methods}
-\include{introduction/md}
-\include{introduction/fec}
-\include{introduction/characterisation}
+\section{MD}
+\section{Free energy calculations}
+\section{ConAn :)}
+%\include{introduction/md}
+%\include{introduction/fec}
+%\include{introduction/characterisation}
 \chapter{Setup}
-\include{introduction/setup}
+\input{introduction/setup}
 \chapter{Results}
-\include{results/umbrella}
-\include{results/forceAnalysis}
+\section{FAK in solution}
+\label{sec:fak_sol}
+\input{results/freeFAK}
+\section{FAK binding to \pip{}}
+\input{results/umbrella}
+\input{results/forceAnalysis}
+\input{results/membrane}
+\section{Multiple FAK interactions}
+\input{results/multiProtInteractions}
 \end{document}

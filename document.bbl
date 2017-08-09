@@ -17,6 +17,44 @@
 \endgroup
 
 \sortlist[entry]{nty/global/}
+  \entry{pap002}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FJ}{%
+         family={Feng},
+         family_i={F\bibinitperiod},
+         given={Jun},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Mertz},
+         family_i={M\bibinitperiod},
+         given={Blake},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Cell adhesion & migration ; Kinases ; Lipids}
+    \strng{namehash}{FJMB1}
+    \strng{fullhash}{FJMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{issn}{1932-6203}
+    \field{subtitle}{e0132833}
+    \field{title}{Novel Phosphotidylinositol 4,5-Bisphosphate Binding Sites on
+  Focal Adhesion Kinase}
+    \list{location}{1}{%
+      {San Francisco}%
+    }
+    \field{year}{2015}
+  \endentry
+
   \entry{structFAK}{article}{}
     \name{author}{6}{}{%
       {{hash=LD}{%

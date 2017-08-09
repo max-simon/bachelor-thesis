@@ -3,16 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: introduction/fak.aux
-I couldn't open auxiliary file introduction/previouswork.aux
----line 38 of file document.aux
- : \@input{introduction/previouswork.aux
- :                                      }
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: introduction/md.aux
-A level-1 auxiliary file: introduction/fec.aux
-A level-1 auxiliary file: introduction/setup.aux
-A level-1 auxiliary file: results/umbrella.aux
-A level-1 auxiliary file: results/forceAnalysis.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -29,50 +19,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: document-blx.bib
 Database file #2: ../Paper.bib
-Warning--I didn't find a database entry for "SARA"
+Warning--I didn't find a database entry for "sara"
+Warning--I didn't find a database entry for "PW"
 Warning--I didn't find a database entry for "gromacsWHAMpaper"
+Warning--I didn't find a database entry for "jing"
+Warning--I didn't find a database entry for "introOrPaper"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 4 entries,
+You've used 5 entries,
             6256 wiz_defined-function locations,
-            1216 strings with 9883 characters,
-and the built_in function-call counts, 31831 in all, are:
-= -- 2597
-> -- 469
-< -- 143
-+ -- 875
-- -- 159
-* -- 2390
-:= -- 3600
+            1222 strings with 9987 characters,
+and the built_in function-call counts, 37976 in all, are:
+= -- 3026
+> -- 626
+< -- 218
++ -- 1029
+- -- 202
+* -- 2756
+:= -- 4075
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 108
+call.type$ -- 5
+change.case$ -- 165
 chr.to.int$ -- 30
-cite$ -- 6
-duplicate$ -- 3096
-empty$ -- 2779
-format.name$ -- 291
-if$ -- 6417
+cite$ -- 8
+duplicate$ -- 3797
+empty$ -- 3304
+format.name$ -- 361
+if$ -- 7764
 int.to.chr$ -- 0
-int.to.str$ -- 13
+int.to.str$ -- 18
 missing$ -- 0
-newline$ -- 190
-num.names$ -- 216
-pop$ -- 1159
+newline$ -- 227
+num.names$ -- 311
+pop$ -- 1496
 preamble$ -- 1
-purify$ -- 140
+purify$ -- 202
 quote$ -- 0
-skip$ -- 766
+skip$ -- 1068
 stack$ -- 0
-substring$ -- 4856
-swap$ -- 689
-text.length$ -- 97
-text.prefix$ -- 3
+substring$ -- 5397
+swap$ -- 892
+text.length$ -- 128
+text.prefix$ -- 4
 top$ -- 1
-type$ -- 124
+type$ -- 158
 warning$ -- 0
-while$ -- 425
+while$ -- 484
 width$ -- 0
-write$ -- 187
-(There was 1 error message)
+write$ -- 223
+(There were 5 warnings)

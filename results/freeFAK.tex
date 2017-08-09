@@ -1,0 +1,16 @@
+% TODO: link to methods
+In this section the conformation of FAK in absence of \pip{} and other FAK molecules is analyzed. For this purpose the simulation data of setup 1 were used (see \autoref{setup:setup1}).\\
+\\
+First the COM distances of F1 to the N-lobe ($d_\text{F1-N}$) and F2 to the C-lobe ($d_\text{F2-C}$) are considered. In \autoref{tobeadded} a hexagonal binning plot of both values can be found, which indicates, that there are two different states: one in which $d_\text{F2-C}$ is larger (spot 1) and $d_\text{F1-N}$ smaller and one the other way around (spot 2). The systems starts in spot 1 and goes to spot 2 after $7\,\si{\micro\second}$ (this transition goes along with several frequent transitions), where it stays until the end of the simulation.\\
+\textcite{jing} performed equivalent simulations in C36 and obtained
+\begin{align}
+	d_\text{F1-N} &= (3.30 \pm 0.40\,\text{std})\si{\nano\metre}\\
+	d_\text{F2-C} &= (3.15 \pm 0.15\,\text{std})\si{\nano\metre}
+\end{align}
+These values can not be classified in one of the two spots as both distances are lower than those obtained in Martini.\\
+\\
+A contact map of the interface between the FERM domain and the kinase for frames of spot 2 can be found in \autoref{tobeadd}. Two contact areas can be identified. The first one (area 1) is located between F1 and the N-lobe/activation loop. It shows i.e. contacts between \acid{Y}{576} and \acid{Y}{577} and residues of the FERM domain. The minimal distance in this area, between residue \acid{H}{41} and \acid{Y}{576}, is $0.45\,\si{\nano\metre}$ with an RMSF value of $0.03\,\si{\nano\metre}$. This reflects the burying of the activity regulating residues in closed state.\\
+The second contact area (area 2) is located between F2 and the C-lobe. The spots occur around the residues \acid{Y}{180} and \acid{D}{200} of F2 as well as \acid{F}{596} and \acid{R}{665}. The minimal distance in this area occurs between \acid{Y}{180} and \acid{F}{596} with $0.45\,\si{\nano\metre}$ and an RMSF value of $0.02\,\si{\nano\metre}$. These two residues have been reported as important actors in the interface by showing, that a mutation disturbs the interface and enhances the activation of FAK.\\
+The linker show contacts with both domains. Interestingly the minimal distance in the marked areas (area 3 and area 4) occur between the autophosphorylation site \acid{Y}{397} and \acid{H}{58} ($0.45\,\si{\nano\metre}$, RMSF $0.03\,\si{\nano\metre}$) in F1 or \acid{Y}{576} ($0.50\,\si{\nano\metre}$, RMSF $0.10\,\si{\nano\metre}$) in the kinase. This is consistent with the concept, that autophosphorylation is prevented in closed conformation by a binding of the linker to the FERM domain.\\
+\\
+In contrast to \autoref{tobeadd}, the contact map for frames of spot 1 show less contacts between F2 and the C-lobe, i.e. around the mentioned residues \acid{Y}{180} to \acid{M}{183}. A few additional contacts appear between F1 and the N-lobe, but these are only minor spots.
