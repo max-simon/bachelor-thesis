@@ -65,6 +65,26 @@
     \field{year}{2002}
   \endentry
 
+  \entry{sara}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=BS}{%
+         family={Becker},
+         family_i={B\bibinitperiod},
+         given={Sara},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BS1}
+    \strng{fullhash}{BS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Clustering of FAK on a PIP2 enriched membrane}
+    \field{month}{02}
+    \field{year}{2017}
+  \endentry
+
   \entry{fakdimers}{article}{}
     \name{author}{13}{}{%
       {{hash=BK}{%

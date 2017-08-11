@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: biblatex.bst
-A level-1 auxiliary file: introduction/fak.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -19,52 +18,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: document-blx.bib
 Database file #2: ../Paper.bib
-Warning--I didn't find a database entry for "CITATION34"
-Warning--I didn't find a database entry for "sara"
-Warning--I didn't find a database entry for "PW"
-Warning--I didn't find a database entry for "gromacsWHAMpaper"
+Warning--I didn't find a database entry for "CIT34"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 14 entries,
+You've used 15 entries,
             6256 wiz_defined-function locations,
-            1307 strings with 14207 characters,
-and the built_in function-call counts, 178428 in all, are:
-= -- 15444
-> -- 2328
-< -- 771
-+ -- 5369
-- -- 809
-* -- 13635
-:= -- 20428
+            1304 strings with 14198 characters,
+and the built_in function-call counts, 181805 in all, are:
+= -- 15607
+> -- 2417
+< -- 799
++ -- 5428
+- -- 835
+* -- 13848
+:= -- 20698
 add.period$ -- 0
-call.type$ -- 14
-change.case$ -- 622
-chr.to.int$ -- 30
-cite$ -- 26
-duplicate$ -- 17913
-empty$ -- 14980
-format.name$ -- 1655
-if$ -- 35315
+call.type$ -- 15
+change.case$ -- 631
+chr.to.int$ -- 36
+cite$ -- 28
+duplicate$ -- 18328
+empty$ -- 15337
+format.name$ -- 1702
+if$ -- 36038
 int.to.chr$ -- 0
-int.to.str$ -- 64
+int.to.str$ -- 66
 missing$ -- 0
-newline$ -- 983
-num.names$ -- 1106
-pop$ -- 5277
+newline$ -- 1003
+num.names$ -- 1147
+pop$ -- 5606
 preamble$ -- 1
-purify$ -- 829
+purify$ -- 840
 quote$ -- 0
-skip$ -- 3764
+skip$ -- 3915
 stack$ -- 0
-substring$ -- 29167
-swap$ -- 3665
-text.length$ -- 414
-text.prefix$ -- 13
+substring$ -- 29346
+swap$ -- 3780
+text.length$ -- 440
+text.prefix$ -- 14
 top$ -- 1
-type$ -- 464
+type$ -- 498
 warning$ -- 0
-while$ -- 2371
+while$ -- 2412
 width$ -- 0
-write$ -- 970
-(There were 4 warnings)
+write$ -- 989
+(There was 1 warning)
