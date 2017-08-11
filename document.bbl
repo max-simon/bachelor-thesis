@@ -17,6 +17,432 @@
 \endgroup
 
 \sortlist[entry]{nty/global/}
+  \entry{fatdomain}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AST}{%
+         family={Arold},
+         family_i={A\bibinitperiod},
+         given={Stefan\bibnamedelima T},
+         given_i={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HMK}{%
+         family={Hoellerer},
+         family_i={H\bibinitperiod},
+         given={Maria\bibnamedelima K},
+         given_i={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=NME}{%
+         family={Noble},
+         family_i={N\bibinitperiod},
+         given={Martin\bibnamedelima E.M},
+         given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Inc}%
+    }
+    \keyw{paxillin binding ; Grb2 ; focal adhesion kinase ; crystallography ;
+  SH2 interactions}
+    \strng{namehash}{AST+1}
+    \strng{fullhash}{ASTHMKNME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{issn}{0969-2126 and 1878-4186}
+    \field{number}{3}
+    \field{pages}{319\bibrangedash 327}
+    \field{title}{The Structural Basis of Localization and Signaling by the
+  Focal Adhesion Targeting Domain}
+    \field{volume}{10}
+    \list{location}{1}{%
+      {CAMBRIDGE}%
+    }
+    \field{journaltitle}{Structure}
+    \field{year}{2002}
+  \endentry
+
+  \entry{fakdimers}{article}{}
+    \name{author}{13}{}{%
+      {{hash=BK}{%
+         family={Brami‐Cherrier},
+         family_i={B\bibinitperiod},
+         given={Karen},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gervasi},
+         family_i={G\bibinitperiod},
+         given={Nicolas},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Arsenieva},
+         family_i={A\bibinitperiod},
+         given={Diana},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Walkiewicz},
+         family_i={W\bibinitperiod},
+         given={Katarzyna},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Boutterin},
+         family_i={B\bibinitperiod},
+         given={Marie‐Claude},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Ortega},
+         family_i={O\bibinitperiod},
+         given={Alvaro},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=LPG}{%
+         family={Leonard},
+         family_i={L\bibinitperiod},
+         given={Paul\bibnamedelima G},
+         given_i={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Seantier},
+         family_i={S\bibinitperiod},
+         given={Bastien},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gasmi},
+         family_i={G\bibinitperiod},
+         given={Laila},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Bouceba},
+         family_i={B\bibinitperiod},
+         given={Tahar},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kadar{\'e}},
+         family_i={K\bibinitperiod},
+         given={Gress},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Girault},
+         family_i={G\bibinitperiod},
+         given={Jean‐Antoine},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=AST}{%
+         family={Arold},
+         family_i={A\bibinitperiod},
+         given={Stefan\bibnamedelima T},
+         given_i={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Blackwell Publishing Ltd}%
+    }
+    \keyw{focal adhesion kinase ; cell adhesion ; signal transduction ;
+  non‐receptor tyrosine kinase ; focal adhesion}
+    \strng{namehash}{BK+1}
+    \strng{fullhash}{BKGNADWKBMOALPGSBGLBTKGGJAST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issn}{0261-4189 and 1460-2075}
+    \field{number}{4}
+    \field{pages}{356\bibrangedash 370}
+    \field{title}{FAK dimerization controls its kinase‐dependent functions at
+  focal adhesions}
+    \field{volume}{33}
+    \list{location}{1}{%
+      {England}%
+    }
+    \field{journaltitle}{The EMBO Journal}
+    \field{year}{2014}
+  \endentry
+
+  \entry{tyrosinePhosphor}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CMB}{%
+         family={Calalb},
+         family_i={C\bibinitperiod},
+         given={M\bibnamedelima B},
+         given_i={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=PTR}{%
+         family={Polte},
+         family_i={P\bibinitperiod},
+         given={T\bibnamedelima R},
+         given_i={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HSK}{%
+         family={Hanks},
+         family_i={H\bibinitperiod},
+         given={S\bibnamedelima K},
+         given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {American Society for Microbiology}%
+    }
+    \keyw{CELL BIOLOGY ; DEPENDENT PROTEIN-KINASE ; TRANSFORMATION ; PEPTIDE
+  INHIBITOR ; EXTRACELLULAR-MATRIX}
+    \strng{namehash}{CMB+1}
+    \strng{fullhash}{CMBPTRHSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{issn}{0270-7306 and 1098-5549}
+    \field{number}{2}
+    \field{pages}{954\bibrangedash 963}
+    \field{title}{Tyrosine phosphorylation of focal adhesion kinase at sites in
+  the catalytic domain regulates kinase activity: a role for Src family
+  kinases}
+    \field{volume}{15}
+    \list{location}{1}{%
+      {WASHINGTON}%
+    }
+    \field{journaltitle}{Molecular and Cellular Biology}
+    \field{year}{1995}
+  \endentry
+
+  \entry{fermdomain}{article}{}
+    \name{author}{32}{}{%
+      {{hash=CAH}{%
+         family={Chishti},
+         family_i={C\bibinitperiod},
+         given={Athar\bibnamedelima H},
+         given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KAC}{%
+         family={Kim},
+         family_i={K\bibinitperiod},
+         given={Anthony\bibnamedelima C},
+         given_i={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MSM}{%
+         family={Marfatia},
+         family_i={M\bibinitperiod},
+         given={Shirin\bibnamedelima M},
+         given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lutchman},
+         family_i={L\bibinitperiod},
+         given={Mohini},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hanspal},
+         family_i={H\bibinitperiod},
+         given={Manjit},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jindal},
+         family_i={J\bibinitperiod},
+         given={Hitesh},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=LSC}{%
+         family={Liu},
+         family_i={L\bibinitperiod},
+         given={Shih-Chun},
+         given_i={S\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=LPS}{%
+         family={Low},
+         family_i={L\bibinitperiod},
+         given={Philip\bibnamedelima S},
+         given_i={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=RGA}{%
+         family={Rouleau},
+         family_i={R\bibinitperiod},
+         given={Guy\bibnamedelima A},
+         given_i={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Mohandas},
+         family_i={M\bibinitperiod},
+         given={Narla},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=CJA}{%
+         family={Chasis},
+         family_i={C\bibinitperiod},
+         given={Joel\bibnamedelima A},
+         given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CJG}{%
+         family={Conboy},
+         family_i={C\bibinitperiod},
+         given={John\bibnamedelima G},
+         given_i={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gascard},
+         family_i={G\bibinitperiod},
+         given={Phillipe},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Takakuwa},
+         family_i={T\bibinitperiod},
+         given={Yuichi},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=HSC}{%
+         family={Huang},
+         family_i={H\bibinitperiod},
+         given={Shu-Ching},
+         given_i={S\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=BJEJ}{%
+         family={Benz\bibnamedelima Jr},
+         family_i={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Edward\bibnamedelima J},
+         given_i={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bretscher},
+         family_i={B\bibinitperiod},
+         given={Anthony},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=FRG}{%
+         family={Fehon},
+         family_i={F\bibinitperiod},
+         given={Richard\bibnamedelima G},
+         given_i={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GJF}{%
+         family={Gusella},
+         family_i={G\bibinitperiod},
+         given={James\bibnamedelima F},
+         given_i={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Ramesh},
+         family_i={R\bibinitperiod},
+         given={Vijaya},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Solomon},
+         family_i={S\bibinitperiod},
+         given={Frank},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=MVT}{%
+         family={Marchesi},
+         family_i={M\bibinitperiod},
+         given={Vincent\bibnamedelima T},
+         given_i={V\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tsukita},
+         family_i={T\bibinitperiod},
+         given={Shoichiro},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tsukita},
+         family_i={T\bibinitperiod},
+         given={Sachiko},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Arpin},
+         family_i={A\bibinitperiod},
+         given={Monique},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Louvard},
+         family_i={L\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=TNK}{%
+         family={Tonks},
+         family_i={T\bibinitperiod},
+         given={Nicholas\bibnamedelima K},
+         given_i={N\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=AJM}{%
+         family={Anderson},
+         family_i={A\bibinitperiod},
+         given={James\bibnamedelima M},
+         given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FAS}{%
+         family={Fanning},
+         family_i={F\bibinitperiod},
+         given={Alan\bibnamedelima S},
+         given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BPJ}{%
+         family={Bryant},
+         family_i={B\bibinitperiod},
+         given={Peter\bibnamedelima J},
+         given_i={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WDF}{%
+         family={Woods},
+         family_i={W\bibinitperiod},
+         given={Daniel\bibnamedelima F},
+         given_i={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=HKB}{%
+         family={Hoover},
+         family_i={H\bibinitperiod},
+         given={Kevin\bibnamedelima B},
+         given_i={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \keyw{protein 4.1 ; band 4.1 ; FERM domain ; cytoskeleton ; ERM}
+    \strng{namehash}{CAH+1}
+  \strng{fullhash}{CAHKACMSMLMHMJHLSCLPSRGAMNCJACJGGPTYHSCBJEJBAFRGGJFRVSFMVTTSTSAMLDTNKAJMFASBPJWDFHKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{issn}{0968-0004 and 1362-4326}
+    \field{number}{8}
+    \field{pages}{281\bibrangedash 282}
+    \field{title}{The FERM domain: a unique module involved in the linkage of
+  cytoplasmic proteins to the membrane}
+    \field{volume}{23}
+    \list{location}{1}{%
+      {LONDON}%
+    }
+    \field{journaltitle}{Trends in Biochemical Sciences}
+    \field{year}{1998}
+  \endentry
+
   \entry{pap002}{book}{}
     \name{author}{2}{}{%
       {{hash=FJ}{%
@@ -53,6 +479,238 @@
       {San Francisco}%
     }
     \field{year}{2015}
+  \endentry
+
+  \entry{pap001}{book}{}
+    \name{author}{13}{}{%
+      {{hash=GGM}{%
+         family={Go{\~n}i},
+         family_i={G\bibinitperiod},
+         given={Guillermina\bibnamedelima M.},
+         given_i={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={Epifano},
+         family_i={E\bibinitperiod},
+         given={Carolina},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Boskovic},
+         family_i={B\bibinitperiod},
+         given={Jasminka},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=CAM}{%
+         family={Camacho-Artacho},
+         family_i={C\bibinitperiod-A\bibinitperiod},
+         given={Marta},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhou},
+         family_i={Z\bibinitperiod},
+         given={Jing},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bronowska},
+         family_i={B\bibinitperiod},
+         given={Agnieszka},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MMT}{%
+         family={Mart{\'\i}n},
+         family_i={M\bibinitperiod},
+         given={M.\bibnamedelima Teresa},
+         given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=EMJ}{%
+         family={Eck},
+         family_i={E\bibinitperiod},
+         given={Michael\bibnamedelima J.},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kremer},
+         family_i={K\bibinitperiod},
+         given={Leonor},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gr{\"a}ter},
+         family_i={G\bibinitperiod},
+         given={Frauke},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=GFL}{%
+         family={Gervasio},
+         family_i={G\bibinitperiod},
+         given={Francesco\bibnamedelima Luigi},
+         given_i={F\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PMM}{%
+         family={Perez-Moreno},
+         family_i={P\bibinitperiod-M\bibinitperiod},
+         given={Mirna},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lietha},
+         family_i={L\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {National Acad Sciences}%
+    }
+    \keyw{Amino Acids - metabolism ; Focal Adhesion Protein-Tyrosine Kinases -
+  metabolism ; Protein Binding - drug effects ; Mutant Proteins - metabolism ;
+  Biocatalysis - drug effects}
+    \strng{namehash}{GGM+1}
+    \strng{fullhash}{GGMECBJCAMZJBAMMTEMJKLGFGFLPMMLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{issn}{0027-8424 and 1091-6490}
+    \field{pages}{E3177\bibrangedash E3186}
+    \field{series}{PNAS Plus}
+    \field{title}{Phosphatidylinositol 4,5-bisphosphate triggers activation of
+  focal adhesion kinase by inducing clustering and conformational changes}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{pap002Exp}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJE}{%
+         family={Hall},
+         family_i={H\bibinitperiod},
+         given={Jessica\bibnamedelima E},
+         given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SMD}{%
+         family={Schaller},
+         family_i={S\bibinitperiod},
+         given={Michael\bibnamedelima D},
+         given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=JC}{%
+         family={Johnson},
+         family_i={J\bibinitperiod},
+         given={Colin},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Kinases ; Phosphorylation ; Extracellular matrix ; Binding sites ;
+  Cell adhesion & migration}
+    \strng{namehash}{HJESMD1}
+    \strng{fullhash}{HJESMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{issn}{1932-6203 and 1932-6203}
+    \field{number}{2}
+    \field{pages}{e0172136}
+    \field{title}{Phospholipid binding to the FAK catalytic domain impacts
+  function}
+    \field{volume}{12}
+    \list{location}{1}{%
+      {San Francisco}%
+    }
+    \field{journaltitle}{PLOS ONE}
+    \field{year}{2017}
+  \endentry
+
+  \entry{dimersVsClusters}{article}{}
+    \name{author}{8}{}{%
+      {{hash=KBZ}{%
+         family={Katz},
+         family_i={K\bibinitperiod},
+         given={Ben-Zion},
+         given_i={B\bibinitperiod-Z\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Miyamoto},
+         family_i={M\bibinitperiod},
+         given={Shingo},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Teramoto},
+         family_i={T\bibinitperiod},
+         given={Hidemi},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zohar},
+         family_i={Z\bibinitperiod},
+         given={Muriel},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Krylov},
+         family_i={K\bibinitperiod},
+         given={Dmitry},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=VC}{%
+         family={Vinson},
+         family_i={V\bibinitperiod},
+         given={Charles},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Gutkind},
+         family_i={G\bibinitperiod},
+         given={J.Silvio},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=YKM}{%
+         family={Yamada},
+         family_i={Y\bibinitperiod},
+         given={Kenneth\bibnamedelima M},
+         given_i={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier B.V}%
+    }
+    \keyw{Tyrosine phosphorylation ; Clustering ; MAP kinase ; FAK ;
+  Dimerization}
+    \strng{namehash}{KBZ+1}
+    \strng{fullhash}{KBZMSTHZMKDVCGJYKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{issn}{0167-4889 and 1879-2596}
+    \field{number}{2}
+    \field{pages}{141\bibrangedash 152}
+    \field{title}{Direct transmembrane clustering and cytoplasmic dimerization
+  of focal adhesion kinase initiates its tyrosine phosphorylation}
+    \field{volume}{1592}
+    \field{journaltitle}{BBA - Molecular Cell Research}
+    \field{year}{2002}
   \endentry
 
   \entry{structFAK}{article}{}
@@ -120,6 +778,61 @@
     }
     \field{journaltitle}{Cell}
     \field{year}{2007}
+  \endentry
+
+  \entry{pip2_minus5}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MS}{%
+         family={McLaughlin},
+         family_i={M\bibinitperiod},
+         given={Stuart},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Jiyao},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gambhir},
+         family_i={G\bibinitperiod},
+         given={Alok},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Murray},
+         family_i={M\bibinitperiod},
+         given={Diana},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \keyw{phosphoinositides ; phosphatidylinositol 4,5-bisphosphate ; signal
+  transduction ; second messengers}
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSWJGAMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{issn}{1056-8700 and 1545-4266}
+    \field{number}{1}
+    \field{pages}{151\bibrangedash 175}
+    \field{title}{PIP2 AND PROTEINS: Interactions, Organization, and
+  Information Flow}
+    \field{volume}{31}
+    \list{location}{1}{%
+      {4139 El Camino Way, P.O. Box 10139}%
+    }
+    \field{journaltitle}{Annual Review of Biophysics and Biomolecular
+  Structure}
+    \field{year}{2002}
   \endentry
 
   \entry{backwardpy}{article}{}
@@ -229,6 +942,68 @@
   ATP}
     \list{location}{1}{%
       {United States}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{pap004}{book}{}
+    \name{author}{6}{}{%
+      {{hash=ZJ}{%
+         family={Zhou},
+         family_i={Z\bibinitperiod},
+         given={Jing},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=ASC}{%
+         family={Aponte-Santamar{\'\i}a},
+         family_i={A\bibinitperiod-S\bibinitperiod},
+         given={Camilo},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sturm},
+         family_i={S\bibinitperiod},
+         given={Sebastian},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=BJT}{%
+         family={Bullerjahn},
+         family_i={B\bibinitperiod},
+         given={Jakob\bibnamedelima T{\'o}mas},
+         given_i={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bronowska},
+         family_i={B\bibinitperiod},
+         given={Agnieszka},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gr{\"a}ter},
+         family_i={G\bibinitperiod},
+         given={Frauke},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Experiments ; Kinases ; Funding ; Phosphorylation ; Parameter
+  estimation}
+    \strng{namehash}{ZJ+1}
+    \strng{fullhash}{ZJASCSSBJTBAGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{issn}{1553-7358}
+    \field{subtitle}{e1004593}
+    \field{title}{Mechanism of Focal Adhesion Kinase Mechanosensing}
+    \list{location}{1}{%
+      {San Francisco}%
     }
     \field{year}{2015}
   \endentry

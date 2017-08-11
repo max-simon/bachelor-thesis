@@ -19,53 +19,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: document-blx.bib
 Database file #2: ../Paper.bib
+Warning--I didn't find a database entry for "CITATION34"
 Warning--I didn't find a database entry for "sara"
 Warning--I didn't find a database entry for "PW"
 Warning--I didn't find a database entry for "gromacsWHAMpaper"
-Warning--I didn't find a database entry for "jing"
-Warning--I didn't find a database entry for "introOrPaper"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 5 entries,
+You've used 14 entries,
             6256 wiz_defined-function locations,
-            1222 strings with 9987 characters,
-and the built_in function-call counts, 37976 in all, are:
-= -- 3026
-> -- 626
-< -- 218
-+ -- 1029
-- -- 202
-* -- 2756
-:= -- 4075
+            1307 strings with 14207 characters,
+and the built_in function-call counts, 178428 in all, are:
+= -- 15444
+> -- 2328
+< -- 771
++ -- 5369
+- -- 809
+* -- 13635
+:= -- 20428
 add.period$ -- 0
-call.type$ -- 5
-change.case$ -- 165
+call.type$ -- 14
+change.case$ -- 622
 chr.to.int$ -- 30
-cite$ -- 8
-duplicate$ -- 3797
-empty$ -- 3304
-format.name$ -- 361
-if$ -- 7764
+cite$ -- 26
+duplicate$ -- 17913
+empty$ -- 14980
+format.name$ -- 1655
+if$ -- 35315
 int.to.chr$ -- 0
-int.to.str$ -- 18
+int.to.str$ -- 64
 missing$ -- 0
-newline$ -- 227
-num.names$ -- 311
-pop$ -- 1496
+newline$ -- 983
+num.names$ -- 1106
+pop$ -- 5277
 preamble$ -- 1
-purify$ -- 202
+purify$ -- 829
 quote$ -- 0
-skip$ -- 1068
+skip$ -- 3764
 stack$ -- 0
-substring$ -- 5397
-swap$ -- 892
-text.length$ -- 128
-text.prefix$ -- 4
+substring$ -- 29167
+swap$ -- 3665
+text.length$ -- 414
+text.prefix$ -- 13
 top$ -- 1
-type$ -- 158
+type$ -- 464
 warning$ -- 0
-while$ -- 484
+while$ -- 2371
 width$ -- 0
-write$ -- 223
-(There were 5 warnings)
+write$ -- 970
+(There were 4 warnings)
