@@ -1,6 +1,6 @@
 % kompiliert mit XeLaTeX
 \documentclass[
-12pt, % font size
+11pt, % font size
 parskip=half, % space between paragraphs instead of indentation
 digital, % digital or print
 oneside, % oneside / twoside
@@ -28,10 +28,18 @@ oneside, % oneside / twoside
 \newcommand{\diff}{\text{d}}
 \newcommand{\pip}{PI(4,5)P$_2$}
 \newcommand{\acid}[2]{#1$^{#2}$}
+
+
 \newcommand{\gromacs}{GROMACS}
+\newcommand{\martini}{MARTINI}
+\newcommand{\charmm}{CHARMM36}
+
 \newcommand{\pope}{POPE}
 \newcommand{\popc}{POPC}
 \newcommand{\forceunit}{\si{\kilo\joule/\mole/\nano\metre}}
+
+% MyFig: \myFig[width]{source}{label}{figure title}{text}
+\newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}~#2}}}
 
 
 \begin{document}
@@ -41,12 +49,10 @@ oneside, % oneside / twoside
 \chapter{Motivation}
 \input{introduction/motivation}
 \chapter{Methods}
-\section{MD}
-%\include{introduction/md}
-Will be shortened.
+\section{Molecular dynamic simulation}
+\input{introduction/md}
 \section{Free energy calculations}
-%\include{introduction/fec}
-Will be shortened.
+\input{introduction/fec}
 \section{Contact Analysis}
 \input{introduction/characterisation}
 \chapter{Setup}

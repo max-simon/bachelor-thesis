@@ -17,6 +17,56 @@
 \endgroup
 
 \sortlist[entry]{nty/global/}
+  \entry{gromacsManual}{manual}{}
+    \name{author}{5}{}{%
+      {{hash=AM}{%
+         family={Abraham},
+         family_i={A\bibinitperiod},
+         given={M.J.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=vdSD}{%
+         prefix={van\bibnamedelima der},
+         prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Spoel},
+         family_i={S\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Lindahl},
+         family_i={L\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hess},
+         family_i={H\bibinitperiod},
+         given={B.},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=tGdt}{%
+         prefix={the GROMACS\bibnamedelima development},
+         prefix_i={t\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  d\bibinitperiod},
+         family={team},
+         family_i={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMSDvdLEHBttGd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{edition}{2016.2}
+    \field{title}{GROMACS User Manual version 2016.2}
+    \list{location}{1}{%
+      {www.gromacs.org}%
+    }
+    \field{year}{2017}
+  \endentry
+
   \entry{fatdomain}{article}{}
     \name{author}{3}{}{%
       {{hash=AST}{%
@@ -66,16 +116,28 @@
   \endentry
 
   \entry{sara}{unpublished}{}
-    \name{author}{1}{}{%
+    \name{author}{3}{}{%
       {{hash=BS}{%
          family={Becker},
          family_i={B\bibinitperiod},
          given={Sara},
          given_i={S\bibinitperiod},
       }}%
+      {{hash=DC}{%
+         family={Daday},
+         family_i={D\bibinitperiod},
+         given={Csaba},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gr{\"a}ter},
+         family_i={G\bibinitperiod},
+         given={Frauke},
+         given_i={F\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{BS1}
-    \strng{fullhash}{BS1}
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSDCGF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
@@ -83,6 +145,205 @@
     \field{title}{Clustering of FAK on a PIP2 enriched membrane}
     \field{month}{02}
     \field{year}{2017}
+  \endentry
+
+  \entry{gromacs1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BH}{%
+         family={Berendsen},
+         family_i={B\bibinitperiod},
+         given={H.J.C},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=vdSD}{%
+         prefix={van\bibnamedelima der},
+         prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Spoel},
+         family_i={S\bibinitperiod},
+         given={D},
+         given_i={D},
+      }}%
+      {{hash=vDR}{%
+         prefix={van},
+         prefix_i={v\bibinitperiod},
+         family={Drunen},
+         family_i={D\bibinitperiod},
+         given={R},
+         given_i={R},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier B.V}%
+    }
+    \keyw{Parallel computing ; Molecular dynamics ; PHYSICS, MATHEMATICAL ;
+  MOLECULAR DYNAMICS ; PARALLEL COMPUTING}
+    \strng{namehash}{BH+1}
+    \strng{fullhash}{BHSDvdDRv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issn}{0010-4655 and 1879-2944}
+    \field{number}{1}
+    \field{pages}{43\bibrangedash 56}
+    \field{title}{GROMACS: A message-passing parallel molecular dynamics
+  implementation}
+    \field{volume}{91}
+    \list{location}{1}{%
+      {AMSTERDAM}%
+    }
+    \field{journaltitle}{Computer Physics Communications}
+    \field{year}{1995}
+  \endentry
+
+  \entry{berendsen}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BH}{%
+         family={Berendsen},
+         family_i={B\bibinitperiod},
+         given={HJC},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={POSTMA},
+         family_i={P\bibinitperiod},
+         given={JPM},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=VW}{%
+         family={VANGUNSTEREN},
+         family_i={V\bibinitperiod},
+         given={WF},
+         given_i={W\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={DINOLA},
+         family_i={D\bibinitperiod},
+         given={A},
+         given_i={A},
+      }}%
+      {{hash=HNV}{%
+         family={HAAK},
+         family_i={H\bibinitperiod},
+         given={[No\bibnamedelima Value]},
+         given_i={N\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{BH+2}
+    \strng{fullhash}{BHPJVWDAHNV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issn}{0021-9606 and 1089-7690}
+    \field{number}{8}
+    \field{pages}{3684\bibrangedash 3690}
+    \field{title}{MOLECULAR-DYNAMICS WITH COUPLING TO AN EXTERNAL BATH}
+    \field{volume}{81}
+    \field{journaltitle}{Journal of Chemical Physics}
+    \field{year}{1984}
+  \endentry
+
+  \entry{charmm36_protein}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BR}{%
+         family={Best},
+         family_i={B\bibinitperiod},
+         given={{Robert B.}},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhu},
+         family_i={Z\bibinitperiod},
+         given={Xiao},
+         given_i={X\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shim},
+         family_i={S\bibinitperiod},
+         given={Jihyun},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lopes},
+         family_i={L\bibinitperiod},
+         given={{Pedro E M}},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mittal},
+         family_i={M\bibinitperiod},
+         given={Jeetain},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Feig},
+         family_i={F\bibinitperiod},
+         given={Michael},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={MacKerell},
+         family_i={M\bibinitperiod},
+         given={{Alexander D.}},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Chemical Society}%
+    }
+    \strng{namehash}{BR+1}
+    \strng{fullhash}{BRZXSJLPMJFMMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    While the quality of the current CHARMM22/CMAP additive force field for
+  proteins has been demonstrated in a large number of applications, limitations
+  in the model with respect to the equilibrium between the sampling of helical
+  and extended conformations in folding simulations have been noted. To
+  overcome this, as well as make other improvements in the model, we present a
+  combination of refinements that should result in enhanced accuracy in
+  simulations of proteins. The common (non-Gly, -Pro) backbone CMAP potential
+  has been refined against experimental solution NMR data for weakly structured
+  peptides, resulting in a rebalancing of the energies of the α-helix and
+  extended regions of the Ramachandran map, correcting the α-helical bias of
+  CHARMM22/CMAP. The Gly and Pro CMAPs have been refitted to more accurate
+  quantum-mechanical energy surfaces. Side-chain torsion parameters have been
+  optimized by fitting to backbone-dependent quantum-mechanical energy
+  surfaces, followed by additional empirical optimization targeting NMR scalar
+  couplings for unfolded proteins. A comprehensive validation of the revised
+  force field was then performed against a collection of experimental data: (i)
+  comparison of simulations of eight proteins in their crystal environments
+  with crystal structures; (ii) comparison with backbone scalar couplings for
+  weakly structured peptides; (iii) comparison with NMR residual dipolar
+  couplings and scalar couplings for both backbone and side-chains in folded
+  proteins; (iv) equilibrium folding of mini-proteins. The results indicate
+  that the revised CHARMM 36 parameters represent an improved model for
+  modeling and simulation studies of proteins, including studies of protein
+  folding, assembly, and functionally relevant conformational changes.
+  {\copyright} 2012 American Chemical Society.%
+    }
+    \verb{doi}
+    \verb 10.1021/ct300400x
+    \endverb
+    \field{issn}{1549-9618}
+    \field{number}{9}
+    \field{pages}{3257\bibrangedash 3273}
+    \field{title}{Optimization of the additive CHARMM all-atom protein force
+  field targeting improved sampling of the backbone φ, ψ and side-chain χ 1
+  and χ 2 Dihedral Angles}
+    \field{volume}{8}
+    \field{journaltitle}{Journal of Chemical Theory and Computation}
+    \field{month}{09}
+    \field{year}{2012}
   \endentry
 
   \entry{fakdimers}{article}{}
@@ -240,6 +501,53 @@
     }
     \field{journaltitle}{Molecular and Cellular Biology}
     \field{year}{1995}
+  \endentry
+
+  \entry{freeEnergyBook}{book}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Chipot},
+         family_i={C\bibinitperiod},
+         given={Christophe},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pohorille},
+         family_i={P\bibinitperiod},
+         given={Andrew},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Freie Energie}
+    \strng{namehash}{CCPA1}
+    \strng{fullhash}{CCPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1007/978-3-540-38448-9
+    \endverb
+    \field{isbn}{978-3-540-38448-9}
+    \field{library}{UB ; UW}
+    \field{pages}{Online\bibrangedash Ressource (XVIII, 517 p. 85 illus., 11 in
+  color, digital)}
+    \field{series}{Springer Series in CHEMICAL PHYSICS ; 86}
+    \field{subtitle}{Theory and Applications in Chemistry and Biology}
+    \field{title}{Free Energy Calculations}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/978-3-540-38448-9
+    \endverb
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2007}
   \endentry
 
   \entry{fermdomain}{article}{}
@@ -463,6 +771,91 @@
     \field{year}{1998}
   \endentry
 
+  \entry{pme}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DT}{%
+         family={Darden},
+         family_i={D\bibinitperiod},
+         given={Tom},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=YD}{%
+         family={York},
+         family_i={Y\bibinitperiod},
+         given={Darrin},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Pedersen},
+         family_i={P\bibinitperiod},
+         given={Lee},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{DT+1}
+    \strng{fullhash}{DTYDPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{issn}{0021-9606 and 1089-7690}
+    \field{number}{12}
+    \field{pages}{10089\bibrangedash 10092}
+    \field{title}{Particle mesh Ewald: An N⋅log(N) method for Ewald sums in
+  large systems}
+    \field{volume}{98}
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{year}{1993}
+  \endentry
+
+  \entry{parinelloBussi}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DD}{%
+         family={Donadio},
+         family_i={D\bibinitperiod},
+         given={Davide},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Parrinello},
+         family_i={P\bibinitperiod},
+         given={Michele},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Bussi},
+         family_i={B\bibinitperiod},
+         given={Giovanni},
+         given_i={G\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {American Institute of Physics}%
+    }
+    \strng{namehash}{DD+1}
+    \strng{fullhash}{DDPMBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{issn}{0021-9606 and 1089-7690}
+    \field{number}{1}
+    \field{pages}{014101\bibrangedash 014101\bibrangedash 7}
+    \field{title}{Canonical sampling through velocity rescaling}
+    \field{volume}{126}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{Journal of Chemical Physics}
+    \field{year}{2007}
+  \endentry
+
   \entry{pap002}{book}{}
     \name{author}{2}{}{%
       {{hash=FJ}{%
@@ -499,6 +892,82 @@
       {San Francisco}%
     }
     \field{year}{2015}
+  \endentry
+
+  \entry{originalWHAM}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FAM}{%
+         family={Ferrenberg},
+         family_i={F\bibinitperiod},
+         given={Alan\bibnamedelima M},
+         given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SRH}{%
+         family={Swendsen},
+         family_i={S\bibinitperiod},
+         given={Robert\bibnamedelima H},
+         given_i={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{FAMSRH1}
+    \strng{fullhash}{FAMSRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{issn}{0031-9007 and 1079-7114}
+    \field{number}{12}
+    \field{pages}{1195\bibrangedash 1198}
+    \field{title}{Optimized Monte Carlo data analysis}
+    \field{volume}{63}
+    \field{journaltitle}{Physical Review Letters}
+    \field{year}{1989}
+  \endentry
+
+  \entry{UnderstandingMD}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FD}{%
+         family={Frenkel},
+         family_i={F\bibinitperiod},
+         given={Daan},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smit},
+         family_i={S\bibinitperiod},
+         given={Berend},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \keyw{Zwischenmolekulare Kraft / Computersimulation / Molek{\"u}l}
+    \strng{namehash}{FDSB1}
+    \strng{fullhash}{FDSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{edition}{2. ed.}
+    \field{isbn}{0-12-267351-4 and 978-0-12-267351-1}
+    \field{library}{MA [Signatur: Frenk]}
+    \field{note}{Hier auch sp{\"a}ter erschienene, unver{\"a}nderte Nachdrucke}
+    \field{number}{ARRAY(0x4357db8)}
+    \field{pages}{XXII, 638 S.}
+    \field{series}{Computational science series}
+    \field{subtitle}{from algorithms to applications}
+    \field{title}{Understanding molecular simulation}
+    \list{location}{1}{%
+      {San Diego [u.a.]}%
+    }
+    \field{year}{2002}
   \endentry
 
   \entry{pap001}{book}{}
@@ -658,6 +1127,218 @@
     \field{year}{2017}
   \endentry
 
+  \entry{velRescaleSucks}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HSC}{%
+         family={Harvey},
+         family_i={H\bibinitperiod},
+         given={Stephen\bibnamedelima C},
+         given_i={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=TRKZ}{%
+         family={Tan},
+         family_i={T\bibinitperiod},
+         given={Robert K.-Z},
+         given_i={R\bibinitperiod\bibinitdelim
+  K\bibinitperiod-Z\bibinitperiod},
+      }}%
+      {{hash=CTE}{%
+         family={Cheatham},
+         family_i={C\bibinitperiod},
+         given={Thomas\bibnamedelima E},
+         given_i={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{HSC+1}
+    \strng{fullhash}{HSCTRKZCTE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{issn}{0192-8651 and 1096-987X}
+    \field{number}{7}
+    \field{pages}{726\bibrangedash 740}
+    \field{title}{The flying ice cube: Velocity rescaling in molecular dynamics
+  leads to violation of energy equipartition}
+    \field{volume}{19}
+    \field{journaltitle}{Journal of Computational Chemistry}
+    \field{year}{1998}
+  \endentry
+
+  \entry{nosehooverthermo2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HWG}{%
+         family={Hoover},
+         family_i={H\bibinitperiod},
+         given={William\bibnamedelima G},
+         given_i={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{HWG1}
+    \strng{fullhash}{HWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{issn}{0556-2791}
+    \field{number}{3}
+    \field{pages}{1695\bibrangedash 1697}
+    \field{title}{Canonical dynamics: Equilibrium phase-space distributions}
+    \field{volume}{31}
+    \field{journaltitle}{Physical Review A}
+    \field{year}{1985}
+  \endentry
+
+  \entry{martini22}{article}{}
+    \name{author}{10}{}{%
+      {{hash=dJDH}{%
+         prefix={de},
+         prefix_i={d\bibinitperiod},
+         family={Jong},
+         family_i={J\bibinitperiod},
+         given={Djurre\bibnamedelima H},
+         given_i={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Singh},
+         family_i={S\bibinitperiod},
+         given={Gurpreet},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=BWFw}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={W.\bibnamedelima F.\bibnamedelima w},
+         given_i={W\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim w},
+      }}%
+      {{hash=AC}{%
+         family={Arnarez},
+         family_i={A\bibinitperiod},
+         given={Clement},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=WTA}{%
+         family={Wassenaar},
+         family_i={W\bibinitperiod},
+         given={Tsjerk\bibnamedelima A},
+         given_i={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SLV}{%
+         family={Schafer},
+         family_i={S\bibinitperiod},
+         given={Lars\bibnamedelima V},
+         given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=PX}{%
+         family={Periole},
+         family_i={P\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+      {{hash=TDP}{%
+         family={Tieleman},
+         family_i={T\bibinitperiod},
+         given={D.\bibnamedelima Peter},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SLV}{%
+         family={Sch{\"a}fer},
+         family_i={S\bibinitperiod},
+         given={Lars\bibnamedelima V},
+         given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {AMER CHEMICAL SOC}%
+    }
+    \keyw{FUSION PEPTIDES ; MODEL LIPID-BILAYERS ; MOLECULAR-DYNAMICS
+  SIMULATIONS ; PREDICTIVE TOOLS ; AQUEOUS-SOLUTION}
+    \strng{namehash}{JDHd+1}
+    \strng{fullhash}{JDHdSGBWFwACWTASLVPXTDPMSJSLV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{issn}{1549-9618 and 1549-9626}
+    \field{number}{1}
+    \field{pages}{687\bibrangedash 697}
+    \field{title}{Improved Parameters for the Martini Coarse-Grained Protein
+  Force Field}
+    \field{volume}{9}
+    \list{location}{1}{%
+      {WASHINGTON}%
+    }
+    \field{journaltitle}{Journal of Chemical Theory and Computation}
+    \field{year}{2013}
+  \endentry
+
+  \entry{tip3p}{article}{}
+    \name{author}{5}{}{%
+      {{hash=JWL}{%
+         family={Jorgensen},
+         family_i={J\bibinitperiod},
+         given={William\bibnamedelima L},
+         given_i={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chandrasekhar},
+         family_i={C\bibinitperiod},
+         given={Jayaraman},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Madura},
+         family_i={M\bibinitperiod},
+         given={Jeffry\bibnamedelima D},
+         given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=IRW}{%
+         family={Impey},
+         family_i={I\bibinitperiod},
+         given={Roger\bibnamedelima W},
+         given_i={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=KML}{%
+         family={Klein},
+         family_i={K\bibinitperiod},
+         given={Michael\bibnamedelima L},
+         given_i={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{JWL+1}
+    \strng{fullhash}{JWLCJMJDIRWKML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{issn}{0021-9606 and 1089-7690}
+    \field{number}{2}
+    \field{pages}{926}
+    \field{title}{Comparison of simple potential functions for simulating
+  liquid water}
+    \field{volume}{79}
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{year}{1983}
+  \endentry
+
   \entry{dimersVsClusters}{article}{}
     \name{author}{8}{}{%
       {{hash=KBZ}{%
@@ -733,6 +1414,145 @@
     \field{year}{2002}
   \endentry
 
+  \entry{charmm36_lipids}{article}{}
+    \name{author}{9}{}{%
+      {{hash=KJB}{%
+         family={Klauda},
+         family_i={K\bibinitperiod},
+         given={Jeffery\bibnamedelima B},
+         given_i={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=VRM}{%
+         family={Venable},
+         family_i={V\bibinitperiod},
+         given={Richard\bibnamedelima M},
+         given_i={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FJA}{%
+         family={Freites},
+         family_i={F\bibinitperiod},
+         given={J\bibnamedelima Alfredo},
+         given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=OJW}{%
+         family={O'Connor},
+         family_i={O\bibinitperiod},
+         given={Joseph\bibnamedelima W},
+         given_i={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=TDJ}{%
+         family={Tobias},
+         family_i={T\bibinitperiod},
+         given={Douglas\bibnamedelima J},
+         given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MRC}{%
+         family={Mondragon-Ramirez},
+         family_i={M\bibinitperiod-R\bibinitperiod},
+         given={Carlos},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=VI}{%
+         family={Vorobyov},
+         family_i={V\bibinitperiod},
+         given={Igor},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=MADJ}{%
+         family={MacKerell},
+         family_i={M\bibinitperiod},
+         suffix={Jr},
+         suffix_i={J\bibinitperiod},
+         given={Alexander\bibnamedelima D},
+         given_i={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PRW}{%
+         family={Pastor},
+         family_i={P\bibinitperiod},
+         given={Richard\bibnamedelima W},
+         given_i={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {American Chemical Society}%
+    }
+    \keyw{Dimyristoylphosphatidylcholine - chemistry ;
+  1,2-Dipalmitoylphosphatidylcholine - chemistry ; Phosphatidylethanolamines -
+  chemistry ; Lipid Bilayers - chemistry ; Lipids - chemistry}
+    \strng{namehash}{KJB+1}
+    \strng{fullhash}{KJBVRMFJAOJWTDJMRCVIMJADPRW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{issn}{1520-6106 and 1520-5207}
+    \field{number}{23}
+    \field{pages}{7830}
+    \field{title}{Update of the CHARMM all-atom additive force field for
+  lipids: validation on six lipid types}
+    \field{volume}{114}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{The journal of physical chemistry. B}
+    \field{year}{2010}
+  \endentry
+
+  \entry{extensionWHAM}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KS}{%
+         family={Kumar},
+         family_i={K\bibinitperiod},
+         given={Shankar},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=RJM}{%
+         family={Rosenberg},
+         family_i={R\bibinitperiod},
+         given={John\bibnamedelima M},
+         given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Bouzida},
+         family_i={B\bibinitperiod},
+         given={Djamal},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=SRH}{%
+         family={Swendsen},
+         family_i={S\bibinitperiod},
+         given={Robert\bibnamedelima H},
+         given_i={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KPA}{%
+         family={Kollman},
+         family_i={K\bibinitperiod},
+         given={Peter\bibnamedelima A},
+         given_i={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSRJMBDSRHKPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{issn}{0192-8651 and 1096-987X}
+    \field{number}{8}
+    \field{pages}{1011\bibrangedash 1021}
+    \field{title}{THE weighted histogram analysis method for free-energy
+  calculations on biomolecules. I. The method}
+    \field{volume}{13}
+    \field{journaltitle}{Journal of Computational Chemistry}
+    \field{year}{1992}
+  \endentry
+
   \entry{structFAK}{article}{}
     \name{author}{6}{}{%
       {{hash=LD}{%
@@ -800,6 +1620,163 @@
     \field{year}{2007}
   \endentry
 
+  \entry{martini22_lipids}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LCA}{%
+         family={Lopez},
+         family_i={L\bibinitperiod},
+         given={Cesar\bibnamedelima A},
+         given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SZ}{%
+         family={Sovova},
+         family_i={S\bibinitperiod},
+         given={Zofie},
+         given_i={Z\bibinitperiod},
+      }}%
+      {{hash=vEFJ}{%
+         prefix={van},
+         prefix_i={v\bibinitperiod},
+         family={Eerden},
+         family_i={E\bibinitperiod},
+         given={Floris\bibnamedelima J},
+         given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=dVAH}{%
+         prefix={de},
+         prefix_i={d\bibinitperiod},
+         family={Vries},
+         family_i={V\bibinitperiod},
+         given={Alex\bibnamedelima H},
+         given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \keyw{DOMAIN FORMATION ; PHASE-BEHAVIOR ; LIPID-BILAYER ;
+  MOLECULAR-DYNAMICS SIMULATIONS ; HEAD GROUPS}
+    \strng{namehash}{LCA+1}
+    \strng{fullhash}{LCASZEFJvVAHdMSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{issn}{1549-9618 and 1549-9626}
+    \field{number}{3}
+    \field{pages}{1694\bibrangedash 1708}
+    \field{title}{Martini Force Field Parameters for Glycolipids}
+    \field{volume}{9}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{Journal of Chemical Theory and Computation}
+    \field{year}{2013}
+  \endentry
+
+  \entry{martini22_check}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TDP}{%
+         family={Tieleman},
+         family_i={T\bibinitperiod},
+         given={D.\bibnamedelima Peter},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \keyw{DOMAIN FORMATION ; COMPUTER-SIMULATIONS ; PHASE-SEPARATION ;
+  MOLECULAR-DYNAMICS SIMULATIONS ; FORCE-FIELD}
+    \strng{namehash}{MSJTDP1}
+    \strng{fullhash}{MSJTDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{issn}{0306-0012 and 1460-4744}
+    \field{number}{16}
+    \field{pages}{6801\bibrangedash 6822}
+    \field{title}{Perspective on the Martini model}
+    \field{volume}{42}
+    \list{location}{1}{%
+      {England}%
+    }
+    \field{journaltitle}{Chemical Society Reviews}
+    \field{year}{2013}
+  \endentry
+
+  \entry{martini}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RHJ}{%
+         family={Risselada},
+         family_i={R\bibinitperiod},
+         given={H.\bibnamedelima Jelger},
+         given_i={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yefimov},
+         family_i={Y\bibinitperiod},
+         given={Serge},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TDP}{%
+         family={Tieleman},
+         family_i={T\bibinitperiod},
+         given={D.\bibnamedelima Peter},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=dVAH}{%
+         prefix={de},
+         prefix_i={d\bibinitperiod},
+         family={Vries},
+         family_i={V\bibinitperiod},
+         given={Alex\bibnamedelima H},
+         given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \keyw{VESICLE FUSION ; COMPUTER-SIMULATIONS ; UNIVERSAL SOLVATION MODEL ;
+  MOLECULAR-DYNAMICS SIMULATIONS ; ATOMIC-LEVEL}
+    \strng{namehash}{MSJ+1}
+    \strng{fullhash}{MSJRHJYSTDPVAHd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{issn}{1520-6106 and 1520-5207}
+    \field{number}{27}
+    \field{pages}{7812\bibrangedash 7824}
+    \field{title}{The MARTINI force field: Coarse grained model for
+  biomolecular simulations}
+    \field{volume}{111}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{Journal of Physical Chemistry B}
+    \field{year}{2007}
+  \endentry
+
   \entry{pip2_minus5}{article}{}
     \name{author}{4}{}{%
       {{hash=MS}{%
@@ -855,6 +1832,168 @@
     \field{year}{2002}
   \endentry
 
+  \entry{greenBook}{book}{}
+    \name{editor}{2}{}{%
+      {{hash=ML}{%
+         family={Monticelli},
+         family_i={M\bibinitperiod},
+         given={Luca},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Salonen},
+         family_i={S\bibinitperiod},
+         given={Emppu},
+         given_i={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hamana Press}%
+    }
+    \strng{namehash}{MLSE1}
+    \strng{fullhash}{MLSE1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{series}{Methods in Molecular Biology}
+    \field{title}{Biomolecular Simulations - Methods and Protocols}
+    \field{volume}{924}
+    \field{year}{2013}
+  \endentry
+
+  \entry{nosehooverthermo}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NS}{%
+         family={Nos{\'e}},
+         family_i={N\bibinitperiod},
+         given={Sh{\=u}ichi},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{NS1}
+    \strng{fullhash}{NS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{issn}{0026-8976 and 1362-3028}
+    \field{number}{2}
+    \field{pages}{255\bibrangedash 268}
+    \field{title}{A molecular dynamics method for simulations in the canonical
+  ensemble}
+    \field{volume}{52}
+    \field{journaltitle}{Molecular Physics}
+    \field{year}{1984}
+  \endentry
+
+  \entry{parinelloBarostat2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NS}{%
+         family={Nos{\'e}},
+         family_i={N\bibinitperiod},
+         given={Shuichi},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Klein},
+         family_i={K\bibinitperiod},
+         given={M.L},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{NSKM1}
+    \strng{fullhash}{NSKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{issn}{0026-8976 and 1362-3028}
+    \field{number}{5}
+    \field{pages}{1055\bibrangedash 1076}
+    \field{title}{Constant pressure molecular dynamics for molecular systems}
+    \field{volume}{50}
+    \field{journaltitle}{Molecular Physics}
+    \field{year}{1983}
+  \endentry
+
+  \entry{parinelloBarostat}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PM}{%
+         family={Parrinello},
+         family_i={P\bibinitperiod},
+         given={M},
+         given_i={M},
+      }}%
+      {{hash=RA}{%
+         family={Rahman},
+         family_i={R\bibinitperiod},
+         given={A},
+         given_i={A},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{PMRA1}
+    \strng{fullhash}{PMRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{issn}{0021-8979 and 1089-7550}
+    \field{number}{12}
+    \field{pages}{7182\bibrangedash 7190}
+    \field{title}{Polymorphic transitions in single crystals: A new molecular
+  dynamics method}
+    \field{volume}{52}
+    \field{journaltitle}{Journal of Applied Physics}
+    \field{year}{1981}
+  \endentry
+
+  \entry{originalUmbrellaSampling}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TG}{%
+         family={Torrie},
+         family_i={T\bibinitperiod},
+         given={G.M},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Valleau},
+         family_i={V\bibinitperiod},
+         given={J.P},
+         given_i={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Inc}%
+    }
+    \strng{namehash}{TGVJ1}
+    \strng{fullhash}{TGVJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{issn}{0021-9991 and 1090-2716}
+    \field{number}{2}
+    \field{pages}{187\bibrangedash 199}
+    \field{title}{Nonphysical sampling distributions in Monte Carlo free-energy
+  estimation: Umbrella sampling}
+    \field{volume}{23}
+    \field{journaltitle}{Journal of Computational Physics}
+    \field{year}{1977}
+  \endentry
+
   \entry{backwardpy}{article}{}
     \name{author}{5}{}{%
       {{hash=WTA}{%
@@ -908,6 +2047,74 @@
     }
     \field{journaltitle}{Journal of chemical theory and computation}
     \field{year}{2014}
+  \endentry
+
+  \entry{polarizableMartini}{article}{}
+    \name{author}{5}{}{%
+      {{hash=YSO}{%
+         family={Yesylevskyy},
+         family_i={Y\bibinitperiod},
+         given={Semen\bibnamedelima O},
+         given_i={S\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=SLV}{%
+         family={Schafer},
+         family_i={S\bibinitperiod},
+         given={Lars\bibnamedelima V},
+         given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sengupta},
+         family_i={S\bibinitperiod},
+         given={Durba},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SLV}{%
+         family={Sch{\"a}fer},
+         family_i={S\bibinitperiod},
+         given={Lars\bibnamedelima V},
+         given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=LM}{%
+         family={Levitt},
+         family_i={L\bibinitperiod},
+         given={Michael},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {PUBLIC LIBRARY SCIENCE}%
+    }
+    \keyw{PHOSPHOLIPID-BILAYERS ; SYSTEMS ; LATERAL DIFFUSION ; ION PERMEATION
+  ; TRANSPORT}
+    \strng{namehash}{YSO+1}
+    \strng{fullhash}{YSOSLVSDMSJSLV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{issn}{1553-734X and 1553-7358 and 1553-7358}
+    \field{number}{6}
+    \field{pages}{e1000810}
+    \field{title}{Polarizable Water Model for the Coarse-Grained MARTINI Force
+  Field}
+    \field{volume}{6}
+    \list{location}{1}{%
+      {SAN FRANCISCO}%
+    }
+    \field{journaltitle}{PLoS Computational Biology}
+    \field{year}{2010}
   \endentry
 
   \entry{pap003}{book}{}

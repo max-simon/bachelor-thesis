@@ -11,7 +11,7 @@ The calculation of the SASA values was done with \gromacs{} sasa tool.
 \subsection{Intermolecular}
 In order to determine the cluster behaviour of FAK intermolecular contacts of FAK molecules have to be considered. For this purpose, the following terms are defined.
 \paragraph{Interaction} Proteins or parts of proteins interact, if their minimal distance is smaller than a cut-off distance (here $1.5\,\si{\nano\metre}$).
-\paragraph{Neighbour} Protein A is a neighbour of Protein B, if they are interacting. One protein can have several neighbours. For a more detailed characterisation the following types are defined (see also \autoref{methods:inttypes}):
+\paragraph{Neighbour} Protein A is a neighbour of Protein B, if they are interacting. One protein can have several neighbours. For a more detailed characterisation the following two-molecule interaction types are defined (see also \autoref{methods:inttypes}):
 \begin{enumerate}[label={type \theenumi:}, leftmargin=*]
 	\item only the FERM domain interacts with only the FERM domain of the other protein
 	\item only the kinase interacts with only the kinase of the other protein
@@ -28,7 +28,7 @@ In order to determine the cluster behaviour of FAK intermolecular contacts of FA
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{figures/introduction/classification}
-	\captionof{figure}{Different interaction types for two FAK molecules}
+	\nicecaption{Different two-molecule interaction types}{The black part refers to the FERM domain, the white to the kinase.}
 	\label{methods:inttypes}
 \end{figure}
 %

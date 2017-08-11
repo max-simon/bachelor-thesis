@@ -77,9 +77,7 @@ The electrostatic potential is proportional to $1/r$, i.e. has a relatively slug
 In addition to bonded and non-bonded interactions, external or artificial forces can be applied, such as pulling forces, restraints and constraints.\\
 \\
 With \gromacs{}, it is possible to perform pulling forces onto groups of atoms in the system. In this thesis, pulling was used to bias distances between groups. For this, \gromacs{} provides an option to apply an umbrella potential to two groups, yielding in a force proportional to the deviation of the distance between the groups from a reference distance (as a harmonic potential). The force can be applied on one or two spatial dimensions only or along a predefined vector and the reference distance can change in time  \autocite[p. 154-159]{gromacsManual}.\\
-Restraints are artificial potentials applied to positions, distances, angles, dihedral angles or orientations of particle groups
-%CS: what do you mean with ``orientations of particle groups'' ?
-to conserve labile configurations or to take additional information from experimental data into account \autocite[p. 84f]{gromacsManual}.\\
+Restraints are artificial potentials applied to positions, distances, angles or dihedral angles to conserve labile configurations or to take additional information from experimental data into account \autocite[p. 84f]{gromacsManual}.\\
 Constraints are set to keep properties, such as bond lengths, constant. In order to do so, these properties get reset to the desired value after each time step \autocite[p. 44f]{gromacsManual}. % Lincs, shake?
 \subsection{Force fields}
 %CSABA: this should definitely be in the methods!!!

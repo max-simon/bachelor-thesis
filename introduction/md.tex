@@ -1,56 +1,58 @@
-\section{Molecular Dynamics simulations}
-It is often difficult to get a precise insight into dynamics of a biological system on a molecular scale. Reasons are, that the measurable time- and length scales are usually larger than those of the system. Therefore most effects can only be measured indirectly. Another problem are disturbing factors, which can be hard to control.\\
-These problems do not exist in computer simulations, in which the positions of all particles of the system are known at a much smaller timescale than the dynamics in the system.\\
-An important tool is Molecular dynamics simulation (MD). MD can provide atomistic details, but e.g. with coarse grained models (see \autoref{subsub:coarsegraining}) a length scale of several nanometres is still accessible for microseconds. Therefore MD is suitable for membranes, proteins and other biomolecules.\\
-In this thesis MD was used to investigate interactions of FAK with other FAK and the membrane. Therefore the main concepts of MD and characteristics of the used models are outlined below. However within the scope of this thesis it can just be a small survey.\\
-Because \gromacs{} (Groningen Machine for Chemical Simulations) \autocites{gromacs1, gromacsManual} was used as MD engine in this thesis, the following explanations refer to \gromacs{} conventions and features.
-\subsection{The physics behind MD}
-In MD the system is simulated on an atomistic scale but with classical mechanics only. In order to do so atoms are only treated as spheres without distinction into electrons and nuclei. Quantum mechanical (QM) effects, such as excitation or electron transfer processes, are therefore not accessible and neglected in MD. However the atoms are parametrized by effective parameters, which can be motivated from QM \autocite[p. 127f]{greenBook}.\\
-\\
-Newtons equation of motion
-\begin{equation}
-\vec{F}_i = m_i\frac{\diff^2 \vec{r}_i}{\diff t^2}
-\end{equation}
-where $\vec{F}_i$ is the force acting on particle $i$, $m_i$ its mass and $\vec{r}_i$ its position, can be turned into two first-order differential equations
+Because the measurable time- and length scale of biological experiments are usually larger than those of the system, the dynamics in the system can only be measured indirectly. To get a more precise insight into the concrete processes, Molecular dynamics simulation (MD) are a suitable tool.\\
+In the following section the main concepts of MD and characteristics of the used models are outlined, with a special focus on the \martini{} force field. Nevertheless, this can only be a small survey in the scope of this thesis. Because \gromacs{} (\textit{GROningen MAchine for Chemical Simulations}) \autocites{gromacs1, gromacsManual} was used as MD engine in this thesis, the following explanations refer to \gromacs{} conventions and features. 
+\subsection{The physics of MD}
+In MD atoms are modelled as solid beads, which comprise the nucleus as well as the electron shell and follow classical equations of motion. Due to this implicit treatments of electrons Quantum mechanical (QM) effects, such as excitation or electron transfer processes, are not accessible in MD. However, the beads are parametrized by effective parameters motivated by QM or experiments \autocite[p. 127f]{greenBook}.\\
+Newtons equation of motion can be turned into two first order differential equation
 \begin{align}
-\label{eq:eq_of_mot_first_order}
-\frac{\diff \vec{r}_i}{\diff t} = \vec{v}_i \\
-m_i \frac{\diff \vec{v}_i}{\diff t} = \vec{F}_i
+	\label{eq:eq_of_mot_first_order}
+	\frac{\diff \vec{r}_i}{\diff t} = \vec{v}_i \\
+	m_i \frac{\diff \vec{v}_i}{\diff t} = \vec{F}_i
 \end{align}
-They can be integrated numerically with e.g. Leapfrog- or Verlet integration scheme. Both are low order, i.e. the integration error is $\mathcal{O}(\Delta t^3)$, which saves computational cost. However they have the great advantage to be time reversible and symplectic. Later means, that it conserves the phase space volume, like the Hamiltonian operator would do as well. Therefore the long term error in energy conservation stays small \autocite[p. 72ff]{UnderstandingMD}.\\
-\\
-The force acting on particle $i$ is given by the potential at its position.
-\begin{equation}
-\vec{F}_i = - \frac{\partial V}{\partial \vec{r}_i}
-\end{equation}
-In MD bonded and non-bonded interactions contribute to the potential $V$, but it is also possible to apply external forces.
+which can be integrated numerically with e.g. Leapfrog- or Verlet integration scheme. Both are time reversible and symplectic, which ensures a small long term error in energy conservation \autocite[p. 72ff]{UnderstandingMD}. The force acting on particle $i$ is given by the potential $V$ at its position. In MD bonded and non-bonded interactions contribute to this potential, but also external forces can be applied.
+\begin{align}
+	\vec{F}_i = - \frac{\partial V}{\partial \vec{r}_i} = - \frac{\partial}{\partial \vec{r}_i} \left(V_\text{bonded} + V_\text{non-bonded} + V_\text{external}\right)
+\end{align}
 \subsubsection{Bonded interactions}
-Bonded interactions act intra molecular and describe chemical bonds. They can occur between two, three or four particles.\\
+Bonded interactions act intramolecularly and describe chemical bonds. They can occur between two, three or four particles and refer to bond stretching, bending and torsion respectively. An illustration can be found in \autoref{md:fig_bonds}\\
 \\
-An interaction between two bonded particles refers to their bond length. A deviation from the equilibrium bond length results in potential energy, which is usually described by an harmonic oscillator.
+Deviations of the bond length $r$ from an equilibrium distance $r_0$ results in potential energy, which is usually described by a harmonic oscillator with the force constant $k_\text{dist}$.
 \begin{align}
 V_{\text{dist, bond }i} = \frac{k_{\text{dist}}}{2}\left( r - r_{0} \right)^2
 \end{align}
-$k_{\text{dist,}}$ is the force constant and $r_0$ is the equilibrium bond length for the bond type of bond $i$. For larger deviations a Morse potential (exponential decaying potential for large deviations) is more precise, but has a much higher computational cost.\\
+For larger deviations a Morse potential, which assumes an exponential decay of the potential energy, is more precise, but has a much higher computational cost.\\
 \\
-Also a deviation from an equilibrium angle between three bonded partners, i.e. the bond angle, results in potential energy. A common description is the harmonic oscillator as well.
+Bending of a chemical bond refers to deviations of the angle between three bonded $\theta$ partners from an equilibrium angle $\theta_0$. The resulting harmonic potential is usually described by a harmonic oscillator as well.
 \begin{equation}
 V_\text{angle} = \frac{k_\text{angle}}{2}\left( \theta - \theta_0 \right)^2
-\end{equation}%TODO: write what is what or is this clear?
-\\
-The dihedral angle is the angle between two particles, which are separated by three bonds and can therefore be understood as the torsion angle of the intermediate two particles and bond. Besides a description of torsion this angle can also be used to preserve plane rings and the chirality of four particle groups. It is usually approximated with a periodic approach
+\end{equation}
+The dihedral angle describes the angle between two planes, which go through 3 beads respectively and have 2 beads in common. Therefore it can be understood as a torsion angle, but can also be used to preserve plane rings and the chirality of four particle groups. The resulting potential energy is usually approximated with a periodic approach
 \begin{equation}
 V_{\text{dihedral, periodic}} = \frac{k_\text{dihedral}}{2}\left(1 + \cos\left(n \phi - \phi_0 \right)\right)
 \end{equation}
 where $k_\text{dihedral}$ describes the energy barrier for turning the dihedral angle, $n$ the number of minima in the energy function (multiplicity) and $\phi_0$ a phase factor \autocite[p. 71-83]{gromacsManual}.
+%
+%
+%
+\begin{figure}
+	\subcaptionbox{\label{md:fig_bonds}}[0.5\textwidth]{
+		\includegraphics[height=3cm]{figures/introduction/fig_bonds}
+	}\hfill%
+	\subcaptionbox{\label{md:fig_pot}}[6cm]{
+		\includegraphics[height=6cm]{figures/introduction/fig_potentials}
+	}%
+	\nicecaption{Interactions in MD}{(\subref{md:fig_bonds}): illustration of bonded interactions. (\subref{md:fig_pot}): schematic course of contributing potentials}
+	\label{md:figs}
+\end{figure}
+%
+%
+%
 \subsubsection{Non-bonded interactions}
-Non-bonded interactions are present between all atoms in the system and act pairwise. In MD Pauli repulsion, van der Waals (vdW) forces and electrostatic forces are taken into account. Because bonded interactions use effective parameters they are usually excluded from non-bonded interactions.\\
-\\
+Non-bonded interactions are present between all atoms in the system and act pairwise. In MD Pauli repulsion, van der Waals (vdW) forces and electrostatic forces are taken into account.
 The Lennard-Jones potential combines Pauli repulsion ($r^{-12}$ term) and the vdW force ($r^{-6}$ term).
 \begin{equation}
 V_\text{Lennard-Jones} = \sum_{\text{non-bonded pairs i,j}} 4 \epsilon\left(\left(\frac{\sigma}{r_{ij}}\right)^{12} - \left(\frac{\sigma}{r_{ij}}\right)^6\right)
 \end{equation}
-$\epsilon$ is related to the potential depth and $\sigma$ to the potential range.\\
+$\epsilon$ is related to the potential depth and $\sigma$ to the potential range (\autoref{md:fig_pot}).\\
 \\
 The Coulomb potential is given by
 \begin{equation}
@@ -59,107 +61,63 @@ V_\text{Coulomb} = \frac{q_1 q_2}{4 \pi \epsilon_0 \epsilon_r r}
 where $q_1$, $q_2$ are the (partial) charges of the interacting particles, $r$ their distance and $\epsilon_r$ the relative dielectric constant \autocite[p. 65-71]{gromacsManual}.\\
 \\
 In general non-bonded interactions act between all atoms in the system, which come along with a very large computational cost.\\
-The easiest solution is to use a cut-off radius $r_c$. Particles behind this radius are not taken into account. This can be implemented very efficiently with Verlet neighbour lists. For each particle a neighbour list is created, which contains all particles inside a second radius $r_v$ with $r_v > r_c$. For a force calculation only the distances to the particles, which are part of the list, have to be calculated. The lists are updated, if the maximal displacement in the system is larger than $r_v - r_c$. This method is suitable especially for Lennard-Jones potential, because of its rapid decay $r_c$ can be chosen very small \autocite[p. 144]{greenBook}.\\
-The electrostatic potential is proportional to $1/r$, that is why the use of a cut-off radius would lead to large jumps in the potential. Long range interactions have to be considered, which can be effectively done with Particle Mesh Ewald (PME) summation \autocite{pme}. Particle mesh methods in general split the electrostatic potential up into a short range and a long range part via a switching function. The short range part can be calculated with a small cut-off radius in real space. The long range part however is calculated by solving the Poisson equation of the actual charge distribution, for which a discrete grid (mesh) is used. In PME this grid is transformed to Fourier space, where the solution of the Poisson equation is a sum over the gridpoints. This requires of course periodic boundary conditions (see \autoref*{subsec:pbc}) \autocite[p. 246-251]{greenBook}.
+The easiest solution for this problem is to use a cut-off radius $r_c$. Particles beyond this radius are not taken into account. This can be implemented very efficiently with a Verlet neighbour lists. For each particle a neighbour list is created, which contains all particles inside a second radius $r_v$ with $r_v > r_c$. This reduces the number of distance calculations a lot. The lists are updated, if the maximal displacement in the system is larger than $r_v - r_c$.  The application of a cut-off radius is suitable especially for Lennard-Jones potential as it decays very rapidly and $r_c$ can be chosen very small \autocite[p. 144]{greenBook}.\\
+Because the electrostatic potential is proportional to $1/r$ the use of a cut-off radius would lead to large jumps in the potential. That is why long range interactions have to be considered, which can be effectively done with Particle Mesh Ewald (PME) summation \autocite{pme}. Particle mesh methods in general split the electrostatic potential up into a short range and a long range part via a switching function. The short range part can be calculated with a small cut-off radius in real space. The long range part however is calculated by solving the Poisson equation of the actual charge distribution, for which a discrete grid (mesh) is used. In contrast to other particle mesh methods, this grid is transformed to Fourier space in PME with FFT techniques. Here the solution of the Poisson equation is a sum over the gridpoints. Afterwards the potential can be back transformed into real space. The use of PME requires of course periodic boundary conditions, which are described in \autoref{subsec:pbc} \autocite[p. 246-251]{greenBook}.
 \subsubsection{External forces}
-In addition to bonded and non-bonded interactions external or artificial forces can be applied, such as pulling forces, restrains and constrains.\\
-\\
-With \gromacs{} it is possible to perform pulling forces onto groups of atoms in the system. In this thesis pulling was used to bias distances between groups. For this \gromacs{} provides an option to apply an umbrella potential to two groups which yields in a force, which is proportional to the deviation of the distance between the groups from a reference distance. The force can be applied on one or two spatial dimensions only or along a predefined vector and the reference distance can change during in time  \autocite[p. 154-159]{gromacsManual}.\\
-Restrains are artificial potentials applied to positions, distances, angles, dihedral angles or orientations of particle groups to conserve labile configurations or to take additional information from experimental data into account \autocite[p. 84f]{gromacsManual}.\\
-Constrains are set to keep properties, such as bond lengths constant. In order to do so, they get reset to the desired value after each time step \autocite[p. 44f]{gromacsManual}. % Lincs, shake?
+With \gromacs{} it is possible to perform pulling forces onto groups of atoms in the system. In this thesis pulling was used to bias distances between groups. For this \gromacs{} provides an option to apply an umbrella potential to two groups which yields in a force proportional to the deviation of the distance between the groups from a reference distance. The force can be applied on one or two spatial dimensions only or along a predefined vector and the reference distance can change during in time  \autocite[p. 154-159]{gromacsManual}.
 \subsection{Forcefields}
-The parameters for the potentials described above are provided by force fields. There is a wide range of force fields, which are optimized for different application fields. In this thesis tow different ones, CHARMM36 and Martini, are introduced.\\
+The parameters for the potentials described above are provided by force fields. There is a wide range of force fields, which are optimized for different application fields. In this thesis tow different ones, \charmm{} and \martini{}, are introduced.\\
 \\
-Force fields define specific atomtypes, which allow a mapping of atoms (particles in physical system) onto beads (particles used in the simulation). This mapping can take the environment of the particle (binding partners, solvents, nearby charges a.o.) into account, but can also neglect details by f.e. mapping several atoms to one bead (coarse-graining).\\
-Force fields not only define the atomtypes and their properties, but also all parameters for the calculation of the potential, especially force constants, equilibrium distances a.o. Therefore they define the physics of the system.
-\subsubsection{All-atom and the CHARMM36 force field}
-CHARMM (\textit{Chemistry at HARvard Macromolecular Mechanics}) is a MD engine, which uses its own force fields. They are bunched together as CHARMM force fields and are provided for other MD engines as well. The number of the force field corresponds to the version number of CHARMM, in which the force field was used first. The force field CHARMM36 \autocites{charmm36_protein}{charmm36_lipids} (C36) was published in 2010.\\
-\\
-In C36 all atoms are considered (all-atom force field). Parameters were mainly optimized to structural experimental data, such as nuclear magnetic resonance (NMR) or X-ray data, but also QM and semi empirical QM calculations were used (e.g. for dihedral angles of the sidechains of proteins \autocite{charmm36_protein} and partial charges of lipids \autocite{charmm36_lipids}).\\
+Force fields define specific atom types, which allow a mapping of atoms (particles in physical system) onto beads (particles used in the simulation). This mapping can take the environment of the particle (binding partners, solvents, nearby charges a.o.) into account, but can also neglect details by f.e. mapping several atoms to one bead (coarse-graining).\\
+Force fields do not only define the atom types and their properties, but also all parameters for the calculation of the potential, namely force constants, equilibrium distances a.o. Therefore forcefields define the physics of the system.
+\subsubsection{All-atom and the \charmm{} force field}
+\charmm{} \autocites{charmm36_protein}{charmm36_lipids} (C36) is part of the CHARMM (\textit{Chemistry at HARvard Macromolecular Mechanics}) MD engine and was published in 2010. In C36 all atoms are considered (all-atom force field). Parameters were mainly optimized to structural experimental data, such as nuclear magnetic resonance (NMR) or X-ray data, but also QM and semi empirical QM calculations were used (e.g. for dihedral angles of the sidechains of proteins \autocite{charmm36_protein} and partial charges of lipids \autocite{charmm36_lipids}).\\
 All simulations for optimizing have been done with a time step of 2$\si{\femto\second}$. Therefore very detailed dynamics are still included in the simulations.\\
 \\
-There are several models for water, which can be used with all-atom force fields. They differ mainly in intermolecular interactions of water atoms. For simulations in this thesis the TIPS3P water model was used. It is a modification of the TIP3P water model \autocite{tip3p} used in parametrisation of C36, which allows also Lennard-Jones-interactions on the hydrogens and not only on the oxygen \autocite{charmm36_protein}. % TODO: better citing?
-\subsubsection{Coarse graining and the Martini 2.2 force field}
+For all simulations the TIP3P water model \autocite{tip3p} was used, which was also used in the parametrisation of C36. Here each water molecule is modelled with three polar beads.
+\subsubsection{Coarse graining and the \martini{} force field}
 \label{subsub:coarsegraining}
-The Martini 2.2 \autocites{martini22_lipids}{martini22} force field was introduced in 2013 and is one of the most famous coarse graining force fields. It maps usually four heavy atoms onto a single bead (ring-like structures need a higher resolution), which implicates of course a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
+The \martini{} force field \autocites{martini}{martini22}{martini22_lipids} is one of the most famous coarse graining force fields. It maps usually four heavy atoms onto a single bead (\autoref{md:martinimapping}), which implicates of course a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
+%
+%
+%
+\begin{figure}
+	\centering
+	\includegraphics[width=.5\textwidth]{figures/introduction/fig_martini_mapping}
+	\nicecaption{\martini{} bead mapping}{\martini{} structure of \pip{}. Four heavy atoms are mapped to one \martini{} bead.}
+	\label{md:martinimapping}
+\end{figure}
+%
+%
+%
+The parametrisation of \martini{} is mainly based on reproducing free energies, i.e. partitioning free energies and dimerization free energies of amino acid side chain analogues. For lipids also thermodynamic properties, such as area per lipid, have been considered. The parameters were optimized with a time step of 20$\si{\femto\second}$ up to 30$\si{\femto\second}$ \autocites{martini22}{martini22_lipids}.\\
 \\
-The parametrisation in Martini is mainly based on fitting partitioning free energies of small molecules, such as amino acid side chain analogues, between a range of polar and non-polar solvents to results from all-atom simulations and experimental. For lipids also thermodynamic properties, such as area per lipid, have been considered. The parameters for membrane-protein interactions were optimized by fitting binding energies of small peptides and a membrane to experimental data and results from all-atom simulations data. In the simulations for optimization a time step of 20$\si{\femto\second}$ up to 30$\si{\femto\second}$ was used \autocites{martini22}{martini22_lipids}.\\
-\\
-Coarse graining brings a lot of side effects a long. First of all, the coarse graining is not unique, therefore important structural properties (e.g. the lipid tail length) are neglected. In proteins the simplifications also lead to problems, because the secondary structure become less stable in coarse grained models and has to be constrained by elastic networks (additional bonds between backbone beads) \autocite[p. 6812]{martini22_check}.\\
-Further more coarse grained beads have a larger size, which leads a.o. to a smoothing of the energy profile. Because smaller local minima in the energy profile, which would slow down the evolving of the system, are smoothed out, coarse graining speeds up the dynamics in the system. The speed up factor is not constant, but can be relatively good approximated by factor four (obtained in most diffusion simulations) \autocites[p. 6810]{martini22_check}[p. 7815]{martini}.\\
-\\
+There are several side effects of coarse graining. Due to the mapping of four atoms to one bead, different atomistic structures can end up in the same Martini structures, which can be problematic e.g. for lipid tails. Also the secondary structure of proteins is affected as it becomes less stable in coarse grained models. Therefore it has to be to be constrained with elastic networks (additional bonds between backbone beads) and can not change during the simulation \autocite[p. 6812]{martini22_check}.\\
+The decrease of degrees of freedom in the system also smooths the energy surface in coarse grained models. Because smaller local irregularities in the energy surface, which would slow down the evolving of the system, are smoothed out, coarse graining speeds up the dynamics in the system. The speed up factor is not constant, but can be relatively good approximated by factor $4$ (obtained in most diffusion simulations) \autocites[p. 6810]{martini22_check}[p. 7815]{martini}.\\
 Coarse graining also has an effect on the entropy and the temperature dependency of the system. In NpT ensembles the Gibbs free energy $G$ is given by
 \begin{equation}
 G = H - T S
 \end{equation}
-where $S$ is the entropy and $H$ the enthalpy. Due to a lower number of degrees of freedom in coarse grained systems the configurational entropy is reduced. Because Martini is tuned to free energy calculations, this implicates also a reduction of the enthalpy. Therefore a decomposition of $G$ might not be realistic \autocite[p. 6811]{martini22_check}.\\
+where $S$ is the entropy and $H$ the enthalpy. Due to a lower number of degrees of freedom in coarse grained systems the configurational entropy is reduced. Because \martini{} is tuned to free energy calculations, this implicates also a reduction of the enthalpy. The temperature dependency is therefore systematically biased \autocite{martini22_check}.\\ 
 \\
-In Martini solvent beads represent four water molecules. Unfortunately the Martini water has a freezing temperature of up to 300 $\si{\kelvin}$ and the freezing process is very sensitive to nucleation. To prevent this antifreeze beads were introduced, which have the same properties as the standard water beads except for a larger $\sigma$ for the Lennard-Jones potential. By changing around 10\% of the standard solvents to these antifreeze beads, the lattice conformation is disturbed and the freezing temperature is increased \autocite[p. 7815]{martini}.\\
-The treatment of water as uncharged beads also implies, that the water phase is not polarizable in Martini. This problem is addressed by assuming a uniform relative dielectric constant, but at water phase interfaces the electrostatic interactions are systematically wrong and the interaction strength of polar beads is underestimated. To overcome this a polarizable water (PW) model was introduced to Martini. PW consists of three beads with equal mass. There is one positively charged bead and one negatively charged, both are bound to the central neutral bead. The charged beads acting only electrostatical with other charged beads, but not intramolecular. To control the distribution of the dipole momentum the binding angle between the three beads is constrained. The central bead interacts via the Lennard-Jones potential \autocite{polarizableMartini}. However PW comes with a higher computational cost and is not as well tested as the standard water model.
+Consistently with the four to one mapping, solvent beads in \martini{} represent four water molecules. The \martini{} water has a freezing temperature of $\approx 300\,\si{\kelvin}$ and the freezing process in irreversible. Therefore antifreeze beads were introduced, which have a larger $\sigma_\text{LJ}$ regarding interactions to normal solvent beads. By inserting these antifreeze beads the lattice conformation is disturbed and the freezing temperature reduced \autocite{martini}.\\
+In contrast to water the solvent beads are not polarizable. For this reason electrostatic screening has to be treated implicitly, which is done by an relative dielectric constant $\epsilon_r = 15$. However, this approximation fails near to polar beads resulting in an underestimation of the interaction strength between polar beads \autocite{martini22_check}. % TODO: also hydration energies? 
+To overcome implicit screening a polarizable water model was introduced to \martini{}, which is denoted as PW in the following. PW consists of three beads, two of them carrying charges. This model enables orientational polarizability and decreases the freezing point as well. Nevertheless it comes with a higher computational cost \autocite{polarizableMartini}.\\
+\\
+As reviewed by \textcite{martini22_check} \martini{} have been already used to study protein-membrane interactions as well as protein oligomerization on membranes. Also changes in tertiary structure have been addressed using \martini{}.% TODO: smth like: therefore also in this thesis?
 \subsection{External constrains}
 \subsubsection{Periodic boundary conditions}
 \label{subsec:pbc}
 Because the simulation of an open system is not possible, boundary conditions have to be considered. Closed boundaries often lead to surface interaction artefacts and are therefore in most cases not suitable for MD simulation. That is why usually periodic boundary conditions (PBC) are used.\\
-To use PBC the shape of the simulation box has to have a space filling geometry (e.g. rectangular or rhombic dodecahedron). With periodic boundary conditions images of the simulation box are repeated in every direction. If a particle leaves the simulation box, its periodic image is coming in from the opposite. So the number of particles is kept constant while surface interactions are avoided.\\
-A particle interacts only with the nearest image of another particle, which means that particles near boundaries can interact with periodic images of other particles instead of the real particle. Nevertheless molecules can have long range interaction with their own periodic images, which leads to artefacts and has to be considered when choosing the systems size.\\
-It is generally thought, that PBC only have small or no effects on equilibrium properties or structures of fluids, but known problems are the absence of long wavelength fluctuations (e.g. in phase transitions) or the violation of angular momentum conversation \autocite[p. 141f]{greenBook}.
+To use PBC the shape of the simulation box has to have a space filling geometry (e.g. rectangular or rhombic dodecahedron). With periodic boundary conditions images of the simulation box are repeated in every direction. If a particle leaves the simulation box, its periodic image is coming in from the opposite. In that way the number of particles is kept constant while surface interactions are avoided.\\
+A particle interacts only with the nearest image of another particle, which means that particles near boundaries can interact with periodic images of other particles instead of the real particle. Nevertheless molecules can have long range interaction with their own periodic images, which leads to artefacts and has to be considered when choosing the size of the simulation box \autocite[p. 141f]{greenBook}.
+%It is generally thought, that PBC only have small or no effects on equilibrium properties or structures of fluids, but known problems are the absence of long wavelength fluctuations (e.g. in phase transitions) or the violation of angular momentum conversation .
 \subsubsection{Thermostats}
-Integration schemes in MD are designed to conserve the energy of a system. However in real biological systems not the energy but rather temperature is kept constant. This can be achieved with thermostats.
-\paragraph{Berendsen and Parinello-Bussi}
-The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. Weak coupling means, that the energy difference is not conducted in one rescaling, but over a given time scale $\tau_T$, which allows a specification of the coupling strength. As the rescaling of velocities transfer kinetic energy from internal degrees of freedom, such as vibrations, to translational and rotational kinetic energy of the center of mass of the system \autocite[p. 738]{velRescaleSucks}, this thermostat is not suitable for production runs. However deviations from $T_0$ decay exponential making this thermostat usefull for equilibration runs or non equilibrium MD simulations \autocite[p. 3689]{berendsen}.\\
-The Parrinello-Bussi  thermostat \autocite{parinelloBussi} extends the Berendsen thermostat by a stochastic term, which leads to a more accurate sampling of phase space. The advantages of the Berendsen thermostat are still in place \autocite[p. 31]{gromacsManual}.
-\paragraph{Nosé-Hoover thermostat}
-The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath, which is represented as a first order derivation in the equations of motion. The friction parameter varies in time and depends on the derivation of the temperature in the system from the given target temperature. For larger deviations Nosè-Hoover thermostat are unstable and lead to large temperature deviations. However the sampling of the phase space of the system is better than in Berendsen thermostats and for that reason Nosè-Hoover can be used for production runs of equilibrated systems \autocite[p. 32f]{gromacsManual}.\\
+Integration schemes in MD are designed to conserve the energy of a system. However in real biological systems not the energy but rather temperature is kept constant. This can be achieved with thermostats. For the simulations in this thesis the Berendsen thermostat \autocite{berendsen} (BT), the Parrinello-Bussi thermostat \autocite{parinelloBussi} (PBT) and the Nosè-Hoover (NHT) thermostat \autocites{nosehooverthermo}{nosehooverthermo2} were used. BT couples the system to a heat bath by rescaling the velocities of the particles, which results in an exponential decay of temperature deviations. The coupling strength is given by the time scale, over which the energy is conducted. The rescaling involves a transfer of kinetic energy from internal degrees of freedom to translational and rotational kinetic energy of the systems COM \autocite{velRescaleSucks}. In order to prevent this transfer PBT extends BT by a stochastic term. Both BT and PBT are usefull for equilibration runs or non equilibrium MD simulations as they are stable upon large deviations \autocites{berendsen}[p. 31]{gromacsManual}.\\%TODO: better citing
+In comparism NHT extends the Hamiltonian of the system by a friction term representing a heat bath. The friction parameter follow a differential equation depending on the temperature deviation. This ansatz samples the phase space more accurately making NHT suitable for production runs. However, for large deviations NHT gets unstable \autocite[p. 32f]{gromacsManual}.\\
 \\
 Often groups are coupled to independent thermostats. This is helpful, because the heat exchange between f.e. proteins and solvents is often not correct. Therefore proteins would cool down and the solvent would heat up \autocite[p. 34]{gromacsManual}.
 \subsubsection{Barostats}
-In biological systems often not the volume but the pressure is constant, which can be achieved in MD with different barostats.
-\paragraph{Berendsen barostat}
-Analogously to the Berendsen thermostat the Berendsen barostat \autocite{berendsen} couples the systems pressure weakly to an external pressure $P_0$ by rescaling the positions of the particles. Similar to the Berendsen thermostat this barostat does not sample the whole phase space and should therefore only be used in equilibration runs and non-equilibrium MD simulations \autocite[p. 36]{gromacsManual}.
-\paragraph{Parinello-Rahman barostat}
-In the Parinello-Rahman barostat \autocites{parinelloBarostat}{parinelloBarostat2} the position vectors of the particles are transformed by a matrix $\underline{M}$. $\underline{M}$ depends on the current pressure, the target pressure and the volume. The Parinello-Rahman barostat samples the full phase space and can be therefore used in production runs. Large deviations from the desired pressure however lead to oscillations in the box, therefore it should not be used for equilibration runs \autocite[p. 36]{gromacsManual}.\\
+In biological systems often not the volume but the pressure is constant, which can be achieved in MD with different barostats. For equilibration runs the Berendsen barostat \autocite{berendsen} was used, which couples the system, analogously to the BT, to a external pressure by rescaling the positions of the particles \autocite[p. 36]{gromacsManual}. For production runs the Parinello-Rahman barostat \autocites{parinelloBarostat}{parinelloBarostat2} was used, because it samples the phase space more accurately. This barostat allows also a rotation of the position vectors. The appropriate matrix follows a differential equation depending upon the current deviation of the pressure from the external pressure. However, large deviations lead to oscillations in the box \autocite[p. 36]{gromacsManual}.\\
 \\
 \gromacs{} provides the possibility to couple the z-direction independently from the x- and y-direction, which is called semiisotropic pressure coupling. This feature is useful for membrane and pulling simulations, because the dynamics differ a lot between these axes.
-
-
-
-%For the thermostats used in this thesis some characteristics are outlined below.
-%\paragraph{Berendsen thermostat}
-%The Berendsen thermostat \autocite{berendsen} couples the system weakly to a heat bath with temperature $T_0$ by scaling the velocities of the particles. The temperature $T$, to which the system is set to, is given by
-%\begin{equation}
-%\label{eq:berendsen_time_evolving}
-%\frac{\diff T}{\diff t} = \frac{T_0 - T}{\tau_T}
-%\end{equation}
-%Therefore an exponential relaxation can be observed. Weak coupling means, that the energy difference is not conducted in one rescaling, but over a given time scale $\tau_T$, which allows a specification of the coupling strength.\\
-%It has been shown, that rescaling of velocities transfer kinetic energy from internal degrees of freedom, such as vibrations, to translational and rotational kinetic energy of the center of mass of the system \autocite[p. 738]{velRescaleSucks}, which results in a wrong sampling of phase space. Therefore this thermostat is not suitable for production runs. Due to the exponential decay it adjusts quit fast, is stable against large deviations from the desired temperature and prevents oscillations. For these reasons it is often used in equilibration runs or non-equilibrium MD simulations \autocite[p. 3689]{berendsen}.
-%\paragraph{Parinello-Bussi thermostat}
-%The Parrinello-Bussi  thermostat \autocite{parinelloBussi} extends the Berendsen thermostat by a stochastic term, which leads to a more accurate sampling of phase space. The advantages of the Berendsen thermostat are still in place \autocite[p. 31]{gromacsManual}.
-%\paragraph{Nosé-Hoover thermostat}
-%The Nosé-Hoover thermostat \autocites{nosehooverthermo}{nosehooverthermo2} extends the Hamiltonian of the system by a friction representing a heat bath. The equations of motion are modified to
-%\begin{equation}
-%\frac{\diff^2 \vec{r}_i}{\diff t^2} = \frac{\vec{F}_i}{m_i} - \frac{p_\xi}{Q(T_0, \tau_T)}\frac{\diff \vec{r}_i}{\diff t}
-%\end{equation}
-%Here $\xi$ represents the friction parameter with momentum $p_\xi$ and a mass parameter $Q(T_0, \tau_T)$, which defines the coupling strength. $Q$ depends on the target temperature $T_0$ and a coupling time scale $\tau_T$. The evolution of $\xi$ is defined as
-%\begin{equation}
-%\frac{\diff p_\xi}{\diff t} = T - T_0
-%\end{equation}
-%This leads to oscillations between the system and the heat bath with the period $\tau_T$. The relaxation is about five times slower as by an exponential relaxation (see Berendsen or Parrinello–Bussi thermostats) with the same $\tau_T$ \autocite[p. 32f]{gromacsManual}.\\
-%\\
-%Often groups are coupled to independent thermostats. This is helpful, because the heat exchange between f.e. proteins and solvents is often not correct. Therefore proteins would cool down and the solvent would heat up \autocite[p. 34]{gromacsManual}.
-%\subsubsection{Barostats}
-%In biological systems often not the volume but the pressure is constant. This refers to the isobaric isothermal ensemble (NpT). Below the characteristics of the barostats used in this thesis are outlined.
-%\paragraph{Berendsen barostat}
-%Analogously to the Berendsen thermostat the Berendsen barostat \autocite{berendsen} couples the systems pressure $P$ weakly to an external pressure $P_0$ by rescaling the positions of the particles.\\
-%\begin{equation}
-%\label{eq:berendsen_pressure_time_evolving}
-%\frac{\diff P}{\diff t} = \frac{P_0 - T}{\tau_P}
-%\end{equation}
-%$\tau_P$ is the time scale of coupling. Similar to the Berendsen thermostat this barostat does not sample the NpT ensemble and should therefore only be used in equilibration runs and non-equilibrium MD simulations \autocite[p. 36]{gromacsManual}.
-%\paragraph{Parinello-Rahman barostat}
-%In the Parinello-Rahman barostat \autocites{parinelloBarostat}{parinelloBarostat2} the equations of motion of the particles change to
-%\begin{equation}
-%\frac{\diff^2 \vec{r}_i}{\diff t^2} = \frac{\vec{F}_i}{m_i} - \underline{M} \frac{\diff \vec{r}_i}{\diff t}
-%\end{equation}
-%where $\underline{M}$ is a matrix is given by a differential equation depending on the current pressure, the target pressure, the volume and a time scale. The Parinello-Rahman barostat samples the full phase space and can be therefore used in production runs. Large deviations from the desired pressure however lead to oscillations in the box, therefore it should not be used for equilibration runs \autocite[p. 36]{gromacsManual}.\\
-%\\
-%\gromacs{} provides the possibility to couple the z-direction independently from the x- and y-direction, which is called semiisotropic pressure coupling. This feature is useful for membrane and pulling simulations, because the dynamics differ a lot between these axes.
