@@ -36,7 +36,7 @@ oneside, % oneside / twoside
 
 \newcommand{\pope}{POPE}
 \newcommand{\popc}{POPC}
-\newcommand{\forceunit}{\si{\kilo\joule/\mole/\nano\metre}}
+\newcommand{\forceunit}{\si{\pico\newton}}
 
 % MyFig: \myFig[width]{source}{label}{figure title}{text}
 \newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}~#2}}}
@@ -62,6 +62,8 @@ oneside, % oneside / twoside
 \label{sec:fak_sol}
 \input{results/freeFAK}
 \section{FAK binding to \pip{}}
+In this section the impacts on the conformation due to a binding to a \pip{} containing membrane are investigated and compared to results from \autoref{sec:fak_sol}.\\
+First of all measurements of the free energy profile of the basic patch bound to a \pip{} are presented. Afterwards simulations of setup 4 are considered. Because a stabilizing force was applied to the FAK molecules in these simulations, the impacts of the force are estimated before conformational changes are investigated.
 \input{results/umbrella}
 \input{results/forceAnalysis}
 \input{results/membrane}
