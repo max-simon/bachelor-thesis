@@ -1,11 +1,13 @@
 \subsection{Conformational changes}
-In this section the conformation of FAK bound to \pip{} containing membrane (FAK-MEM) is compared to the observations from \autoref{sec:fak_sol} (FAK-SOL). For this purpose the simulation data of setup 4 was used with the condition, that other FAK molecules are more than $2\,\si{\nano\metre}$ away (0 neighbours). The contact map is based on the same dataset, which was used in \autoref{forceana:intramolec}.\\
+In this section the conformation of FAK bound to a \pip{} containing membrane (FAK-MEM) is compared to the observations of FAK-SOL. To this end FAK structures of setup 4 were used with the condition that the FAK molecules have no neighbours. The contact map is based on the same dataset, which was used for \autoref{force:contactmap}.\\
 \\
-Analogously to \autoref{sec:fak_sol} the distribution of the COM distances is presented in \autoref{mem:comdist} as an hexagonal binning plot. Again two spots can be identified, which show a large number of encounters. However these spots are much more smeared out than obtained in FAK-SOL. In addition larger values of $d_\text{F2-C}$ disappear. This is expected, as the kinase is also bound to the membrane, resulting in less deviations in the lower part of the protein. Also the contact area of the interface, which can be found in \autoref{mem:contactarea}, indicates a closure of the protein. \\
+Regarding $d_\text{F2-C}$ a closure of F2 and the C-lobe can be obtained. Large values up to $3.8\,\si{\nano\metre}$, such as in spot 1 of FAK-SOL, disappear. Since both, FERM domain and kinase, have a docking site for \pip{} this stabilisation is expected. In contrast the distribution of $d_\text{F2-C}$ induces that a partial opening of the interface between F1 and the N-lobe gets more preferred. As explained in \autoref{sec:fak_sol} the linker is located in this region for FAK-SOL.\\
+The closure of F2 and the C-lobe influences the contact area as well. In comparison to FAK-SOL, it is increased to $30.8\,\si{\nano\metre}^2$.\\
 \\
-In contrast the linker region containing the autophosphorylation site \acid{Y}{397} seems to be released from the two domains. On the one hand the mean distance to residues of the domain increases by up to $0.67\,\si{\nano\metre}$ (\acid{S}{74} and \acid{T}{394}), on the other hand the RMSF values are increasing as well, which indicates a more flexible region.\\
+A more detailed insight can be obtained from the contact map. For an easier comparison, the difference between the contact map of FAK-SOL and FAK-MEM is shown in \autoref{mem:contactmap}. At the interface of F2 and the C-lobe (area 1) the residue distances get closer, which is consistent with the decreasing $d_\text{F2-C}$. In area 2 both, increasing and decreasing distances can be found. Regarding the 3D structure one can see that the residues of the FERM domain, which get closer to the kinase, are located nearer to F2 than those getting farther away. In addition all residues of the FERM domain getting farther away from residues \acid{S}{574} to \acid{A}{579} of the kinase, which also include the activity regulating residues \acid{Y}{576} and \acid{Y}{577}.\\
+Also in the linker region conformational changes can be observed. Area 3 indicates that the ball structure of the \acid{Y}{397} containing ball structure observed in FAK-SOL disappears. As shown in \autoref{3D} the residues unravel and cling to the FERM domain. By this the autophosphorylation site \acid{Y}{397} gets more exposed.\\
 \\
-The obtained results are consistent with previous observations. \pip does not induce the dissociation of the FERM domain and the kinase, but it enhances autophosphorylation. Later can not be simulated in MD simulation, but the changes in the linker region support this assumption.
+As suggested by experimental results the FERM domain does not dissociate from the kinase because of binding to \pip{}. However this binding leads to conformational changes resulting in a partial opening of the FERM kinase interface and the exposure of the autophosphorylation site \acid{Y}{397} \autocites{pap001}{pap003}.
 %
 %
 %
@@ -21,4 +23,3 @@ The obtained results are consistent with previous observations. \pip does not in
 %
 %
 %
-% TODO: show contact map?
