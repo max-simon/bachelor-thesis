@@ -36,6 +36,7 @@ oneside, % oneside / twoside
 
 \newcommand{\pope}{POPE}
 \newcommand{\popc}{POPC}
+\newcommand{\forceunit}{\si{\kilo\joule/\mole^{-1}\nano\metre^{-2}}}
 \newcommand{\forceunit}{\si{\pico\newton}}
 
 % MyFig: \myFig[width]{source}{label}{figure title}{text}
@@ -43,18 +44,18 @@ oneside, % oneside / twoside
 
 
 \begin{document}
-	
-\chapter{Introduction}
-%\input{introduction/fak}
-\chapter{Motivation}
-%\input{introduction/motivation}
-\chapter{Methods}
-\section{Molecular dynamic simulation}
-%\input{introduction/md}
-\section{Free energy calculations}
-%\input{introduction/fec}
-\section{Contact Analysis}
-%\input{introduction/characterisation}
+% chapter introduction
+\include{introduction/fak}
+%
+%
+% chapter motivation
+\include{introduction/motivation}
+%
+%
+% chapter methods
+\include{introduction/methods}
+%
+%
 \chapter{Setup}
 %\input{introduction/setup}
 \chapter{Results}

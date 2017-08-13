@@ -6,7 +6,7 @@ In the microcanonical ensemble (N, V and E constant) the probability that a syst
 \label{eq:partfunc}
 \Omega(N, V, E) = C_0 \int \delta\left(\mathcal{H}(\mathbf{q}, \mathbf{p}) - E\right) \diff \mathbf{q} \diff \mathbf{p}
 \end{equation}
-where $\mathcal{H}(\mathbf{q}, \mathbf{p}) = U(\mathbf{q}) + K(\mathbf{p})$ is the Hamiltonian and $C_0$ a proportional constant, in which the smallest phase space volume and the indistinguishability of particles have to be taken into account \autocite[16]{freeEnergyBook}.\\
+where $\mathcal{H}(\mathbf{q}, \mathbf{p}) = U(\mathbf{q}) + K(\mathbf{p})$ is the Hamiltonian and $C_0$ a proportionality constant, in which the smallest phase space volume and the indistinguishability of particles have to be taken into account \autocite[16]{freeEnergyBook}.\\
 \\
 In the canonical ensemble however the temperature $T$ is kept constant instead of the energy. Therefore the partition function has to include all possible energies weighted with their probability given by the Boltzmann factor. Below $\frac{1}{k_B T}$ is shortened with $\beta$.
 \begin{align}
@@ -17,7 +17,7 @@ The configurational integral is defined as
 \begin{equation}
 Z(N, V, T) = \int \exp\left(-{\beta U}(\mathbf{q})\right) \diff \mathbf{q}
 \end{equation}
-It is important to see, that $\mathcal{H}$ only depends on the quadrature of $\mathbf{p}$, so the integral over the momenta can always be solved analytical by turning it into a Gauss integral. This implies, that for two related systems, in which the particle masses are the same, the integral over $\mathbf{p}$ does not change and therefore
+It is important to see, that $\mathcal{H}$ only depends $\mathbf{p}^2$, so the integral over the momenta can always be solved analytically by turning it into a Gauss integral. This implies, that for two related systems, in which the particle masses are the same, the integral over $\mathbf{p}$ does not change and therefore
 \begin{equation}
 \frac{Q_2}{Q_1} = \frac{Z_2}{Z_1}
 \end{equation}
@@ -38,10 +38,10 @@ The free energy of a system as a function of a parameter $\xi$ is given as
 \label{eq:free_energy_from_rho}
 A(\xi) = - \beta \ln\left(\rho(\xi)\right)
 \end{equation}
-$\rho(\xi)$ is the probability distribution of $\xi$ and can be easily obtained in MD simulation by counting the number of the appropriate states. Therefore it is also referred as histogram. $\xi$ is called reaction coordinate and could be e.g. the distance between two molecules.\\
-However in reality $A(\xi)$ can have big barriers and because the potential energy $U$ is sharply distributed around its mean in $NVT$ simulations, $\rho(\xi)$ can hardly be sampled during a finite simulation.\\
+$\rho(\xi)$ is the probability distribution of $\xi$ and can be easily obtained in MD simulation by counting the number of the appropriate states. Therefore it is also referred to as histogram. $\xi$ is called reaction coordinate and could be e.g. the distance between two molecules.\\
+However in reality $A(\xi)$ can have big barriers and because the potential energy $U$ is sharply distributed around its mean in $NVT$ simulations, $\rho(\xi)$ can hardly be sampled with a realistic computational cost.\\
 \\
-One possibility to overcome this sampling problem is umbrella sampling \autocite{originalUmbrellaSampling}. In this approach the path $\xi$ is split up into distinct windows $[\xi_0, \xi_n]$. To each window $i$ a biasing potential $\hat{U}_i(\xi)$ can be applied to ensure a well sampling of $\xi$ around $\xi_i$. This changes the potential energy to
+One way to overcome this sampling problem is umbrella sampling \autocite{originalUmbrellaSampling}. In this approach the path $\xi$ is split up into distinct windows $[\xi_0, \xi_n]$. To each window $i$ a biasing potential $\hat{U}_i(\xi)$ can be applied to ensure a well sampling of $\xi$ around $\xi_i$. This changes the potential energy to
 \begin{equation}
 U_{B, i}(\mathbf{q}) = U(\mathbf{q}) + \hat{U}_i(\xi(\mathbf{q})))
 \end{equation}
