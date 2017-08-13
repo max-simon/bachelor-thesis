@@ -39,33 +39,35 @@ oneside, % oneside / twoside
 \newcommand{\forceunit}{\si{\pico\newton}}
 
 % MyFig: \myFig[width]{source}{label}{figure title}{text}
-\newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}~#2}}}
+\newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}\\#2}}}
 
 
 \begin{document}
 	
 \chapter{Introduction}
-\input{introduction/fak}
+%\input{introduction/fak}
 \chapter{Motivation}
-\input{introduction/motivation}
+%\input{introduction/motivation}
 \chapter{Methods}
 \section{Molecular dynamic simulation}
-\input{introduction/md}
+%\input{introduction/md}
 \section{Free energy calculations}
-\input{introduction/fec}
+%\input{introduction/fec}
 \section{Contact Analysis}
-\input{introduction/characterisation}
+%\input{introduction/characterisation}
 \chapter{Setup}
-\input{introduction/setup}
+%\input{introduction/setup}
 \chapter{Results}
 \section{FAK in solution}
-\input{results/freeFAK}
+%\input{results/freeFAK}
 \section{FAK binding to \pip{}}
-In this section the impacts on the conformation due to a binding to a \pip{} containing membrane are investigated and compared to results from \autoref{sec:fak_sol}.\\
-First of all measurements of the free energy profile of the basic patch bound to a \pip{} are presented. Afterwards simulations of setup 4 are considered. Because a stabilizing force was applied to the FAK molecules in these simulations, the impacts of the force are estimated before conformational changes are investigated.
-\input{results/umbrella}
-\input{results/forceAnalysis}
-\input{results/membrane}
+%In this section the impacts on the conformation due to a binding to a \pip{} containing membrane are investigated and compared to results from \autoref{sec:fak_sol}.\\
+%First of all measurements of the free energy profile of the basic patch bound to a \pip{} are presented. Afterwards simulations of setup 4 are considered. Because a stabilizing force was applied to the FAK molecules in these simulations, the impacts of the force are estimated before conformational changes are investigated.
+%\input{results/umbrella}
+%\input{results/forceAnalysis}
+%\input{results/membrane}
 \section{Multiple FAK interactions}
-\input{results/multiProtInteractions}
+%\input{results/multiProtInteractions}
+\chapter{Conclusion}
+\input{results/conclusion}
 \end{document}
