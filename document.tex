@@ -33,42 +33,39 @@ oneside, % oneside / twoside
 \newcommand{\gromacs}{GROMACS}
 \newcommand{\martini}{MARTINI}
 \newcommand{\charmm}{CHARMM36}
+\newcommand{\conan}{ConAn}
 
 \newcommand{\pope}{POPE}
 \newcommand{\popc}{POPC}
 \newcommand{\forceunit}{\si{\kilo\joule/\mole^{-1}\nano\metre^{-2}}}
-\newcommand{\forceunit}{\si{\pico\newton}}
 
 % MyFig: \myFig[width]{source}{label}{figure title}{text}
 \newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}\\#2}}}
 
 
+%\includeonly{results}
+
 \begin{document}
 % chapter introduction
-\include{introduction/fak}
+\include{introduction}
 %
 %
 % chapter motivation
-\include{introduction/motivation}
+\include{motivation}
 %
 %
 % chapter methods
-\include{introduction/methods}
+\include{methods}
 %
 %
-\chapter{Setup}
-%\input{introduction/setup}
-\chapter{Results}
-\section{FAK in solution}
-%\input{results/freeFAK}
-\section{FAK binding to \pip{}}
-%In this section the impacts on the conformation due to a binding to a \pip{} containing membrane are investigated and compared to results from \autoref{sec:fak_sol}.\\
-%First of all measurements of the free energy profile of the basic patch bound to a \pip{} are presented. Afterwards simulations of setup 4 are considered. Because a stabilizing force was applied to the FAK molecules in these simulations, the impacts of the force are estimated before conformational changes are investigated.
-%\input{results/umbrella}
-%\input{results/forceAnalysis}
-%\input{results/membrane}
-\section{Multiple FAK interactions}
-%\input{results/multiProtInteractions}
-\chapter{Conclusion}
-\input{results/conclusion}
+% chapter setup
+\include{setup}
+%
+%
+% chapter results
+\include{results}
+%
+%
+% chapter conclusion
+\input{conclusion}
 \end{document}
