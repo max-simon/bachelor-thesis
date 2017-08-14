@@ -20,7 +20,7 @@ oneside, % oneside / twoside
 % Mathe
 \usepackage{amsmath, amssymb, booktabs, hyperref, subcaption, siunitx}
 
-\bibliography{../Paper}
+\bibliography{Paper}
 
 % Code
 \usepackage{listings}
@@ -37,13 +37,13 @@ oneside, % oneside / twoside
 
 \newcommand{\pope}{POPE}
 \newcommand{\popc}{POPC}
-\newcommand{\forceunit}{\si{\kilo\joule/\mole^{-1}\nano\metre^{-2}}}
+\newcommand{\forceunit}{\si{\kilo\joule\mole^{-1}\nano\metre^{-2}}}
 
 % MyFig: \myFig[width]{source}{label}{figure title}{text}
 \newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}\\#2}}}
 
 
-%\includeonly{results}
+\includeonly{methods}
 
 \begin{document}
 % chapter introduction
@@ -67,5 +67,5 @@ oneside, % oneside / twoside
 %
 %
 % chapter conclusion
-\input{conclusion}
+\include{conclusion}
 \end{document}
