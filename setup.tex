@@ -6,6 +6,18 @@ As explained in \autoref{subsub:coarsegraining} the secondary structure of prote
 \label{setup:setup1}
 Setup 1 refers to a \martini{} simulation of a single FAK molecule in waterbox. NaCl ions were added to neutralize the charge.\\
 After a short equilibration the system was simulated for $20\,\si{\micro\second}$ at a temperature of $300\,\si{\kelvin}$. We used the default parameters of the \martini{} forcefield as input parameters.
+%
+%
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm]{figures/setup/setup_free}
+	\nicecaption{Setup 1 - FAK in solution}{The \martini{} structure of setup 1. The simulation box contains one FAK molecule (1486 beads) in water (~50 000 beads) with ions (23 sodium beads and 20 chlorine beads). The box dimensions are $18.8\,\si{\nano\metre}$ x $18.8\,\si{\nano\metre}$ x $18.8\,\si{\nano\metre}$}
+	\label{setup:setup1_pic}
+\end{figure}
+%
+%
+%
 \section{Setup 2 - Free energy of basic patch}
 \label{setup:setup2}
 For this setup only a part of F2 (residues 107 to 219, referred as F2 lobe in the following) was used. The lobe contains the basic patch and has a net charge of -5. Therefore no additional ions were needed.\\
@@ -13,9 +25,45 @@ We placed the lobe as a \charmm{} structure above a single \pip{} embedded into 
 The starting configurations was transferred to a \martini{} structure (with both, standard water model and PW) with provided transformation tools \autocite{backward.py}. Afterwards the elastic network was applied. Analogously to the simulation in \charmm{}, we retrieved starting configurations for the umbrella windows and simulated them for five independent copies. The simulation time for one umbrella window was increased to $10\,\si{\nano\second}$.\\
 The presented results are based on a total simulation time of $3.88\,\si{\micro\second}$ for C36, $6.33\,\si{\micro\second}$ for \martini{}, $5.64\,\si{\micro\second}$ for \martini{} with PW. The temperature in the simulations was kept at $300\,\si{\kelvin}$. For all three force fields the default parameters were used.
 % C36: 1=180, 4.2=135, 5=102, 5.2=102, 6=127, Mart: 1=134, 2=126, 3=130, 4=113, 5=130, MartPol: alle=113
+%
+%
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm]{figures/setup/setup_umbrella}
+	\nicecaption{Setup 2 - Free energy of basic patch}{\charmm{} structure of setup 2. The simulation box comprises the lobe (1936 atoms), one \pip{} (143 atoms) embedded in a \pope{} membrane (509 lipids, 63625 atoms) and water (63199 molecules) which corresponds to 255301 atoms in total. The corresponding \martini{} structure contains 269 beads for the lobe, 6125 beads for the membrane and 16246 water beads. The box dimensions are $14.0\,\si{\nano\metre}$ x $9.0\,\si{\nano\metre}$ x $20.0\,\si{\nano\metre}$.}
+	\label{setup:setup2_pic}
+\end{figure}
+%
+%
+%
 \section{Setup 3 - FAK on a \pip{} membrane}
 \label{setup:setup3}
 Setup 3 is a \martini{} simulation adopted from \textcite{sara} (\autoref{tobeadded}). It contains a single FAK molecule which was placed on a phosphatidylcholine (\popc{}) and \pip{} membrane (\pip{} concentration $15\%$). NaCl were added to neutralize the system. In contrast to \textcite{sara}, we applied the stabilizing force explained in \autoref{motivation} to the protein.\\
 Five independent copies were simulated for $10\,\si{\micro\second}$ each. The temperature was kept at $300\si{\kelvin}$ and the default parameters of \martini{} were used.
+%
+%
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm]{figures/setup/setup_gen}
+	\nicecaption{Setup 3 - FAK on a \pip{} membrane}{DESCRIPTION NEEDED.}
+	\label{setup:setup3_pic}
+\end{figure}
+%
+%
+%
 \section{Setup 4 - FAK cluster}
 From each copy in setup 3, we cut out five frames. All these 25 frames were arranged on a {5x5} grid (\autoref{tobeadded}). Each of the 25 proteins was stabilized with the external force independently. After a short equilibration the system was simulated for $9\,\si{\micro\second}$. We set up 25 different copies, regarding to the arrangement of the frames, resulting in a total simulation time of $45\,\si{\micro\second}$. The temperature was kept at $300\,\si{\kelvin}$ and the default parameters of \martini{} were used.
+%
+%
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm]{figures/setup/setup_cluster}
+	\nicecaption{Setup 4 - FAK cluster}{DESCRIPTION NEEDED.}
+	\label{setup:setup4_pic}
+\end{figure}
+%
+%
+%

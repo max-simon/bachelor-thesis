@@ -5,8 +5,8 @@ In MD, atoms are modelled as solid beads, which comprise the nucleus as well as 
 Newton's equation of motion can be turned into two first order differential equations:
 \begin{align}
 	\label{eq:eq_of_mot_first_order}
-	\frac{\diff \vec{r}_i}{\diff t} = \vec{v}_i \\
-	m_i \frac{\diff \vec{v}_i}{\diff t} = \vec{F}_{i},
+	\frac{\diff \vec{r}_i}{\diff t} &= \vec{v}_i \\
+	m_i \frac{\diff \vec{v}_i}{\diff t} &= \vec{F}_{i},
 \end{align}
 which can be integrated numerically with e.g. Leapfrog- or Verlet integration scheme. Both are time reversible and symplectic, which ensures a small long-term error in energy conservation \autocite[p. 72-74]{UnderstandingMD}. The force acting on particle $i$ is given by the gradient of the potential $V$ at its position. In MD, bonded and non-bonded interactions contribute to this potential, but also external forces can be applied:
 \begin{align}
