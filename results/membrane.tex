@@ -1,12 +1,11 @@
-In this section the conformation of FAK bound to a \pip{} containing membrane (FAK-MEM) is compared to the observations of FAK-SOL. To this end FAK structures of setup 4 were used with the condition that the FAK molecules have no neighbours. The contact map is based on the same dataset, which was used for \autoref{force:contactmap}.\\
+In this section, the conformation of FAK bound to a \pip{} containing membrane (FAK-MEM) is compared to the observations of FAK-SOL. To this end, FAK structures of setup 4 were used with the condition that the FAK molecules have no neighbours. The contact map is based on the same dataset which was used for \autoref{force:contactmap}.\\
 \\
-Regarding $d_\text{F2-C}$ a closure of F2 and the C-lobe can be obtained. Large values up to $3.8\,\si{\nano\metre}$, such as in spot 1 of FAK-SOL, disappear (\autoref{mem:comdist}). Since both, FERM domain and kinase, have a docking site for \pip{} which binds them to the membrane, this stabilisation is reasonable. In contrast the distribution of $d_\text{F2-C}$ induces that a partial opening of the interface between F1 and the N-lobe gets more preferred. As explained in \autoref{sec:fak_sol} the linker is located in this region for FAK-SOL.\\
-The closure of F2 and the C-lobe influences the contact area as well. In comparison to FAK-SOL, it is increased to $30.8\,\si{\nano\metre}^2$ (\autoref{mem:contactarea}).\\
+The distribution of $d_\text{F2-C}$ shown in \autoref{mem:comdist} lacks the peak observed for FAK-SOL at $3.8\,\si{\nano\metre}$ which has been associated with spot 1. Also the distribution of $d_\text{F1-N}$ shows a distinct peak at values associated to spot 2 observed in FAK-SOL ($4.0\,\si{\nano\metre}$). This induces that the tilting of the kinase domain is suppressed in presence of the membrane which is reasonable since both, FERM domain and kinase have a docking site for \pip{}. However, there is a significant increase in the contact area (\autoref{mem:contactarea}) to $30.8\,\si{\nano\metre}^2$. Therefore, we analysed the FERM-kinase interface in order to get a more detailed insight in the conformational change.\\
 \\
-A more detailed insight can be obtained from the contact map. For an easier comparison, the difference between the contact map of FAK-SOL and FAK-MEM is shown in \autoref{mem:contact}. At the interface of F2 and the C-lobe (area 1) the residue distances get closer, which is consistent with the decreasing $d_\text{F2-C}$. In area 2 both, increasing and decreasing distances can be found. Regarding the 3D structure one can see that the residues of the FERM domain, which get closer to the kinase, are located nearer to F2 than those getting farther away. In addition all residues of the FERM domain getting farther away from residues \acid{S}{574} to \acid{A}{579} of the kinase, which also include the activity regulating residues \acid{Y}{576} and \acid{Y}{577}.\\
-Also in the linker region conformational changes can be observed. Area 3 indicates that the ball structure of the \acid{Y}{397} containing ball structure observed in FAK-SOL disappears. As shown in \autoref{3D} the residues unravel and cling to the FERM domain. By this the autophosphorylation site \acid{Y}{397} gets more exposed.\\
+The contact map in \autoref{mem:contact} shows the difference to the contact map obtained for FAK-SOL. At the interface of F2 and the C-lobe (area 1) the residue distances get closer. In area 2 both, increasing and decreasing distances can be found. Regarding the 3D structure (\autoref{mem:3d}) one can see that although the upper part of the interface (contacts between \acid{P}{49} to \acid{S}{54} and the kinase) gets closer, the region below (contacts between \acid{E}{44} to \acid{E}{48} and the kinase) gets farther away. This induces a spreading of the interface at the activation loop including the activity regulating residues \acid{Y}{576} and \acid{Y}{577}.\\
+Also in the linker region conformational changes can be observed. Area 3 indicates that the ball structure of the \acid{Y}{397} containing ball structure observed in FAK-SOL disappears. As shown in \autoref{mem:3d} the linker is pulled back to the FERM domain which results in an exposed position of the autophosphorylation site \acid{Y}{397}.\\
 \\
-As suggested by experimental results the FERM domain does not dissociate from the kinase because of binding to \pip{}. However this binding leads to conformational changes resulting in a partial opening of the FERM kinase interface and the exposure of the autophosphorylation site \acid{Y}{397} \autocites{pap001}{pap003}.
+As suggested by findings of \textcite{pap001} and \textcite{pap003} the FERM domain does not dissociate from the kinase because of binding to \pip{}. However this binding leads to conformational changes resulting in a partial opening of the FERM kinase interface and the exposure of the autophosphorylation site \acid{Y}{397}.
 %
 %
 %
@@ -28,8 +27,20 @@ As suggested by experimental results the FERM domain does not dissociate from th
 \begin{figure}
 	\centering
 	\includegraphics[width=.8\textwidth]{figures/results/contactmap_diff_to_free}
-	\nicecaption{Difference contact map of FAK-MEM}{The contact map shows the difference FAK-MEM - FAK-SOL in the distances.}
+	\nicecaption{Contact map of FAK-MEM}{The contact map shows the difference FAK-MEM - FAK-SOL of the inter-residue distances.}
 	\label{mem:contact}
+\end{figure}
+%
+%
+%
+%
+%
+%
+\begin{figure}
+	\centering
+	\includegraphics[height=4cm]{figures/results/fak_mem}
+	\nicecaption{3D structure of FAK-MEM}{The 3D structure shows the FERM domain (blue), the kinase (red) and the linker (black, transparent). The molecule is located on the membrane (grey). The autophosphorylation site \acid{Y}{397} (green) is exposed. Residues around \acid{S}{47} (magenta) gets farther away from the kinase while residues around \acid{W}{52} (yellow) gets closer.}
+	\label{mem:3d}
 \end{figure}
 %
 %

@@ -348,9 +348,9 @@
 
   \entry{fakdimers}{article}{}
     \name{author}{13}{}{%
-      {{hash=BK}{%
-         family={Brami‐Cherrier},
-         family_i={B\bibinitperiod},
+      {{hash=BCK}{%
+         family={Brami-Cherrier},
+         family_i={B\bibinitperiod-C\bibinitperiod},
          given={Karen},
          given_i={K\bibinitperiod},
       }}%
@@ -435,8 +435,8 @@
     }
     \keyw{focal adhesion kinase ; cell adhesion ; signal transduction ;
   non‐receptor tyrosine kinase ; focal adhesion}
-    \strng{namehash}{BK+1}
-    \strng{fullhash}{BKGNADWKBMOALPGSBGLBTKGGJAST1}
+    \strng{namehash}{BCK+1}
+    \strng{fullhash}{BCKGNADWKBMOALPGSBGLBTKGGJAST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}

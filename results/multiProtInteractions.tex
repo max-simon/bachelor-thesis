@@ -4,7 +4,7 @@ The focus in this section is on interactions occurring between multiple FAK mole
 \label{mult:dimers}
 First, we want to investigate interactions between two FAK molecules. For this purpose we filtered the dataset for interactions, in which both partners have exactly one neighbour. It turns out that FERM-kinase dimers occur the most followed by FERM-FERM dimers. Because the latter have been experimentally investigated by \textcite{fakdimers} a short comparison between the obtained results and the experimental findings is given. For this purpose we chose the dimer with the longest lasting time as a representative example.\\ % TODO: add the plot here? 
 \\
-The contact map of the interaction surface is shown in \autoref{mult:fermfermcontact}. From this the importance of residue \acid{W}{266} can be confirmed (orange region). Beside this also the residues \acid{Y}{282} to \acid{K}{286} (green region), \acid{T}{291} to \acid{A}{394} (red region) and \acid{G}{322} to \acid{L}{327} (violet region) appear as important actors at the interaction surface since they interact with \acid{W}{266} and among each other. However, the RMSF value of these contacts is larger than for the contacts involving \acid{W}{266}.\\
+The contact map of the interaction surface is shown in \autoref{mult:fermfermcontact}. From this the importance of residue \acid{W}{266} can be confirmed (orange region). Beside this also the residues \acid{Y}{282} to \acid{K}{286} (green region), \acid{T}{291} to \acid{A}{294} (red region) and \acid{G}{322} to \acid{L}{327} (violet region) appear as important actors at the interaction surface since they interact with \acid{W}{266} and among each other. However, the RMSF value of these contacts is larger than for the contacts involving \acid{W}{266}.\\
 At this point it has to be said that other FERM-FERM dimers in the simulation show also contacts between F1 and F3. Since they are not visible in other samples (e.g. the chosen one), they are not presented here.\\
 % TODO: difference to paper?, not really, because they have no membrane
 FERM-FERM dimerization affects the FERM kinase interface of the involved proteins. In comparison to FAK-MEM almost all distances of the interacting residues gets closer for both protein instances (about $0.2\,\si{\nano\metre}$). A reason for this could be that the connection of the FERM domains require an uplift of F3 since the interaction interface points towards the membrane in FAK-MEM. Because the FERM domain is anchored on the membrane via the basic patch, this would push the kinase partly into the membrane. Therefore a force is acting on the kinase, which could be the reason of the closure. % TODO: cite Daniel?
@@ -22,9 +22,28 @@ FERM-FERM dimerization affects the FERM kinase interface of the involved protein
 %
 \subsection{FAK clusters}
 \label{mult:oligs}
-The characterisation of the emerged FAK clusters is very difficult as they differ a lot in size and shape. The largest cluster observed in setup 4 had a size of 21 proteins, while there are other proteins, which did not join any cluster at all. Present shapes of the clusters include long chains as well as ring like conformations or just agglomerations (see \autoref{tobeadded}). \\
+The characterisation of the emerged FAK clusters is very difficult as they differ a lot in size and shape. The largest cluster observed in setup 4 had a size of 21 proteins, while there are other proteins, which did not join any cluster at all. Present shapes of the clusters include long chains as well as ring like conformations or just agglomerations (see \autoref{clust:3d}). \\
 \\
-First of all we focus on the occurring neighbouring types, which were introduced in \autoref{methods:contactana}. In \autoref{mult:inttype_vs_t} the time evolution of the average number of encounters of the different interaction types is determined. It shows, that FERM-kinase interactions (type 3) occur the most, while type 1, 2, 4 and 5 occur equally often. Type 6 and type 7 are interactions, in which all four domains are involved. They occur less often, especially type 7, which is the asymmetric one.\\
+%
+%
+%
+\begin{figure}
+	\subcaptionbox{\label{clust:3d_chain}}[0.32\textwidth]{
+		\includegraphics[height=3cm]{figures/results/fak_chainlike}
+	}\hfill%
+	\subcaptionbox{\label{clust:3d_ring}}[0.32\textwidth]{
+		\includegraphics[height=3cm]{figures/results/fak_circle}
+	}\hfill%
+	\subcaptionbox{\label{clust:3d_aggl}}[0.32\textwidth]{
+		\includegraphics[height=3cm]{figures/results/fak_agglo}
+	}
+	\nicecaption{Obtained cluster shapes}{FAK molecules (FERM blue, kinase red, linker black) in different clusters on a membrane (grey). The shapes differ a lot and are hard to classify.}
+	\label{clust:3d}
+\end{figure}
+%
+%
+%
+First, we focus on the occurring neighbouring types, which were introduced in \autoref{methods:contactana}. In \autoref{mult:inttype_vs_t} the time evolution of the average number of encounters of the different interaction types is determined. It shows, that FERM-kinase interactions (type 3) occur the most, while type 1, 2, 4 and 5 occur equally often. Type 6 and type 7 are interactions, in which all four domains are involved. They occur less often, especially type 7, which is the asymmetric one.\\
 We also analysed the altering of neighbour types, which is presented in \autoref{mult:inttype_markov}. This indicates that the first contact of two FAK molecules appear at the end of their long axis. Some of these in line neighbours alter than to type 4 and 5, but also backwards. Also type 6 neighbours are only formed out of already interacting proteins.\\
 Lastly the mean number of neighbours is considered. It turns out, that there is a fast rising in the beginning and a flattening after $6\,\si{\nano\second}$. The average over the five copies is at the end of the simulation $1.86$ neighbours.\\
 From these observations one could draw the conclusion, that the preferred arrangement of FAK molecules are chains along their long axis. The FAK molecules inside the chain interact either as type 3 (FK chains) neighbours or as type 1 and type 2 neighbours (FFKK chains). Of course also combinations of these two are possible.
