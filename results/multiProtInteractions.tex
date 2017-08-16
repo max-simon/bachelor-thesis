@@ -2,34 +2,34 @@
 The focus in this section is on interactions obtained from setup 4 occurring between multiple FAK molecules. At this point, we want to remind the reader that the used protein structure lacks the FAT domain, which is in full length FAK connected to the kinase via a linker region. This might have a significant effect on clustering processes.
 \subsection{Dimerization of FAK}
 \label{mult:dimers}
-First, we want to investigate interactions between two FAK molecules. To this end, we filtered the dataset for interactions in which both partners have exactly one neighbour. It turns out that FERM-kinase dimers occur the most, followed by FERM-FERM dimers. Because the latter have been experimentally investigated by \textcite{fakdimers}, a short comparison between the obtained results and the experimental findings follows. For this purpose, we chose the dimer with the longest lasting time as a representative example.\\ % TODO: add the plot here? 
-\\
-% TODO: shift G322 to 323, because can not form.
-The contact map of the interaction surface is shown in \autoref{mult:fermfermcontact}. From this, the importance of residue \acid{W}{266} can be confirmed (orange region). Beside this, also the residues \acid{Y}{282} to \acid{K}{286} (green region), \acid{T}{291} to \acid{A}{294} (red region) and \acid{G}{322} to \acid{L}{327} (violet region) appear as important actors at the interaction surface since they interact with \acid{W}{266} and among each other. However, the RMSF value of these distances is larger than for the pairs involving \acid{W}{266}.\\
+First, we want to investigate interactions between two FAK molecules. To this end, we filtered the dataset for interactions in which both partners have exactly one neighbour (dimers). It turns out that FERM-kinase dimers occur the most, followed by FERM-FERM dimers. Because the latter have been experimentally investigated by \textcite{fakdimers}, a short comparison between the obtained results and the experimental findings follows. For this purpose, we chose the dimer with the longest lasting time as a representative example.\\
+The contact map of the interaction surface is shown in \autoref{mult:fermfermcontact}. From this, the importance of residue \acid{W}{266} can be confirmed (orange region). Beside this, also the residues \acid{Y}{282} to \acid{K}{286} (green region) and \acid{T}{291} to \acid{A}{294} (red region) appear as important actors at the interaction surface since they interact with \acid{W}{266} and among each other. However, the RMSF value of these distances is larger than for the pairs involving \acid{W}{266}.\\
 At this point, it has to be said that other FERM-FERM dimers in the simulation also show contacts between F1 and F3. Since, however, they are not visible in other samples (e.g. the chosen one), they are not presented here.\\
-% TODO: nachfolgendes rauslassen, da schlecht erklärt.
-FERM-FERM dimerization affects the FERM-kinase interface of the involved proteins. In comparison to FAK-MEM, almost all interacting residue pairs get closer for both protein instances (about $0.2\,\si{\nano\metre}$). A reason for this could be that the connection of the FERM domains require an uplift of F3 since the interaction interface points towards the membrane in FAK-MEM. Because the FERM domain is anchored on the membrane via the basic patch, this would push the kinase partly into the membrane. Therefore, a force is acting on the kinase, which could be the reason of the closure.
+Comparing the FERM-kinase of the involved proteins to FAK-MEM, we noticed a closure of the interface by ca. $0.2\,\si{\nano\metre}$. This can be attributed to the fact that FERM-FERM dimerisation requires an uplift of F3, because the interaction interface points towards the membrane in FAK-MEM. Since the FERM domain is anchored on the membrane via the basic patch, this would push the kinase partly into the membrane (see \autoref{tobeadded}). Therefore, a force is acting on the kinase which might leads to the observed closure.
 %
 %
 %
 % TODO: fix numbering, plot a sign for the residues in, colorbar more to the right.
 \begin{figure}
-	\centering
-	\includegraphics[width=.8\textwidth]{figures/results/fermferminterface}
-	\nicecaption{Contact map of FERM-FERM dimers}{The contact map shows the interaction site. The most important residues are highlighted.}
-	\label{mult:fermfermcontact}
+	\subcaptionbox{\label{mult:fermferm_sketch}}[0.49\textwidth]{
+		\includegraphics[height=3cm]{figures/results/fermfermdimer_sketch}
+	}\hfill%
+	\subcaptionbox{\label{mult:fermfermcontact}}[0.5\textwidth]{
+		\includegraphics[height=6cm]{figures/results/fermferminterface}
+	}
+	\nicecaption{FERM-FERM dimers}{(\subref{mult:fermferm_sketch}): Sketch of FERM-FERM dimer. In FAK-MEM (left) the interaction site points to the membrane. Therefore, an uplift of F3 is required for dimerization (right) which pushes the kinase into the membrane. \acid{W}{266} is marked with a star. (\subref{mult:fermfermcontact}):  Contact map of the interaction site between the two FERM domains (only F3 is shown). \acid{W}{266} (orange) forms a lot of contacts with the neighbouring FAK molecule. Also the regions around \acid{Y}{282} (green) and \acid{H}{292} are important contributors.}
+	\label{mult:fermferm}
 \end{figure}
 %
 %
 %
 \subsection{FAK clusters}
 \label{mult:oligs}
-The characterisation of the emerged FAK clusters is very difficult as they differ a lot in size and shape. The largest cluster observed in setup 4 had a size of 21 proteins, while there are other proteins, which did not join any cluster at all. Present shapes of the clusters include long chains as well as ring like conformations or just agglomerations (see \autoref{clust:3d}). \\
+The characterisation of the emerged FAK clusters is very difficult as they differ a lot in size and shape. The largest cluster observed in setup 4 had a size of 21 proteins, while there are other proteins, which did not join any cluster at all. Present shapes of the clusters include long chains as well as ring like conformations or just agglomerations (see \autoref{clust:3d}).\\
 \\
 %
 %
 %
-% TODO: refer to a, b and cs
 \begin{figure}
 	\subcaptionbox{\label{clust:3d_chain}}[0.32\textwidth]{
 		\includegraphics[height=3cm]{figures/results/fak_chainlike}
@@ -40,22 +40,18 @@ The characterisation of the emerged FAK clusters is very difficult as they diffe
 	\subcaptionbox{\label{clust:3d_aggl}}[0.32\textwidth]{
 		\includegraphics[height=3cm]{figures/results/fak_agglo}
 	}
-	\nicecaption{Obtained cluster shapes}{FAK molecules (FERM blue, kinase red, linker black) in different clusters on a membrane (grey). The shapes differ a lot and are hard to classify.}
+	\nicecaption{Obtained cluster shapes}{FAK molecules (FERM blue, kinase red, linker black) in different clusters on a membrane (grey). The shapes differ a lot and are hard to classify. Examples are chains (\subref{clust:3d_chain}), ring-like structures (\subref{clust:3d_ring}) and agglomerations (\subref{clust:3d_aggl})}
 	\label{clust:3d}
 \end{figure}
 %
 %
 %
-%TODO: restructure following
-%Preference of 4 domains is clearly symmetric, some indication that type 6 preferred over type7, type 7 unstable in sense of it goes immediately back.
-First, we focus on the occurring neighbouring types which were introduced in \autoref{methods:contactana}. In \autoref{mult:inttype_vs_t} the time evolution of the average number of encounters of the different interaction types is determined. It shows that FERM-kinase interactions (type 3) occur the most, while type 1, 2, 4 and 5 occur equally often. Type 6 and type 7 are interactions, in which all four domains are involved. They occur less often, especially type 7, which is the asymmetric one.\\
-We also analysed the altering of neighbour types, which is presented in \autoref{mult:inttype_markov}. This indicates that the first contact of two FAK molecules appear at the end of their long axis. Some of these in line neighbours alter than to type 4 and 5, but also backwards. Also type 6 neighbours are only formed out of already interacting proteins.\\
+In order to classify the occurring interactions, we analysed the time evolution of the neighbouring types introduced in \autoref{methods:contactana} as well as the transitions among them (see \autoref{mult:inttype_both}). These plots indicate that FERM-kinase interactions (type 3) occur the most, while type 1, 2, 4 and 5 occur equally often. Moreover, the first contact of two FAK molecules appears only between two domains (type 1 to 3). These neighbours can alter than to type 4 and 5 (three interacting domains), but also backwards. Interactions involving all four domains occur less often. Especially type 7 neighbours seem to be unstable, since the loose contact immediately after formation (see \autoref{mult:inttype_vs_t}).\\
 Lastly, the mean number of neighbours is considered. It turns out that there is a fast rising in the beginning and a flattening after $6\,\si{\micro\second}$. The average over the five copies is at the end of the simulation $1.86$ neighbours.\\
 From these observations, one could draw the conclusion that the preferred arrangement of FAK molecules are chains along their long axis. The FAK molecules inside the chain interact either as type 3 (FK chains) neighbours or as type 1 and type 2 neighbours (FFKK chains). Of course also combinations of these two are possible.
 %
 %
 %
-% TODO: flip interaction typ right last level
 \begin{figure}
 	\subcaptionbox{\label{mult:inttype_vs_t}}[0.49\textwidth]{
 		\includegraphics[height=5cm]{figures/results/multiple_typevstime}
@@ -63,7 +59,8 @@ From these observations, one could draw the conclusion that the preferred arrang
 	\subcaptionbox{\label{mult:inttype_markov}}[0.49\textwidth]{
 		\includegraphics[height=5cm]{figures/results/markov}
 	}%
-	\nicecaption{Evolution of neighbouring types}{(\subref{mult:inttype_vs_t}): Mean number of encounters over the five copies for the different neighbouring types. The filled area shows the range from minimum to maximum. (\subref{mult:inttype_markov}): Transition diagram of the neighbouring types. Width and colour of the arrows correspond to the total number of observed transitions, which is also given beside the arrows.}
+	\nicecaption{Evolution of neighbouring types}{(\subref{mult:inttype_vs_t}): Mean number of encounters over the five copies for the different neighbouring types. The filled area shows the range from minimum to maximum. (\subref{mult:inttype_markov}): Transition diagram of the neighbouring types. Width and colour of the arrows correspond to the total number of observed transitions, which is also given beside the arrows. For simplicity, only transitions which occurred more than $5\%$ of the maximum (at least 4 times) are shown.}
+	\label{mult:inttype_both}
 \end{figure}
 %
 %
@@ -74,7 +71,7 @@ Unfortunately, in no FAK molecule did a full dissociation take place at any time
 \\
 At first glance, the CA seems to be independent of the number of neighbours, the interaction type and the clustersize. Motivated from \autoref{mult:oligs} we focus on FAK molecules inside chains in the following. A FAK molecule can be seen as a chain member if it has exactly two neighbours and if these neighbours are not neighbours of one another. For FK chains, only type 3 interactions were allowed, for FFKK chains both, type 1 and type 2. We compare the results to FAK-MEM in \autoref{mult:fk_ca} for FK chains and in \autoref{mult:ff_ca} for FFKK chains.\\
 \autoref{mult:fk_ca} indicates that an arrangement of FAK molecules to FK chains does not influence the mean value of CA. The distribution gets slightly sharper compared to FAK-MEM, which could imply a stabilisation of the interface. Not even the distributions of $d_\text{F1-N}$ and $d_\text{F2-C}$ differs noticeably from those obtained in FAK-MEM.\\
-Neither does an arrangement into FFKK chains affects the value of CA (\autoref{mult:ff_ca}) significantly. The distribution gets slightly sharper and shifted to smaller values by $0.6\,\si{\nano\metre}$. However, the distribution of $d_\text{F1-N}$ indicates a trend to larger values in comparison to FAK-MEM, which refers to an more open state of FAK.\\
+Neither does an arrangement into FFKK chains affects the value of CA (\autoref{mult:ff_ca}) significantly. The distribution gets slightly sharper and shifted to smaller values by $0.6\,\si{\nano\metre}$ ($2\%$). However, the distribution of $d_\text{F1-N}$ indicates a trend to larger values in comparison to FAK-MEM, which refers to an more open state of FAK.\\
 \\
 The filtering leads of course to a smaller sampling of the distributions of $d_\text{F1-N}$, $d_\text{F2-C}$ and CA. For example, for FFKK chains, only 10 different FAK instances were taken into account ($21.7\,\si{\micro\second}$ simulation time in total). However, the obtained changes are visible in almost all of the 10 instances.
 %
@@ -95,7 +92,7 @@ The filtering leads of course to a smaller sampling of the distributions of $d_\
 \begin{figure}
 	\centering
 	\includegraphics[height=6cm]{figures/results/fk_ca}
-	\nicecaption{Domain distances and contact area of FK chains}{(left): Q-Q plot of $d_\text{F1-N}$ and $d_\text{F2-C}$ distributions in comparison to FAK-MEM. The distributions are quit similar. (right): CA value in comparison to FAK-MEM.}
+	\nicecaption{Domain distances and contact area of FK chains}{(left): The Q-Q plot of $d_\text{F1-N}$ and $d_\text{F2-C}$ distributions in comparison to FAK-MEM imply a strong similarity. (right): The CA value doesn't change noticeably in comparison to FAK-MEM.}
 	\label{mult:fk_ca}
 \end{figure}
 %
@@ -108,7 +105,7 @@ The filtering leads of course to a smaller sampling of the distributions of $d_\
 \begin{figure}
 	\centering
 	\includegraphics[height=6cm]{figures/results/ff_ca}
-	\nicecaption{Domain distances and contact area of FFKK chains}{(left): Q-Q plot of $d_\text{F1-N}$ and $d_\text{F2-C}$ distributions in comparison to FAK-MEM. FFKK chain members tend to larger values of $d_\text{F1-N}$. (right): CA value in comparison to FAK-MEM.}
+	\nicecaption{Domain distances and contact area of FFKK chains}{(left): The Q-Q plot of $d_\text{F1-N}$ and $d_\text{F2-C}$ distributions in comparison to FAK-MEM imply a tendency to larger distances of F1 and the N-lobe for FFKK chain members. (right): The CA value decreases slightly by $2\%.$.}
 	\label{mult:ff_ca}
 \end{figure}
 %

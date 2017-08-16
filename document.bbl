@@ -2330,47 +2330,6 @@
     \field{year}{2009}
   \endentry
 
-  \entry{cellMigration}{article}{}
-    \name{author}{2}{}{%
-      {{hash=ZX}{%
-         family={Zhao},
-         family_i={Z\bibinitperiod},
-         given={Xiaofeng},
-         given_i={X\bibinitperiod},
-      }}%
-      {{hash=GJL}{%
-         family={Guan},
-         family_i={G\bibinitperiod},
-         given={Jun-Lin},
-         given_i={J\bibinitperiod-L\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier B.V}%
-    }
-    \keyw{Angiogenesis ; Cell migration ; FAK ; Cancer ; Signal transduction}
-    \strng{namehash}{ZXGJL1}
-    \strng{fullhash}{ZXGJL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{issn}{0169-409X and 1872-8294}
-    \field{number}{8}
-    \field{pages}{610\bibrangedash 615}
-    \field{title}{Focal adhesion kinase and its signaling pathways in cell
-  migration and angiogenesis}
-    \field{volume}{63}
-    \list{location}{1}{%
-      {AMSTERDAM}%
-    }
-    \field{journaltitle}{Advanced Drug Delivery Reviews}
-    \field{year}{2011}
-  \endentry
-
   \entry{pap003}{book}{}
     \name{author}{5}{}{%
       {{hash=ZJ}{%

@@ -5,7 +5,7 @@ The profiles are obtained from setup 2. The reaction coordinate is the z compone
 %
 %
 %
-% TODO: make c small in plot!
+% TODO: make c small in plot! --> not in GROMACS WHAM
 \begin{figure}[hb]
 	\centering
 	\includegraphics[width=.8\textwidth]{figures/results/umbrella}
@@ -16,7 +16,7 @@ The profiles are obtained from setup 2. The reaction coordinate is the z compone
 %
 %
 \\
-Both force fields, \charmm{} and \martini{}, show a similar energy depth of $\approx 17 \si{\kilo cal/\mole}$ and a similar slope between $3\,\si{\nano\metre} \le z \le 4\,\si{\nano\metre}$. The slight underestimation of the \martini{}-profile can be attributed to the proposed underestimation of electrostatic forces due to the non-polar water beads (see \autoref{subsub:coarsegraining}). However, the distance between profiles is smaller than the statistical error and not significant. The difference in the range $4\,\si{\nano\metre} \le z \le 6\,\si{\nano\metre}$ originates from the different treatment of long-range electrostatics: whereas \martini{} uses a cut-off radius, \charmm{} uses PME.\\
+Both force fields, \charmm{} and \martini{}, show a similar energy depth of $\approx 17 \si{\kilo Cal/\mole}$ and a similar slope between $3\,\si{\nano\metre} \le z \le 4\,\si{\nano\metre}$. The slight underestimation of the \martini{}-profile can be attributed to the proposed underestimation of electrostatic forces due to the non-polar water beads (see \autoref{subsub:coarsegraining}). However, the distance between profiles is smaller than the statistical error and not significant. The difference in the range $4\,\si{\nano\metre} \le z \le 6\,\si{\nano\metre}$ originates from the different treatment of long-range electrostatics: whereas \martini{} uses a cut-off radius, \charmm{} uses PME.\\
 Also \martini{} with PW uses PME for long-range electrostatic interactions, and indeed it fits much better to the \charmm{} profile for larger distances. However, the binding strength is crucially underestimated in Martini with PW.\\
 The extent to which \martini{} reproduces the results from all-atom simulations is remarkable, even though the parameters for \martini{} were obtained from free energy calculations (see \autoref{subsub:coarsegraining}).\\
 \\

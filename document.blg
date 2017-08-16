@@ -22,52 +22,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11255 items from 5000.
+Reallocated field_info (elt_size=4) to 11116 items from 5000.
 Database file #1: document-blx.bib
 Database file #2: Paper.bib
 Warning--I didn't find a database entry for "backward.py"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 44 entries,
+You've used 43 entries,
             6256 wiz_defined-function locations,
-            1543 strings with 23892 characters,
-and the built_in function-call counts, 421559 in all, are:
-= -- 34273
-> -- 6218
-< -- 2068
-+ -- 11801
-- -- 2106
-* -- 32136
-:= -- 45537
+            1535 strings with 23625 characters,
+and the built_in function-call counts, 415679 in all, are:
+= -- 33884
+> -- 6079
+< -- 2014
++ -- 11664
+- -- 2063
+* -- 31721
+:= -- 45048
 add.period$ -- 0
-call.type$ -- 44
-change.case$ -- 1540
+call.type$ -- 43
+change.case$ -- 1500
 chr.to.int$ -- 39
-cite$ -- 86
-duplicate$ -- 43433
-empty$ -- 36703
-format.name$ -- 4152
-if$ -- 84769
+cite$ -- 84
+duplicate$ -- 42778
+empty$ -- 36171
+format.name$ -- 4082
+if$ -- 83508
 int.to.chr$ -- 0
-int.to.str$ -- 178
+int.to.str$ -- 173
 missing$ -- 0
-newline$ -- 2409
-num.names$ -- 3067
-pop$ -- 15927
+newline$ -- 2369
+num.names$ -- 2990
+pop$ -- 15598
 preamble$ -- 1
-purify$ -- 1986
+purify$ -- 1941
 quote$ -- 0
-skip$ -- 10336
+skip$ -- 10086
 stack$ -- 0
-substring$ -- 62358
-swap$ -- 9895
-text.length$ -- 1229
-text.prefix$ -- 49
+substring$ -- 61814
+swap$ -- 9695
+text.length$ -- 1201
+text.prefix$ -- 48
 top$ -- 1
-type$ -- 1484
+type$ -- 1450
 warning$ -- 0
-while$ -- 5368
+while$ -- 5307
 width$ -- 0
-write$ -- 2366
+write$ -- 2327
 (There was 1 warning)
