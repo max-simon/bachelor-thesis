@@ -65,6 +65,7 @@
       {www.gromacs.org}%
     }
     \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{fatdomain}{article}{}
@@ -88,29 +89,17 @@
          given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier Inc}%
-    }
-    \keyw{paxillin binding ; Grb2 ; focal adhesion kinase ; crystallography ;
-  SH2 interactions}
     \strng{namehash}{AST+1}
     \strng{fullhash}{ASTHMKNME1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{issn}{0969-2126 and 1878-4186}
     \field{number}{3}
     \field{pages}{319\bibrangedash 327}
     \field{title}{The Structural Basis of Localization and Signaling by the
   Focal Adhesion Targeting Domain}
     \field{volume}{10}
-    \list{location}{1}{%
-      {CAMBRIDGE}%
-    }
     \field{journaltitle}{Structure}
     \field{year}{2002}
   \endentry
@@ -172,29 +161,17 @@
          given_i={R},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier B.V}%
-    }
-    \keyw{Parallel computing ; Molecular dynamics ; PHYSICS, MATHEMATICAL ;
-  MOLECULAR DYNAMICS ; PARALLEL COMPUTING}
     \strng{namehash}{BH+1}
     \strng{fullhash}{BHSDvdDRv1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{issn}{0010-4655 and 1879-2944}
     \field{number}{1}
     \field{pages}{43\bibrangedash 56}
     \field{title}{GROMACS: A message-passing parallel molecular dynamics
   implementation}
     \field{volume}{91}
-    \list{location}{1}{%
-      {AMSTERDAM}%
-    }
     \field{journaltitle}{Computer Physics Communications}
     \field{year}{1995}
   \endentry
@@ -232,19 +209,15 @@
          given_i={N\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{BH+2}
     \strng{fullhash}{BHPJVWDAHNV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{issn}{0021-9606 and 1089-7690}
     \field{number}{8}
     \field{pages}{3684\bibrangedash 3690}
-    \field{title}{MOLECULAR-DYNAMICS WITH COUPLING TO AN EXTERNAL BATH}
+    \field{title}{Molecular-Dynamics with coupling to an external bath}
     \field{volume}{81}
     \field{journaltitle}{Journal of Chemical Physics}
     \field{year}{1984}
@@ -295,9 +268,6 @@
          given_i={A\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {American Chemical Society}%
-    }
     \strng{namehash}{BR+1}
     \strng{fullhash}{BRZXSJLPMJFMMA1}
     \field{labelnamesource}{author}
@@ -331,10 +301,6 @@
   folding, assembly, and functionally relevant conformational changes.
   {\copyright} 2012 American Chemical Society.%
     }
-    \verb{doi}
-    \verb 10.1021/ct300400x
-    \endverb
-    \field{issn}{1549-9618}
     \field{number}{9}
     \field{pages}{3257\bibrangedash 3273}
     \field{title}{Optimization of the additive CHARMM all-atom protein force
@@ -342,7 +308,6 @@
   and χ 2 Dihedral Angles}
     \field{volume}{8}
     \field{journaltitle}{Journal of Chemical Theory and Computation}
-    \field{month}{09}
     \field{year}{2012}
   \endentry
 
@@ -427,29 +392,17 @@
          given_i={S\bibinitperiod\bibinitdelim T\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Blackwell Publishing Ltd}%
-    }
-    \keyw{focal adhesion kinase ; cell adhesion ; signal transduction ;
-  non‐receptor tyrosine kinase ; focal adhesion}
     \strng{namehash}{BCK+1}
     \strng{fullhash}{BCKGNADWKBMOALPGSBGLBTKGGJAST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{issn}{0261-4189 and 1460-2075}
     \field{number}{4}
     \field{pages}{356\bibrangedash 370}
     \field{title}{FAK dimerization controls its kinase‐dependent functions at
   focal adhesions}
     \field{volume}{33}
-    \list{location}{1}{%
-      {England}%
-    }
     \field{journaltitle}{The EMBO Journal}
     \field{year}{2014}
   \endentry
@@ -475,30 +428,18 @@
          given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {American Society for Microbiology}%
-    }
-    \keyw{CELL BIOLOGY ; DEPENDENT PROTEIN-KINASE ; TRANSFORMATION ; PEPTIDE
-  INHIBITOR ; EXTRACELLULAR-MATRIX}
     \strng{namehash}{CMB+1}
     \strng{fullhash}{CMBPTRHSK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{issn}{0270-7306 and 1098-5549}
     \field{number}{2}
     \field{pages}{954\bibrangedash 963}
     \field{title}{Tyrosine phosphorylation of focal adhesion kinase at sites in
   the catalytic domain regulates kinase activity: a role for Src family
   kinases}
     \field{volume}{15}
-    \list{location}{1}{%
-      {WASHINGTON}%
-    }
     \field{journaltitle}{Molecular and Cellular Biology}
     \field{year}{1995}
   \endentry
@@ -518,32 +459,18 @@
          given_i={A\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {eng}%
-    }
     \list{publisher}{1}{%
       {Springer Berlin Heidelberg}%
     }
-    \keyw{Freie Energie}
     \strng{namehash}{CCPA1}
     \strng{fullhash}{CCPA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.1007/978-3-540-38448-9
-    \endverb
-    \field{isbn}{978-3-540-38448-9}
-    \field{library}{UB ; UW}
-    \field{pages}{Online\bibrangedash Ressource (XVIII, 517 p. 85 illus., 11 in
-  color, digital)}
     \field{series}{Springer Series in CHEMICAL PHYSICS ; 86}
     \field{subtitle}{Theory and Applications in Chemistry and Biology}
     \field{title}{Free Energy Calculations}
-    \verb{url}
-    \verb http://dx.doi.org/10.1007/978-3-540-38448-9
-    \endverb
     \list{location}{1}{%
       {Berlin, Heidelberg}%
     }
@@ -745,28 +672,17 @@
          given_i={K\bibinitperiod\bibinitdelim B\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier Ltd}%
-    }
-    \keyw{protein 4.1 ; band 4.1 ; FERM domain ; cytoskeleton ; ERM}
     \strng{namehash}{CAH+1}
   \strng{fullhash}{CAHKACMSMLMHMJHLSCLPSRGAMNCJACJGGPTYHSCBJEJBAFRGGJFRVSFMVTTSTSAMLDTNKAJMFASBPJWDFHKB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{issn}{0968-0004 and 1362-4326}
     \field{number}{8}
     \field{pages}{281\bibrangedash 282}
     \field{title}{The FERM domain: a unique module involved in the linkage of
   cytoplasmic proteins to the membrane}
     \field{volume}{23}
-    \list{location}{1}{%
-      {LONDON}%
-    }
     \field{journaltitle}{Trends in Biochemical Sciences}
     \field{year}{1998}
   \endentry
@@ -792,16 +708,12 @@
          given_i={L\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{DT+1}
     \strng{fullhash}{DTYDPL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{issn}{0021-9606 and 1089-7690}
     \field{number}{12}
     \field{pages}{10089\bibrangedash 10092}
     \field{title}{Particle mesh Ewald: An N⋅log(N) method for Ewald sums in
@@ -832,26 +744,15 @@
          given_i={G\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {American Institute of Physics}%
-    }
     \strng{namehash}{DD+1}
     \strng{fullhash}{DDPMBG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{issn}{0021-9606 and 1089-7690}
     \field{number}{1}
-    \field{pages}{014101\bibrangedash 014101\bibrangedash 7}
     \field{title}{Canonical sampling through velocity rescaling}
     \field{volume}{126}
-    \list{location}{1}{%
-      {United States}%
-    }
     \field{journaltitle}{Journal of Chemical Physics}
     \field{year}{2007}
   \endentry
@@ -889,16 +790,12 @@
          given_i={M\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{EF+1}
     \strng{fullhash}{EFLPAPSCSM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{E}
     \field{sortinithash}{E}
-    \field{issn}{0192-8651 and 1096-987X}
     \field{number}{3}
     \field{pages}{273\bibrangedash 284}
     \field{title}{The double cubic lattice method: Efficient approaches to
@@ -909,7 +806,7 @@
     \field{year}{1995}
   \endentry
 
-  \entry{pap002}{book}{}
+  \entry{pap002}{article}{}
     \name{author}{2}{}{%
       {{hash=FJ}{%
          family={Feng},
@@ -924,26 +821,17 @@
          given_i={B\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Public Library of Science}%
-    }
-    \keyw{Cell adhesion & migration ; Kinases ; Lipids}
     \strng{namehash}{FJMB1}
     \strng{fullhash}{FJMB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{issn}{1932-6203}
-    \field{subtitle}{e0132833}
+    \field{number}{7}
     \field{title}{Novel Phosphotidylinositol 4,5-Bisphosphate Binding Sites on
   Focal Adhesion Kinase}
-    \list{location}{1}{%
-      {San Francisco}%
-    }
+    \field{volume}{10}
+    \field{journaltitle}{PloS one}
     \field{year}{2015}
   \endentry
 
@@ -962,16 +850,12 @@
          given_i={R\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{FAMSRH1}
     \strng{fullhash}{FAMSRH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{issn}{0031-9007 and 1079-7114}
     \field{number}{12}
     \field{pages}{1195\bibrangedash 1198}
     \field{title}{Optimized Monte Carlo data analysis}
@@ -995,13 +879,9 @@
          given_i={B\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {eng}%
-    }
     \list{publisher}{1}{%
       {Academic Press}%
     }
-    \keyw{Zwischenmolekulare Kraft / Computersimulation / Molek{\"u}l}
     \strng{namehash}{FDSB1}
     \strng{fullhash}{FDSB1}
     \field{labelnamesource}{author}
@@ -1009,11 +889,6 @@
     \field{sortinit}{F}
     \field{sortinithash}{F}
     \field{edition}{2. ed.}
-    \field{isbn}{0-12-267351-4 and 978-0-12-267351-1}
-    \field{library}{MA [Signatur: Frenk]}
-    \field{note}{Hier auch sp{\"a}ter erschienene, unver{\"a}nderte Nachdrucke}
-    \field{number}{ARRAY(0x4357db8)}
-    \field{pages}{XXII, 638 S.}
     \field{series}{Computational science series}
     \field{subtitle}{from algorithms to applications}
     \field{title}{Understanding molecular simulation}
@@ -1023,12 +898,13 @@
     \field{year}{2002}
   \endentry
 
-  \entry{pap001}{book}{}
-    \name{author}{13}{}{%
+  \entry{pap001}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
       {{hash=GGM}{%
          family={Go{\~n}i},
          family_i={G\bibinitperiod},
-         given={Guillermina\bibnamedelima M.},
+         given={Guillermina\bibnamedelima M},
          given_i={G\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
       {{hash=EC}{%
@@ -1064,13 +940,13 @@
       {{hash=MMT}{%
          family={Mart{\'\i}n},
          family_i={M\bibinitperiod},
-         given={M.\bibnamedelima Teresa},
+         given={M\bibnamedelima Teresa},
          given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod},
       }}%
       {{hash=EMJ}{%
          family={Eck},
          family_i={E\bibinitperiod},
-         given={Michael\bibnamedelima J.},
+         given={Michael\bibnamedelima J},
          given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
       {{hash=KL}{%
@@ -1085,48 +961,19 @@
          given={Frauke},
          given_i={F\bibinitperiod},
       }}%
-      {{hash=GFL}{%
-         family={Gervasio},
-         family_i={G\bibinitperiod},
-         given={Francesco\bibnamedelima Luigi},
-         given_i={F\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=PMM}{%
-         family={Perez-Moreno},
-         family_i={P\bibinitperiod-M\bibinitperiod},
-         given={Mirna},
-         given_i={M\bibinitperiod},
-      }}%
-      {{hash=LD}{%
-         family={Lietha},
-         family_i={L\bibinitperiod},
-         given={Daniel},
-         given_i={D\bibinitperiod},
-      }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {National Acad Sciences}%
-    }
-    \keyw{Amino Acids - metabolism ; Focal Adhesion Protein-Tyrosine Kinases -
-  metabolism ; Protein Binding - drug effects ; Mutant Proteins - metabolism ;
-  Biocatalysis - drug effects}
     \strng{namehash}{GGM+1}
-    \strng{fullhash}{GGMECBJCAMZJBAMMTEMJKLGFGFLPMMLD1}
+    \strng{fullhash}{GGMECBJCAMZJBAMMTEMJKLGF+1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{issn}{0027-8424 and 1091-6490}
-    \field{pages}{E3177\bibrangedash E3186}
-    \field{series}{PNAS Plus}
-    \field{title}{Phosphatidylinositol 4,5-bisphosphate triggers activation of
+    \field{number}{31}
+    \field{pages}{3177\bibrangedash 3186}
+    \field{title}{Phosphatidylinositol 4, 5-bisphosphate triggers activation of
   focal adhesion kinase by inducing clustering and conformational changes}
-    \list{location}{1}{%
-      {United States}%
-    }
+    \field{volume}{111}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
     \field{year}{2014}
   \endentry
 
@@ -1145,38 +992,17 @@
          given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \name{editor}{1}{}{%
-      {{hash=JC}{%
-         family={Johnson},
-         family_i={J\bibinitperiod},
-         given={Colin},
-         given_i={C\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Public Library of Science}%
-    }
-    \keyw{Kinases ; Phosphorylation ; Extracellular matrix ; Binding sites ;
-  Cell adhesion & migration}
     \strng{namehash}{HJESMD1}
     \strng{fullhash}{HJESMD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{issn}{1932-6203 and 1932-6203}
     \field{number}{2}
-    \field{pages}{e0172136}
     \field{title}{Phospholipid binding to the FAK catalytic domain impacts
   function}
     \field{volume}{12}
-    \list{location}{1}{%
-      {San Francisco}%
-    }
-    \field{journaltitle}{PLOS ONE}
+    \field{journaltitle}{PloS one}
     \field{year}{2017}
   \endentry
 
@@ -1202,16 +1028,12 @@
          given_i={T\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{HSC+1}
     \strng{fullhash}{HSCTRKZCTE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{issn}{0192-8651 and 1096-987X}
     \field{number}{7}
     \field{pages}{726\bibrangedash 740}
     \field{title}{The flying ice cube: Velocity rescaling in molecular dynamics
@@ -1230,16 +1052,12 @@
          given_i={W\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{HWG1}
     \strng{fullhash}{HWG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{issn}{0556-2791}
     \field{number}{3}
     \field{pages}{1695\bibrangedash 1697}
     \field{title}{Canonical dynamics: Equilibrium phase-space distributions}
@@ -1273,19 +1091,15 @@
          given_i={D\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{HJS+1}
     \strng{fullhash}{HJSGBLdSDvd1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{issn}{1549-9618 and 1549-9626}
     \field{number}{12}
     \field{pages}{3713}
-    \field{title}{g_wham-A Free Weighted Histogram Analysis Implementation
+    \field{title}{g\_wham-A Free Weighted Histogram Analysis Implementation
   Including Robust Error and Autocorrelation Estimates}
     \field{volume}{6}
     \field{journaltitle}{Journal of Chemical Theory and Computation}
@@ -1357,29 +1171,17 @@
          given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {AMER CHEMICAL SOC}%
-    }
-    \keyw{FUSION PEPTIDES ; MODEL LIPID-BILAYERS ; MOLECULAR-DYNAMICS
-  SIMULATIONS ; PREDICTIVE TOOLS ; AQUEOUS-SOLUTION}
     \strng{namehash}{JDHd+1}
     \strng{fullhash}{JDHdSGBWFwACWTASLVPXTDPMSJSLV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \field{issn}{1549-9618 and 1549-9626}
     \field{number}{1}
     \field{pages}{687\bibrangedash 697}
     \field{title}{Improved Parameters for the Martini Coarse-Grained Protein
   Force Field}
     \field{volume}{9}
-    \list{location}{1}{%
-      {WASHINGTON}%
-    }
     \field{journaltitle}{Journal of Chemical Theory and Computation}
     \field{year}{2013}
   \endentry
@@ -1417,16 +1219,12 @@
          given_i={M\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{JWL+1}
     \strng{fullhash}{JWLCJMJDIRWKML1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \field{issn}{0021-9606 and 1089-7690}
     \field{number}{2}
     \field{pages}{926}
     \field{title}{Comparison of simple potential functions for simulating
@@ -1487,21 +1285,12 @@
          given_i={K\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier B.V}%
-    }
-    \keyw{Tyrosine phosphorylation ; Clustering ; MAP kinase ; FAK ;
-  Dimerization}
     \strng{namehash}{KBZ+1}
     \strng{fullhash}{KBZMSTHZMKDVCGJYKM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{issn}{0167-4889 and 1879-2596}
     \field{number}{2}
     \field{pages}{141\bibrangedash 152}
     \field{title}{Direct transmembrane clustering and cytoplasmic dimerization
@@ -1570,30 +1359,17 @@
          given_i={R\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {American Chemical Society}%
-    }
-    \keyw{Dimyristoylphosphatidylcholine - chemistry ;
-  1,2-Dipalmitoylphosphatidylcholine - chemistry ; Phosphatidylethanolamines -
-  chemistry ; Lipid Bilayers - chemistry ; Lipids - chemistry}
     \strng{namehash}{KJB+1}
     \strng{fullhash}{KJBVRMFJAOJWTDJMRCVIMJADPRW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{issn}{1520-6106 and 1520-5207}
     \field{number}{23}
     \field{pages}{7830}
     \field{title}{Update of the CHARMM all-atom additive force field for
   lipids: validation on six lipid types}
     \field{volume}{114}
-    \list{location}{1}{%
-      {United States}%
-    }
     \field{journaltitle}{The journal of physical chemistry. B}
     \field{year}{2010}
   \endentry
@@ -1631,20 +1407,16 @@
          given_i={P\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{KS+1}
     \strng{fullhash}{KSRJMBDSRHKPA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{issn}{0192-8651 and 1096-987X}
     \field{number}{8}
     \field{pages}{1011\bibrangedash 1021}
-    \field{title}{THE weighted histogram analysis method for free-energy
-  calculations on biomolecules. I. The method}
+    \field{title}{The weighted histogram analysis method for free-energy
+  calculations on biomolecules.}
     \field{volume}{13}
     \field{journaltitle}{Journal of Computational Chemistry}
     \field{year}{1992}
@@ -1695,16 +1467,12 @@
          given_i={R\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{LKR+1}
     \strng{fullhash}{LKRTSBNFBBDZRFR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{issn}{0261-4189 and 1460-2075}
     \field{number}{22}
     \field{pages}{4539\bibrangedash 4553}
     \field{subtitle}{PIPKIγ accelerates adhesion formation}
@@ -1754,30 +1522,17 @@
          given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier Inc}%
-    }
-    \keyw{PROTEINS ; CELLBIO ; Focal Adhesion Protein-Tyrosine Kinases -
-  metabolism ; Enzyme Inhibitors - chemistry ; Focal Adhesion Protein-Tyrosine
-  Kinases - chemistry}
     \strng{namehash}{LD+1}
     \strng{fullhash}{LDCXCDFLYSMDEMJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{issn}{0092-8674 and 1097-4172}
     \field{number}{6}
     \field{pages}{1177\bibrangedash 1187}
     \field{title}{Structural Basis for the Autoinhibition of Focal Adhesion
   Kinase}
     \field{volume}{129}
-    \list{location}{1}{%
-      {United States}%
-    }
     \field{journaltitle}{Cell}
     \field{year}{2007}
   \endentry
@@ -1819,25 +1574,16 @@
          given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \keyw{DOMAIN FORMATION ; PHASE-BEHAVIOR ; LIPID-BILAYER ;
-  MOLECULAR-DYNAMICS SIMULATIONS ; HEAD GROUPS}
     \strng{namehash}{LCA+1}
     \strng{fullhash}{LCASZEFJvVAHdMSJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{issn}{1549-9618 and 1549-9626}
     \field{number}{3}
     \field{pages}{1694\bibrangedash 1708}
     \field{title}{Martini Force Field Parameters for Glycolipids}
     \field{volume}{9}
-    \list{location}{1}{%
-      {United States}%
-    }
     \field{journaltitle}{Journal of Chemical Theory and Computation}
     \field{year}{2013}
   \endentry
@@ -1857,25 +1603,16 @@
          given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \keyw{DOMAIN FORMATION ; COMPUTER-SIMULATIONS ; PHASE-SEPARATION ;
-  MOLECULAR-DYNAMICS SIMULATIONS ; FORCE-FIELD}
     \strng{namehash}{MSJTDP1}
     \strng{fullhash}{MSJTDP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{issn}{0306-0012 and 1460-4744}
     \field{number}{16}
     \field{pages}{6801\bibrangedash 6822}
     \field{title}{Perspective on the Martini model}
     \field{volume}{42}
-    \list{location}{1}{%
-      {England}%
-    }
     \field{journaltitle}{Chemical Society Reviews}
     \field{year}{2013}
   \endentry
@@ -1915,26 +1652,17 @@
          given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \keyw{VESICLE FUSION ; COMPUTER-SIMULATIONS ; UNIVERSAL SOLVATION MODEL ;
-  MOLECULAR-DYNAMICS SIMULATIONS ; ATOMIC-LEVEL}
     \strng{namehash}{MSJ+1}
     \strng{fullhash}{MSJRHJYSTDPVAHd1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{issn}{1520-6106 and 1520-5207}
     \field{number}{27}
     \field{pages}{7812\bibrangedash 7824}
     \field{title}{The MARTINI force field: Coarse grained model for
   biomolecular simulations}
     \field{volume}{111}
-    \list{location}{1}{%
-      {United States}%
-    }
     \field{journaltitle}{Journal of Physical Chemistry B}
     \field{year}{2007}
   \endentry
@@ -1966,29 +1694,17 @@
          given_i={D\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Annual Reviews}%
-    }
-    \keyw{phosphoinositides ; phosphatidylinositol 4,5-bisphosphate ; signal
-  transduction ; second messengers}
     \strng{namehash}{MS+1}
     \strng{fullhash}{MSWJGAMD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{issn}{1056-8700 and 1545-4266}
     \field{number}{1}
     \field{pages}{151\bibrangedash 175}
-    \field{title}{PIP2 AND PROTEINS: Interactions, Organization, and
+    \field{title}{PIP2 and Proteins: Interactions, Organization, and
   Information Flow}
     \field{volume}{31}
-    \list{location}{1}{%
-      {4139 El Camino Way, P.O. Box 10139}%
-    }
     \field{journaltitle}{Annual Review of Biophysics and Biomolecular
   Structure}
     \field{year}{2002}
@@ -2033,16 +1749,12 @@
          given_i={S\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{NS1}
     \strng{fullhash}{NS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \field{issn}{0026-8976 and 1362-3028}
     \field{number}{2}
     \field{pages}{255\bibrangedash 268}
     \field{title}{A molecular dynamics method for simulations in the canonical
@@ -2067,16 +1779,12 @@
          given_i={M\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{NSKM1}
     \strng{fullhash}{NSKM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \field{issn}{0026-8976 and 1362-3028}
     \field{number}{5}
     \field{pages}{1055\bibrangedash 1076}
     \field{title}{Constant pressure molecular dynamics for molecular systems}
@@ -2100,16 +1808,12 @@
          given_i={A},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
     \strng{namehash}{PMRA1}
     \strng{fullhash}{PMRA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \field{issn}{0021-8979 and 1089-7550}
     \field{number}{12}
     \field{pages}{7182\bibrangedash 7190}
     \field{title}{Polymorphic transitions in single crystals: A new molecular
@@ -2134,19 +1838,12 @@
          given_i={J\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier Inc}%
-    }
     \strng{namehash}{TGVJ1}
     \strng{fullhash}{TGVJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{issn}{0021-9991 and 1090-2716}
     \field{number}{2}
     \field{pages}{187\bibrangedash 199}
     \field{title}{Nonphysical sampling distributions in Monte Carlo free-energy
@@ -2195,31 +1892,67 @@
          given_i={J\bibinitperiod-A\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {American Society for Microbiology}%
-    }
-    \keyw{Peptides - genetics ; Protein-Tyrosine Kinases - metabolism ;
-  Isoenzymes - metabolism ; Coumarins - metabolism ; Peptides - metabolism}
     \strng{namehash}{TM+1}
     \strng{fullhash}{TMCASJMKGCMGJA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{issn}{0270-7306 and 1098-5549}
     \field{number}{22}
     \field{pages}{7731\bibrangedash 7743}
     \field{title}{Alternative Splicing Controls the Mechanisms of FAK
   Autophosphorylation}
     \field{volume}{22}
-    \list{location}{1}{%
-      {United States}%
-    }
     \field{journaltitle}{Molecular and Cellular Biology}
     \field{year}{2002}
+  \endentry
+
+  \entry{backwardpy}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WTA}{%
+         family={Wassenaar},
+         family_i={W\bibinitperiod},
+         given={Tsjerk\bibnamedelima A},
+         given_i={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Pluhackova},
+         family_i={P\bibinitperiod},
+         given={Kristyna},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=BRA}{%
+         family={B{\"o}ckmann},
+         family_i={B\bibinitperiod},
+         given={Rainer\bibnamedelima A},
+         given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MSJ}{%
+         family={Marrink},
+         family_i={M\bibinitperiod},
+         given={Siewert\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TDP}{%
+         family={Tieleman},
+         family_i={T\bibinitperiod},
+         given={D\bibnamedelima Peter},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WTA+1}
+    \strng{fullhash}{WTAPKBRAMSJTDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{2}
+    \field{pages}{676}
+    \field{title}{Going Backward: A Flexible Geometric Approach to Reverse
+  Transformation from Coarse Grained to Atomistic Models}
+    \field{volume}{10}
+    \field{journaltitle}{Journal of Chemical Theory and Computation}
+    \field{year}{2014}
   \endentry
 
   \entry{polarizableMartini}{article}{}
@@ -2255,38 +1988,17 @@
          given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
     }
-    \name{editor}{1}{}{%
-      {{hash=LM}{%
-         family={Levitt},
-         family_i={L\bibinitperiod},
-         given={Michael},
-         given_i={M\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {PUBLIC LIBRARY SCIENCE}%
-    }
-    \keyw{PHOSPHOLIPID-BILAYERS ; SYSTEMS ; LATERAL DIFFUSION ; ION PERMEATION
-  ; TRANSPORT}
     \strng{namehash}{YSO+1}
     \strng{fullhash}{YSOSLVSDMSJSLV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
-    \field{issn}{1553-734X and 1553-7358 and 1553-7358}
     \field{number}{6}
-    \field{pages}{e1000810}
     \field{title}{Polarizable Water Model for the Coarse-Grained MARTINI Force
   Field}
     \field{volume}{6}
-    \list{location}{1}{%
-      {SAN FRANCISCO}%
-    }
-    \field{journaltitle}{PLoS Computational Biology}
+    \field{journaltitle}{PLOS Computational Biology}
     \field{year}{2010}
   \endentry
 
@@ -2305,32 +2017,21 @@
          given_i={J\bibinitperiod-L\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Springer US}%
-    }
-    \keyw{FAK ; Tumorigenesis ; Cancer Research ; Biomedicine ; Mouse models}
     \strng{namehash}{ZJGJL1}
     \strng{fullhash}{ZJGJL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{issn}{0167-7659 and 1573-7233}
     \field{number}{1}
     \field{pages}{35\bibrangedash 49}
     \field{title}{Signal transduction by focal adhesion kinase in cancer}
     \field{volume}{28}
-    \list{location}{1}{%
-      {Boston}%
-    }
     \field{journaltitle}{Cancer and Metastasis Reviews}
     \field{year}{2009}
   \endentry
 
-  \entry{pap003}{book}{}
+  \entry{pap003}{article}{}
     \name{author}{5}{}{%
       {{hash=ZJ}{%
          family={Zhou},
@@ -2363,30 +2064,22 @@
          given_i={F\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \keyw{Adenosine Triphosphate - pharmacology ; Focal Adhesion
-  Protein-Tyrosine Kinases - metabolism ; Focal Adhesion Protein-Tyrosine
-  Kinases - chemistry ; Inositol Phosphates - pharmacology ; Allosteric
-  Regulation - drug effects}
     \strng{namehash}{ZJ+1}
     \strng{fullhash}{ZJBALCJLDGF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{issn}{0006-3495 and 1542-0086}
+    \field{number}{3}
     \field{pages}{698\bibrangedash 705}
     \field{title}{Allosteric Regulation of Focal Adhesion Kinase by PIP2 and
   ATP}
-    \list{location}{1}{%
-      {United States}%
-    }
+    \field{volume}{108}
+    \field{journaltitle}{Biophysical Journal}
     \field{year}{2015}
   \endentry
 
-  \entry{pap004}{book}{}
+  \entry{pap004}{article}{}
     \name{author}{6}{}{%
       {{hash=ZJ}{%
          family={Zhou},
@@ -2425,26 +2118,16 @@
          given_i={F\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {English}%
-    }
-    \list{publisher}{1}{%
-      {Public Library of Science}%
-    }
-    \keyw{Experiments ; Kinases ; Funding ; Phosphorylation ; Parameter
-  estimation}
     \strng{namehash}{ZJ+1}
     \strng{fullhash}{ZJASCSSBJTBAGF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{issn}{1553-7358}
-    \field{subtitle}{e1004593}
+    \field{number}{11}
     \field{title}{Mechanism of Focal Adhesion Kinase Mechanosensing}
-    \list{location}{1}{%
-      {San Francisco}%
-    }
+    \field{volume}{11}
+    \field{journaltitle}{PLoS computational biology}
     \field{year}{2015}
   \endentry
 \endsortlist
