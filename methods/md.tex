@@ -13,7 +13,7 @@ which can be integrated numerically with e.g. Leapfrog- or Verlet integration sc
 	\vec{F}_i = - \frac{\partial V}{\partial \vec{r}_i} = - \frac{\partial}{\partial \vec{r}_i} \left(V_\text{bonded} + V_\text{non-bonded} + V_\text{external}\right).
 \end{align}
 \subsubsection{Bonded interactions}
-Bonded interactions act intramolecularly and describe chemical bonds. They can occur between two, three or four particles and refer to bond stretching, bending and torsion respectively. An illustration can be found in \autoref{md:fig_bonds}.\\
+Bonded interactions act intramolecularly and describe chemical bonds. They can occur between two, three or four particles and refer to bond stretching, bending and torsion respectively. An illustration can be found in \Cref{md:fig_bonds}.\\
 \\
 Deviations of the bond length $r$ from an equilibrium distance $r_0$ result in potential energy, which is usually described by a harmonic oscillator with the force constant $k_\text{dist}$:
 \begin{align}
@@ -53,7 +53,7 @@ The Lennard-Jones potential combines Pauli repulsion ($r^{-12}$ term) and the vd
 \begin{equation}
 V_\text{Lennard-Jones} = \sum_{\text{non-bonded pairs i,j}} 4 \epsilon\left(\left(\frac{\sigma}{r_{ij}}\right)^{12} - \left(\frac{\sigma}{r_{ij}}\right)^6\right).
 \end{equation}
-$\epsilon$ is related to the potential depth and $\sigma$ to the potential range (see \autoref{md:fig_pot}).\\
+$\epsilon$ is related to the potential depth and $\sigma$ to the potential range (see \Cref{md:fig_pot}).\\
 \\
 The Coulomb potential is given by
 \begin{equation}
@@ -63,7 +63,7 @@ where $q_1$, $q_2$ are the (partial) charges of the interacting particles, $r$ t
 \\
 In general, non-bonded interactions act between all atoms in the system implying a very large computational cost.\\
 The easiest solution for this problem is to use a cut-off radius $r_c$. Particles beyond this radius are not taken into account. This can be implemented very efficiently with a Verlet neighbour lists. For each particle, a neighbour list is created, which contains all particles inside a second radius $r_v$ with $r_v > r_c$. This reduces the number of distance calculations a lot. The lists are updated if the maximal displacement in the system is larger than $r_v - r_c$.  The application of a cut-off radius is suitable especially for Lennard-Jones potential, as it decays very rapidly and $r_c$ can be chosen very small \autocite[p. 144]{greenBook}.\\
-Because the electrostatic potential is proportional to $1/r$, the use of a cut-off radius would lead to large jumps in the potential. That is why long range interactions have to be considered, which can be effectively done with Particle Mesh Ewald (PME) summation \autocite{pme}. Particle mesh methods in general split up the electrostatic potential into a short-range and a long-range part via a switching function. The short-range part can be calculated with a small cut-off radius in real space. The long-range part, however, is calculated by solving the Poisson equation of the actual charge distribution, for which a discrete grid (mesh) is used. In contrast to other particle mesh methods, this grid is transformed to Fourier space in PME with FFT techniques. Here, the solution of the Poisson equation is a sum over the grid points. Afterwards, the potential can be transformed back into real space. The use of PME requires of course periodic boundary conditions, which are described in \autoref{subsec:pbc} \autocite[p. 246-251]{greenBook}.
+Because the electrostatic potential is proportional to $1/r$, the use of a cut-off radius would lead to large jumps in the potential. That is why long range interactions have to be considered, which can be effectively done with Particle Mesh Ewald (PME) summation \autocite{pme}. Particle mesh methods in general split up the electrostatic potential into a short-range and a long-range part via a switching function. The short-range part can be calculated with a small cut-off radius in real space. The long-range part, however, is calculated by solving the Poisson equation of the actual charge distribution, for which a discrete grid (mesh) is used. In contrast to other particle mesh methods, this grid is transformed to Fourier space in PME with FFT techniques. Here, the solution of the Poisson equation is a sum over the grid points. Afterwards, the potential can be transformed back into real space. The use of PME requires of course periodic boundary conditions, which are described in \Cref{subsec:pbc} \autocite[p. 246-251]{greenBook}.
 \subsubsection{External forces}
 With \gromacs{}, it is possible to perform pulling forces onto groups of atoms in the system. In this thesis, pulling was used to bias distances between groups. For this, \gromacs{} provides an option to apply an umbrella potential to two groups, which yields a force proportional to the deviation of the distance between the groups from a reference distance. The force can be applied on one or two spatial dimensions only or along a predefined vector and the reference distance can change in time  \autocite[p. 154-159]{gromacsManual}.
 \subsection{Force fields}
@@ -79,7 +79,7 @@ All simulations for optimizing have been done with a time step of $2\,\si{\femto
 For all simulations, the TIP3P water model \autocite{tip3p} was used, which was also used in the parametrisation of C36. Here, each water molecule is modelled with three partially charged beads.
 \subsubsection{Coarse graining and the \martini{} force field}
 \label{subsub:coarsegraining}
-The \martini{} force field \autocites{martini}{martini22}{martini22_lipids} is one of the most famous coarse-graining force fields. Most beads are constituted of four heavy atoms (see \autoref{md:martinimapping}), which implies a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
+The \martini{} force field \autocites{martini}{martini22}{martini22_lipids} is one of the most famous coarse-graining force fields. Most beads are constituted of four heavy atoms (see \Cref{md:martinimapping}), which implies a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
 The parametrisation of \martini{} is mainly based on reproducing free energies, e.g. partitioning free energies and dimerization free energies of amino acid side chain analogues. For lipids, also thermodynamic properties, such as area per lipid, have been considered. The parameters were optimized with a time step of $20\,\si{\femto\second}$ up to $30\,\si{\femto\second}$ \autocites{martini22}{martini22_lipids}.\\
 %
 %

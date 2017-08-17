@@ -149,16 +149,16 @@
          prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
          family={Spoel},
          family_i={S\bibinitperiod},
-         given={D},
-         given_i={D},
+         given={D.},
+         given_i={D\bibinitperiod},
       }}%
       {{hash=vDR}{%
          prefix={van},
          prefix_i={v\bibinitperiod},
          family={Drunen},
          family_i={D\bibinitperiod},
-         given={R},
-         given_i={R},
+         given={R.},
+         given_i={R\bibinitperiod},
       }}%
     }
     \strng{namehash}{BH+1}
@@ -185,32 +185,32 @@
          given_i={H\bibinitperiod},
       }}%
       {{hash=PJ}{%
-         family={POSTMA},
+         family={Postma},
          family_i={P\bibinitperiod},
-         given={JPM},
+         given={J.},
          given_i={J\bibinitperiod},
       }}%
       {{hash=VW}{%
-         family={VANGUNSTEREN},
+         family={Vangunsteren},
          family_i={V\bibinitperiod},
-         given={WF},
+         given={W.},
          given_i={W\bibinitperiod},
       }}%
       {{hash=DA}{%
-         family={DINOLA},
+         family={Dinola},
          family_i={D\bibinitperiod},
-         given={A},
-         given_i={A},
+         given={A.},
+         given_i={A\bibinitperiod},
       }}%
-      {{hash=HNV}{%
-         family={HAAK},
+      {{hash=HA}{%
+         family={Haak},
          family_i={H\bibinitperiod},
-         given={[No\bibnamedelima Value]},
-         given_i={N\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
       }}%
     }
     \strng{namehash}{BH+2}
-    \strng{fullhash}{BHPJVWDAHNV1}
+    \strng{fullhash}{BHPJVWDAHA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
@@ -400,7 +400,7 @@
     \field{sortinithash}{B}
     \field{number}{4}
     \field{pages}{356\bibrangedash 370}
-    \field{title}{FAK dimerization controls its kinase‐dependent functions at
+    \field{title}{FAK dimerization controls its kinase-dependent functions at
   focal adhesions}
     \field{volume}{33}
     \field{journaltitle}{The EMBO Journal}
@@ -468,7 +468,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{series}{Springer Series in CHEMICAL PHYSICS ; 86}
+    \field{series}{Springer Series in Chemical Physics; 86}
     \field{subtitle}{Theory and Applications in Chemistry and Biology}
     \field{title}{Free Energy Calculations}
     \list{location}{1}{%
@@ -716,7 +716,7 @@
     \field{sortinithash}{D}
     \field{number}{12}
     \field{pages}{10089\bibrangedash 10092}
-    \field{title}{Particle mesh Ewald: An N⋅log(N) method for Ewald sums in
+    \field{title}{Particle mesh Ewald: An N log(N) method for Ewald sums in
   large systems}
     \field{volume}{98}
     \field{journaltitle}{The Journal of Chemical Physics}
