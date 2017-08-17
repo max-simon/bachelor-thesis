@@ -1,4 +1,4 @@
-Because the measurable time- and length scale of biological experiments are usually larger than those of the system, the dynamics in the system can only be measured indirectly. To get a more precise insight into the specific processes, molecular dynamics simulations (MD) are a suitable tool.\\
+Because the measurable time and length scale of biological experiments are usually larger than those of the system, the dynamics in the system can only be measured indirectly. To get a more precise insight into the specific processes, molecular dynamics simulations (MD) are a suitable tool.\\
 In the following section, the main concepts of MD and characteristics of the used models are outlined with a special focus on the \martini{} force field. An exhaustive exploration of these methods, however, would be outside the scope of this thesis. Because \gromacs{} (GROningen MAchine for Chemical Simulations) \autocites{gromacs1, gromacsManual} was used as MD engine in this thesis, the following explanations refer to \gromacs{} conventions and features. 
 \subsection{The physics of MD}
 In MD, atoms are modelled as solid beads, which comprise the nucleus as well as the electron shell, and follow classical equations of motion. Due to this implicit treatment of electrons, quantum mechanical (QM) effects, such as excitation or electron transfer processes, are not accessible in MD. However, the beads are parametrized by effective parameters motivated by QM or experiments \autocite[p. 127-128]{greenBook}.\\
@@ -36,6 +36,7 @@ where $k_\text{dihedral}$ describes the energy barrier for turning the dihedral 
 \begin{figure}
 	\subcaptionbox{\label{md:fig_bonds}}[0.5\textwidth]{
 		\includegraphics[height=3cm]{figures/introduction/fig_bonds}
+		\vspace{1cm}
 	}\hfill%
 	\subcaptionbox{\label{md:fig_pot}}[6cm]{
 		\includegraphics[height=6cm]{figures/introduction/fig_potentials}
@@ -52,7 +53,7 @@ The Lennard-Jones potential combines Pauli repulsion ($r^{-12}$ term) and the vd
 \begin{equation}
 V_\text{Lennard-Jones} = \sum_{\text{non-bonded pairs i,j}} 4 \epsilon\left(\left(\frac{\sigma}{r_{ij}}\right)^{12} - \left(\frac{\sigma}{r_{ij}}\right)^6\right).
 \end{equation}
-$\epsilon$ is related to the potential depth and $\sigma$ to the potential range (\autoref{md:fig_pot}).\\
+$\epsilon$ is related to the potential depth and $\sigma$ to the potential range (see \autoref{md:fig_pot}).\\
 \\
 The Coulomb potential is given by
 \begin{equation}
@@ -78,7 +79,7 @@ All simulations for optimizing have been done with a time step of $2\,\si{\femto
 For all simulations, the TIP3P water model \autocite{tip3p} was used, which was also used in the parametrisation of C36. Here, each water molecule is modelled with three partially charged beads.
 \subsubsection{Coarse graining and the \martini{} force field}
 \label{subsub:coarsegraining}
-The \martini{} force field \autocites{martini}{martini22}{martini22_lipids} is one of the most famous coarse-graining force fields. Most beads are constituted of four heavy atoms (\autoref{md:martinimapping}), which implies a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
+The \martini{} force field \autocites{martini}{martini22}{martini22_lipids} is one of the most famous coarse-graining force fields. Most beads are constituted of four heavy atoms (see \autoref{md:martinimapping}), which implies a loss of chemical information, but also an enormous reduction of computational cost. With this approach much larger time- and spatial scales are accessible for MD simulations.\\
 The parametrisation of \martini{} is mainly based on reproducing free energies, e.g. partitioning free energies and dimerization free energies of amino acid side chain analogues. For lipids, also thermodynamic properties, such as area per lipid, have been considered. The parameters were optimized with a time step of $20\,\si{\femto\second}$ up to $30\,\si{\femto\second}$ \autocites{martini22}{martini22_lipids}.\\
 %
 %

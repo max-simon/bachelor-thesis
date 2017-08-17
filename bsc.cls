@@ -12,7 +12,10 @@
 \LoadClassWithOptions{scrreprt}
 
 % Language
-\usepackage[ngerman,english]{babel} % all languages being used, with main language last in list
+\usepackage{polyglossia} % Vgl. http://tex.stackexchange.com/questions/135185
+\setmainlanguage{english}
+\setotherlanguage[spelling=old,babelshorthands=true]{german}
+% \usepackage[ngerman,english]{babel} % all languages being used, with main language last in list
 
 % Geometry
 \usepackage[onehalfspacing]{setspace}

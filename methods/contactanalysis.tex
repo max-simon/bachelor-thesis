@@ -9,7 +9,7 @@ For the calculation of SASA values \gromacs{} sasa tool was used. The v.d.W radi
 \\
 For an appropriate description of intermolecular interactions between FAK molecules, we defined the following terms:\\
 \textbf{Interaction} Proteins or part of proteins interact if their minimal distance is smaller than a cut-off distance (here $1.5\,\si{\nano\metre}$).\\
-\textbf{Neighbour} Two proteins are neighbours if they are interacting with each other. One protein can have several neighbours. For a more detailed characterisation we defined the following neighbouring types (see also \autoref{methods:inttypes}):
+\textbf{Neighbour} Two proteins are neighbours if they are interacting with each other. One protein can have several neighbours. For a more detailed characterisation we defined the following neighbouring types (see \autoref{methods:inttypes}):
 \begin{enumerate}[label={type \theenumi:}, leftmargin=*]
 	\setcounter{enumi}{0}
 	\item only the FERM domain interacts with only the FERM domain of the neighbouring protein
@@ -20,6 +20,7 @@ For an appropriate description of intermolecular interactions between FAK molecu
 	\item the FERM domain is interacting with the FERM domain of the neighbouring protein and the kinase is interacting with the kinase of the neighbouring protein
 	\item the FERM domain is interacting with the kinase of the neighbouring protein and the kinase is interacting with the FERM domain of the neighbouring protein
 \end{enumerate}
+It is important to see that the probability of the different types is initially biased. Assuming that both proteins can have four different orientations (FERM on top, on right, on bottom or on left) and that the proteins do not influence the orientation of their neighbours 16 permutations of the two orientations are possible. Only one permutation would result in a type 1 neighbour (FERM domains pointing towards each other), but, for example, two permutations would result in a type 3 neighbour (both FERM domains point to the right or both point to the left).
 \textbf{Cluster} Neighbouring proteins form a cluster. A protein belongs to a cluster if it has at least one neighbour inside the cluster. One protein can only belong to one cluster. The clustersize is the number of proteins belonging to the cluster.
 %
 %
