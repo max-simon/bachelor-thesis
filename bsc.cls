@@ -19,7 +19,7 @@
 
 % Geometry
 \usepackage[onehalfspacing]{setspace}
-\usepackage[a4paper,width=150mm,top=30mm,bottom=30mm]{geometry}
+\usepackage[a4paper,width=150mm,top=30mm,bottom=30mm, bindingoffset=1cm]{geometry}
 
 % Links
 \usepackage{color,xcolor}

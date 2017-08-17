@@ -23,7 +23,7 @@ The presented results are based on a total simulation time of $3.88\,\si{\micro\
 %
 \section{Setup 2 - FAK in solution}
 \label{setup:setup2}
-Setup 1 refers to a \martini{} simulation of a single FAK molecule in waterbox. NaCl ions were added to neutralize the charge (see \Cref{setup:setup1_pic}).\\
+Setup 1 refers to a \martini{} simulation of a single FAK molecule in a waterbox. NaCl ions were added to neutralize the charge (see \Cref{setup:setup1_pic}).\\
 After a short equilibration the system was simulated for $20\,\si{\micro\second}$ at a temperature of $300\,\si{\kelvin}$. We used the default parameters of the \martini{} forcefield as input parameters.
 %
 %
@@ -39,12 +39,12 @@ After a short equilibration the system was simulated for $20\,\si{\micro\second}
 %
 \section{Stabilising force for FAK molecules}
 \label{stabilising}
-Unfortunately, previous work in the group revealed problems in the use of \martini{} regarding simulations of FAK, which are summarized in the following \autocite{sara}.\\
+Unfortunately, previous work in the group \autocite{sara} revealed problems in the use of \martini{} regarding simulations of FAK, which are summarized in the following.\\
 \textcite{sara} obtained in simulations of a single FAK molecule on a \pip{}-containing membrane rapid changes in the inclination of the protein with respect to the membrane. In the following, this inclination is characterized by the angle $\beta$ between the z-axis and the vector connecting F1 and F2, $\vec{d}_\text{F}$. $\beta$ is given as
 \begin{equation}
 \cos\left(\beta\right) = \frac{\vec{d}_{\text{F}, z}}{d_\text{F}},\quad d_\text{F} = \left|\vec{d}_\text{F}\right|.
 \end{equation}
-The distributions of $\beta$ for different simulations ($10\,\si{\micro\second}$ each) are presented in \Cref{stabil:sarascurves}. Considering the red line, a mean value of $90°$ can be observed. The FAK molecule changed from an upright position to this state in less than $50\,\si{\nano\second}$ and stayed constant for the remaining simulation time. We refer to this behaviour as a fall of FAK in the following.\\
+The distributions of $\beta$ for different simulations ($10\,\si{\micro\second}$ each) are presented in \Cref{stabil:sarascurves}. Considering the red line, a mean value of $90°$ can be observed. The FAK molecule changed from an upright position to this state in less than $50\,\si{\nano\second}$ and stayed tilted for the remaining simulation time. We refer to this behaviour as a fall of FAK in the following.\\
 There are several reasons why this is rather an artefact of the \martini{} force field than a possible binding pose of FAK to the membrane as suggested by \textcite{pap002}. First, FAK fell to both sides, which means that the interaction sites for \pip{} proposed by \textcite{pap002} were also located on top of the protein instead of at the protein-membrane interface. Indeed, contact analysis between the protein and \pip{} lipids showed that virtually all residues on the surface (in both, FERM domain and kinase) were interacting with the membrane. A second reason is that this behaviour was not observed in equivalent all-atom simulations in \charmm{} ($1.5\,\si{\micro\second}$ in total). Here, only two maxima were observed around $8°$ and around $20°$, the largest observed angle in all frames was $40°$.\\
 \\
 In the course of this project, we carried out several simulations to understand the cause of this falling. However, we were not able to prove the reason beyond doubt. In order to still perform reasonable simulations of multiple FAK molecules, we decided to apply a stabilising force on each FAK molecule.\\
@@ -64,7 +64,7 @@ In order to not sharpen the distribution, we chose $k = 100 \frac{\si{\kilo\joul
 	\subcaptionbox{\label{stabil:forceillustr}}[0.49\textwidth]{
 		\includegraphics[height=5cm]{figures/introduction/forceapproach}
 	}%
-	\nicecaption{Stabilising force}{(\subref{stabil:sarascurves}): Distributions of $\beta$ obtained by \textcite{sara}. The red curve shows the distribution for a fallen FAK. The blue and green curve are consistent with equivalent all-atom simulations in \charmm{}.  (\subref{stabil:forceillustr}): Illustration of the stabilising force. The violet line represents a orientation of $\vec{d}_{F}$ which wouldn't lead to a force ($\Delta z = 0$). The green line represents a orientation which leads to an uplift ($\Delta z > 0$, the springs are tensioned). The force is proportional to $\Delta z$.}
+	\nicecaption{Stabilising force}{(\subref{stabil:sarascurves}): Distributions of $\beta$ obtained by \textcite{sara}. The red curve shows the distribution for a fallen FAK. The blue and green curve are consistent with equivalent all-atom simulations in \charmm{}.  (\subref{stabil:forceillustr}): Illustration of the stabilising force. The violet line represents a orientation of $\vec{d}_\text{F}$ which would not lead to a force ($\Delta z = 0$). The green line represents a orientation which leads to an uplift ($\Delta z > 0$, the springs are tensioned). The force is proportional to $\Delta z$.}
 \end{figure}
 %
 %
