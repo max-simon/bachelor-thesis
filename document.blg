@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: ba_titlepage.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: motivation.aux
@@ -9,6 +10,7 @@ A level-1 auxiliary file: methods.aux
 A level-1 auxiliary file: setup.aux
 A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: selbstaendigkeit.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -31,24 +33,24 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 44 entries,
             6256 wiz_defined-function locations,
-            1451 strings with 20218 characters,
-and the built_in function-call counts, 380301 in all, are:
-= -- 30199
+            1453 strings with 20257 characters,
+and the built_in function-call counts, 380382 in all, are:
+= -- 30208
 > -- 5170
 < -- 1114
 + -- 10776
 - -- 2097
-* -- 30510
-:= -- 43833
+* -- 30519
+:= -- 43842
 add.period$ -- 0
 call.type$ -- 44
 change.case$ -- 526
 chr.to.int$ -- 37
 cite$ -- 86
 duplicate$ -- 39355
-empty$ -- 33868
+empty$ -- 33877
 format.name$ -- 4045
-if$ -- 74852
+if$ -- 74870
 int.to.chr$ -- 0
 int.to.str$ -- 94
 missing$ -- 0
@@ -60,7 +62,7 @@ purify$ -- 969
 quote$ -- 0
 skip$ -- 7346
 stack$ -- 0
-substring$ -- 57157
+substring$ -- 57184
 swap$ -- 8113
 text.length$ -- 1209
 text.prefix$ -- 49

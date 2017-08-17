@@ -1,7 +1,9 @@
 % TODOS!!!
 %	-> write Section instead of section
 %	-> check (see ...)
-%	-> write in methods, dass sich Protein auch drehen kann, auch in Markov-Chain.
+%  -> look for all refs to motivation and change
+% -> headings
+%
 % kompiliert mit XeLaTeX
 \documentclass[
 11pt, % font size
@@ -23,8 +25,8 @@ oneside, % oneside / twoside
 \date{August 21, 2017}
 
 % Mathe
-\usepackage{amsmath, amssymb, booktabs, hyperref, subcaption, siunitx}
-
+\usepackage{amsmath, amssymb, booktabs, hyperref, subcaption, siunitx, tocloft}
+\setlength\cftaftertoctitleskip{0pt}
 \bibliography{Paper}
 
 % Code
@@ -48,21 +50,27 @@ oneside, % oneside / twoside
 \newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}\\#2}}}
 
 
-%\includeonly{abstract, conclusion}
+%\includeonly{ba_titlepage, abstract, introduction}
 
 \begin{document}
-Tolle Titelseite.
-\newpage
+\include{ba_titlepage}
+%\newpage
 % abstract english and german
+\pagenumbering{roman}
 \include{abstract}
+\leavevmode\thispagestyle{empty}\newpage
 \tableofcontents
+\newpage
+\leavevmode\thispagestyle{empty}\newpage
 %	
 %	
 % chapter introduction
+\pagenumbering{arabic}
 \include{introduction}
 %
-%
-% chapter motivation
+%	
+%	
+% chapter introduction
 \include{motivation}
 %
 %
@@ -82,12 +90,15 @@ Tolle Titelseite.
 \include{conclusion}
 %
 %
-\chapter*{Acknowledgments}
+\chapter*{Acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
-
-Yo thx.
+First, I would like to thank Prof. Dr. Frauke Gräter for the opportunity to work in her research group and Prof. Dr. Ulrich Schwarz for the supervision of my bachelor project. Furthermore, I would like to thank the group members for their support, especially Dr. Csaba Daday who is leading the research on FAK in the group.\\
+Finally, I want to appreciate the feedback offered by my fellow students and friends as well as the support which I got from my family and my girlfriend, Marie.
 %
+\newpage
 \listoffigures
 \printbibliography[title=References]{}
+\newpage
+\include{selbstaendigkeit}
 % bibliography
 \end{document}

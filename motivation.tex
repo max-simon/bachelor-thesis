@@ -1,35 +1,6 @@
 \chapter{Motivation}
-\label{motivation}
-As described in \autoref{intro:clustering}, intermolecular interactions of FAK molecules can effect their activation. However, the process is still not understood, especially on an atomistic scale.\\
-In this thesis, we used MD simulations with the \martini{} force field to investigate these interactions. \martini{} lacks chemical details, but it is a necessary simplification since systems with several FAK molecules involve a large number of particles. Unfortunately, previous work in the group revealed problems in the use of \martini{} regarding simulations of FAK, which are summarized in the following \autocite{sara}.\\
+As described in \autoref{intro:clustering}, intermolecular interactions of FAK molecules can effect their activation. The understanding of these interactions is of interest because they might play an important role in tumour cells in which FAK is often overexpressed. In addition, since FAK contributes to several signalling pathways and has a downstream effect on important cell functions, new insights into the activation process of FAK can be valuable for further studies as well.\\
+The aim of this project is to get first atomistic insights into the clustering process of FAK molecules on a \pip{}-containing membrane. To this end, we let multiple FAK molecules aggregate on a membrane and analyse their clustering and conformational changes. With these observations, more specific investigations on interactions of multiple FAK molecules become accessible.\\
 \\
-\textcite{sara} obtained in simulations of a single FAK molecule on a \pip{}-containing membrane rapid changes in the inclination of the protein with respect to the membrane. In the following, this inclination is characterized by the angle $\beta$ between the z-axis and the vector connecting F1 and F2, $\vec{d}_\text{F}$. $\beta$ is given as
-\begin{equation}
-\cos\left(\beta\right) = \frac{\vec{d}_{\text{F}, z}}{d_\text{F}},\quad d_\text{F} = \left|\vec{d}_\text{F}\right|
-\end{equation}
-The distributions of $\beta$ for different simulations ($10\,\si{\micro\second}$ each) are presented in \autoref{motiv:sarascurves}. Considering the red line, a mean value of $90°$ can be observed. The FAK molecule changed from an upright position to this state in less than $50\,\si{\nano\second}$ and stayed constant for the remaining simulation time. We refer to this behaviour as a fall of FAK in the following.\\
-There are several reasons why this is rather an artefact of the \martini{} force field than a possible binding pose of FAK to the membrane as suggested by \textcite{pap002}. First, FAK fell to both sides, which means that the interaction sites for \pip{} proposed by \textcite{pap002} were also located on top of the protein instead of at the protein-membrane interface. Indeed, contact analysis between the protein and \pip{} lipids showed that virtually all residues on the surface (in both, FERM domain and kinase) were interacting with the membrane. A second reason is that this behaviour was not observed in equivalent all-atom simulations in \charmm{} ($1.5\,\si{\micro\second}$ in total). Here, only two maxima were observed around $8°$ and around $20°$, the largest observed angle in all frames was $40°$.\\
-\\
-In the course of this project, we carried out several simulations to understand the cause of this falling. However, we were not able to prove the reason beyond doubt. In order to still perform reasonable simulations of multiple FAK molecules, we decided to apply a stabilising force on each FAK molecule.\\
-The force is acting onto F1 and F2 parallel to the z-axis and is proportional to the deviation of their z-distance $\Delta z$ from a reference distance $z_0$. This is illustrated in \autoref{motiv:forceillustr}. For the determination of $z_0$ we took only the green and the blue distribution from \autoref{motiv:sarascurves} into account, because the large angles observed in the other distributions have not been observed in the \charmm{} simulations. The mean value of $\vec{d}_{\text{F}, z}$ for these two distributions is $2.228\,\si{\nano\metre}$, which we therefore set as $z_0$. From the standard deviation of $\vec{d}_{\text{F}, z}$, $\Delta z = 0.11\,\si{\nano\metre}$, we estimated the force constant equivalent $k_i$ of the fluctuation around the mean angle:
-\begin{align}
-	k_B T &= \frac{1}{2} k_i \Delta z^2\\
-	k_i &= \frac{2 k_B T}{\Delta z^2} = 412 \frac{\si{\kilo\joule}}{\si{\mole}\,\si{\nano\metre}^2}.
-\end{align}
-In order to not sharpen the distribution, we chose $k = 100 \frac{\si{\kilo\joule}}{\si{\mole}\,\si{\nano\metre}^2}$ for the stabilising force.
-%
-%
-%
-\begin{figure}[htb]
-	\subcaptionbox{\label{motiv:sarascurves}}[0.49\textwidth]{
-		\includegraphics[height=5cm]{figures/introduction/sara_angles}
-	}\hfill%
-	\subcaptionbox{\label{motiv:forceillustr}}[0.49\textwidth]{
-		\includegraphics[height=5cm]{figures/introduction/forceapproach}
-	}%
-	\nicecaption{Inclination angle of FAK}{(\subref{motiv:sarascurves}): Distributions of $\beta$ obtained by \textcite{sara}. The red curve shows the distribution for a fallen FAK. The blue and green curve are consistent with equivalent all-atom simulations in \charmm{}.  (\subref{motiv:forceillustr}): Illustration of the stabilising force. The violet line represents a orientation of $\vec{d}_{F}$ which wouldn't lead to a force ($\Delta z = 0$). The green line represents a orientation which leads to an uplift ($\Delta z > 0$, the springs are tensioned). The force is proportional to $\Delta z$.}
-\end{figure}
-%
-%
-%
-
+In this project, we used coarse-grained MD simulations with the \martini{} force field. \martini{} lacks chemical details, but it is a necessary simplification since systems with several FAK molecules involve a large number of particles and clustering processes have a large time scale.\\
+Previous work in the group revealed problems in the use of \martini{} for simulations of FAK on a \pip{}-containing membrane, which are briefly discussed in \autoref{stabilising}. It was suggested that they occur due to an underestimation of the binding of the basic patch to \pip{} in \martini{}. Therefore, the examination of this binding was part of the project as well.

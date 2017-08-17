@@ -99,7 +99,8 @@
 
 
 % Bibliography
-\usepackage[style=numeric-comp,backend=bibtex,maxnames=10,maxcitenames=2]{biblatex}
+\usepackage[style=numeric-comp,backend=bibtex,maxnames=10,maxcitenames=2,giveninits=true]{biblatex}
+
 %\nocite{*} % print all references, even those not used
 
 % Appendix

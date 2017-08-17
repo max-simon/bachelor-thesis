@@ -4,30 +4,30 @@
 \select@language {german}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Structure of FAK}}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Structure of FAK}}{2}{figure.caption.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Inclination angle of FAK}}{10}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Interactions in MD}}{13}{figure.caption.7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces MARTINI{} bead mapping}}{15}{figure.caption.12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Neighbouring types}}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Interactions in MD}}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces MARTINI{} bead mapping}}{9}{figure.caption.10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Neighbouring types}}{15}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Setup 1 - FAK in solution}}{23}{figure.caption.19}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Setup 2 - Free energy of basic patch}}{24}{figure.caption.20}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Setup 3 - FAK on a PI(4,5)P$_2${} membrane}}{25}{figure.caption.21}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Setup 4 - FAK cluster}}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Setup 2 - Free energy of basic patch}}{17}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Setup 1 - FAK in solution}}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Inclination angle of FAK}}{19}{figure.caption.19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Setup 3 - FAK on a PI(4,5)P$_2${} membrane}}{20}{figure.caption.20}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Setup 4 - FAK cluster}}{20}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Free energy profile of basic patch}}{27}{figure.caption.23}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Domain distances and contact area of FAK-SOL}}{28}{figure.caption.24}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 3D structure of the two states in FAK-SOL}}{29}{figure.caption.25}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Contact map of FAK-SOL}}{30}{figure.caption.26}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Correlations in contact map}}{31}{figure.caption.27}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Domain distances and contact area of FAK-MEM}}{33}{figure.caption.28}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Contact map of FAK-MEM}}{34}{figure.caption.29}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces 3D structure of FAK-MEM}}{34}{figure.caption.30}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces FERM-FERM dimers}}{36}{figure.caption.31}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Obtained cluster shapes}}{36}{figure.caption.32}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Evolution of neighbouring types}}{37}{figure.caption.33}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Domain distances and contact area of FK chains}}{38}{figure.caption.34}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Domain distances and contact area of FFKK chains}}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Free energy profile of basic patch}}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Domain distances and contact area of FAK-SOL}}{23}{figure.caption.23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 3D structure of the two states in FAK-SOL}}{24}{figure.caption.24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Contact map of FAK-SOL}}{25}{figure.caption.25}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Correlations in contact map}}{26}{figure.caption.26}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Domain distances and contact area of FAK-MEM}}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Contact map of FAK-MEM}}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces 3D structure of FAK-MEM}}{29}{figure.caption.29}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces FERM-FERM dimers}}{31}{figure.caption.30}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Obtained cluster shapes}}{31}{figure.caption.31}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Evolution of neighbouring types}}{32}{figure.caption.32}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Domain distances and contact area of FK chains}}{33}{figure.caption.33}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Domain distances and contact area of FFKK chains}}{34}{figure.caption.34}
 \addvspace {10\p@ }
