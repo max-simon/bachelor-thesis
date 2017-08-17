@@ -1,14 +1,12 @@
 % TODOS!!!
 %	-> write Section instead of section
-%	-> rearrange images and paragraphs
 %	-> check (see ...)
-%   -> check Text.// bild // Text.
 %	-> write in methods, dass sich Protein auch drehen kann, auch in Markov-Chain.
 % kompiliert mit XeLaTeX
 \documentclass[
 11pt, % font size
 parskip=half, % space between paragraphs instead of indentation
-digital, % digital or print
+print, % digital or print
 oneside, % oneside / twoside
 %	openright, % openright for title page and subsequent chapters on right pages in twosided layout
 ]{bsc}
@@ -18,6 +16,7 @@ oneside, % oneside / twoside
 % Package für Bilder
 \usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage{afterpage}
 
 \title{Understanding Focal Adhesion Kinase Clustering Using Coarse-Grained MD Simulations}
 \author{Max SImon}
@@ -49,11 +48,14 @@ oneside, % oneside / twoside
 \newcommand{\nicecaption}[2]{\caption[#1]{\small{\textbf{#1}\\#2}}}
 
 
-%\includeonly{abstract, motivation}
+%\includeonly{abstract, conclusion}
 
 \begin{document}
-% abstract english
+Tolle Titelseite.
+\newpage
+% abstract english and german
 \include{abstract}
+\tableofcontents
 %	
 %	
 % chapter introduction
@@ -80,7 +82,12 @@ oneside, % oneside / twoside
 \include{conclusion}
 %
 %
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+Yo thx.
 %
+\listoffigures
 \printbibliography[title=References]{}
 % bibliography
 \end{document}

@@ -20,15 +20,14 @@ For an appropriate description of intermolecular interactions between FAK molecu
 	\item the FERM domain is interacting with the FERM domain of the neighbouring protein and the kinase is interacting with the kinase of the neighbouring protein
 	\item the FERM domain is interacting with the kinase of the neighbouring protein and the kinase is interacting with the FERM domain of the neighbouring protein
 \end{enumerate}
-It is important to see that the probability of the different types is initially biased. Assuming that both proteins can have four different orientations (FERM on top, on right, on bottom or on left) and that the proteins do not influence the orientation of their neighbours 16 permutations of the two orientations are possible. Only one permutation would result in a type 1 neighbour (FERM domains pointing towards each other), but, for example, two permutations would result in a type 3 neighbour (both FERM domains point to the right or both point to the left).
-\textbf{Cluster} Neighbouring proteins form a cluster. A protein belongs to a cluster if it has at least one neighbour inside the cluster. One protein can only belong to one cluster. The clustersize is the number of proteins belonging to the cluster.
+It is important to see that the probability of the different types is initially biased, as the following example demonstrates. Assuming one FAK molecule with the FERM domain pointing to the right, a type 1 neighbour can only form if the second molecule docks via its FERM domain from the right. In contrast, a type 3 neighbour can form from both sides with the appropriate orientations. Therefore, even if there would be no energetic preference between the interaction types, type 3 neighbours would be preferred. On the other hand, interactions of type 4, 5, 6 and 7 would occur more rarely, because the range of appropriate binding surfaces is much smaller compared to type 1, 2 and 3.
 %
 %
 %
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/introduction/classification}
-	\nicecaption{Neighbouring types}{The black part refers to the FERM domain, the white to the kinase.}
+	\nicecaption{Neighbouring types}{The black part shows the FERM domain, the white the kinase. For type 4 and type 5, the upper protein can be vice versa as well.}
 	\label{methods:inttypes}
 \end{figure}
 %

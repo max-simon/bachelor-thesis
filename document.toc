@@ -1,0 +1,44 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\select@language {german}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Structure}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}PI(4,5)P$_2${} binding and activation}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Dimerization, clustering and autophosphorylation}{8}{section.1.3}
+\contentsline {chapter}{\numberline {2}Motivation}{9}{chapter.2}
+\contentsline {chapter}{\numberline {3}Methods}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Molecular dynamics simulations}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}The physics of MD}{11}{subsection.3.1.1}
+\contentsline {subsubsection}{\nonumberline Bonded interactions}{12}{section*.6}
+\contentsline {subsubsection}{\nonumberline Non-bonded interactions}{12}{section*.8}
+\contentsline {subsubsection}{\nonumberline External forces}{14}{section*.9}
+\contentsline {subsection}{\numberline {3.1.2}Force fields}{14}{subsection.3.1.2}
+\contentsline {subsubsection}{\nonumberline All-atom and the CHARMM36{} force field}{15}{section*.10}
+\contentsline {subsubsection}{\nonumberline Coarse graining and the MARTINI{} force field}{15}{section*.11}
+\contentsline {subsection}{\numberline {3.1.3}External constrains}{16}{subsection.3.1.3}
+\contentsline {subsubsection}{\nonumberline Periodic boundary conditions}{16}{section*.13}
+\contentsline {subsubsection}{\nonumberline Thermostats}{17}{section*.14}
+\contentsline {subsubsection}{\nonumberline Barostats}{17}{section*.15}
+\contentsline {section}{\numberline {3.2}Free energy calculations}{18}{section.3.2}
+\contentsline {subsubsection}{\nonumberline Partition function}{18}{section*.16}
+\contentsline {subsubsection}{\nonumberline Free energy in MD and Umbrella Sampling}{19}{section*.17}
+\contentsline {section}{\numberline {3.3}Contact Analysis}{20}{section.3.3}
+\contentsline {chapter}{\numberline {4}Setup}{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}Protein structure}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}Setup 1 - FAK in solution}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Setup 2 - Free energy of basic patch}{22}{section.4.3}
+\contentsline {section}{\numberline {4.4}Setup 3 - FAK on a PI(4,5)P$_2${} membrane}{23}{section.4.4}
+\contentsline {section}{\numberline {4.5}Setup 4 - FAK cluster}{24}{section.4.5}
+\contentsline {chapter}{\numberline {5}Results}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Free energy profile of basic patch}{26}{section.5.1}
+\contentsline {section}{\numberline {5.2}FAK in solution}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Impact of the stabilising force}{31}{section.5.3}
+\contentsline {section}{\numberline {5.4}Conformational changes on a membrane}{33}{section.5.4}
+\contentsline {section}{\numberline {5.5}Multiple FAK interactions}{35}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Dimerization of FAK}{35}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}FAK clusters}{36}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Activation due to clustering}{37}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}
+\contentsline {chapter}{Acknowledgements}{42}{chapter*.36}
