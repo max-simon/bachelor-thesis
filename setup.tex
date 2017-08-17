@@ -12,10 +12,10 @@ The presented results are based on a total simulation time of $3.88\,\si{\micro\
 %
 %
 %
-\begin{figure}[hb]
+\begin{figure}[t]
 	\centering
-	\includegraphics[height=6cm]{figures/setup/setup_umbrella}
-	\nicecaption{Setup 2 - Free energy of basic patch}{The \charmm{} structure of the lobe (1936 atoms) above one \pip{} (143 atoms) embedded in a \pope{} membrane (509 lipids, ca. 63600 atoms). The box was filled up with ca. 63000 water molecules. The corresponding \martini{} structure contains 269 beads for the lobe, ca. 6100 beads for the membrane and ca. 16200 solvent beads/PW molecules. The box dimensions are $14.0\,\si{\nano\metre}$ x $9.0\,\si{\nano\metre}$ x $20.0\,\si{\nano\metre}$.}
+	\includegraphics[height=5.5cm]{figures/setup/setup_umbrella}
+	\nicecaption{Setup 1 - Free energy of basic patch}{The \charmm{} structure of the lobe (1936 atoms) above one \pip{} (143 atoms) embedded in a \pope{} membrane (509 lipids, ca. 63600 atoms). The box was filled up with ca. 63000 water molecules. The corresponding \martini{} structure contains 269 beads for the lobe, ca. 6100 beads for the membrane and ca. 16200 solvent beads/PW molecules. The box dimensions are $14.0\,\si{\nano\metre}$ x $9.0\,\si{\nano\metre}$ x $20.0\,\si{\nano\metre}$.}
 	\label{setup:setup2_pic}
 \end{figure}
 %
@@ -28,10 +28,10 @@ After a short equilibration the system was simulated for $20\,\si{\micro\second}
 %
 %
 %
-\begin{figure}[h]
+\begin{figure}[hb]
 	\centering
 	\includegraphics[height=5cm]{figures/setup/setup_free}
-	\nicecaption{Setup 1 - FAK in solution}{The \martini{} structure of FAK (FERM blue, kinase red and linker black, 1486 beads) was put in a waterbox (ca. 50000 solvent beads) with ions (23 sodium beads and 20 chlorine beads). The box dimensions are $18.8\,\si{\nano\metre}$ x $18.8\,\si{\nano\metre}$ x $18.8\,\si{\nano\metre}$.}
+	\nicecaption{Setup 2 - FAK in solution}{The \martini{} structure of FAK (FERM blue, kinase red and linker black, 1486 beads) was put in a waterbox (ca. 50000 solvent beads) with ions (23 sodium beads and 20 chlorine beads). The box dimensions are $18.8\,\si{\nano\metre}$ x $18.8\,\si{\nano\metre}$ x $18.8\,\si{\nano\metre}$.}
 	\label{setup:setup1_pic}
 \end{figure}
 %
@@ -64,7 +64,7 @@ In order to not sharpen the distribution, we chose $k = 100 \frac{\si{\kilo\joul
 	\subcaptionbox{\label{stabil:forceillustr}}[0.49\textwidth]{
 		\includegraphics[height=5cm]{figures/introduction/forceapproach}
 	}%
-	\nicecaption{Inclination angle of FAK}{(\subref{stabil:sarascurves}): Distributions of $\beta$ obtained by \textcite{sara}. The red curve shows the distribution for a fallen FAK. The blue and green curve are consistent with equivalent all-atom simulations in \charmm{}.  (\subref{stabil:forceillustr}): Illustration of the stabilising force. The violet line represents a orientation of $\vec{d}_{F}$ which wouldn't lead to a force ($\Delta z = 0$). The green line represents a orientation which leads to an uplift ($\Delta z > 0$, the springs are tensioned). The force is proportional to $\Delta z$.}
+	\nicecaption{Stabilising force}{(\subref{stabil:sarascurves}): Distributions of $\beta$ obtained by \textcite{sara}. The red curve shows the distribution for a fallen FAK. The blue and green curve are consistent with equivalent all-atom simulations in \charmm{}.  (\subref{stabil:forceillustr}): Illustration of the stabilising force. The violet line represents a orientation of $\vec{d}_{F}$ which wouldn't lead to a force ($\Delta z = 0$). The green line represents a orientation which leads to an uplift ($\Delta z > 0$, the springs are tensioned). The force is proportional to $\Delta z$.}
 \end{figure}
 %
 %
